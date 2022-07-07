@@ -189,16 +189,16 @@ $screen-md: 48rem;
   object-fit: cover;
 }
 
+.hidden {display: none;}
 .relative {position: relative;}
 .absolute {position: absolute;}
 
-.top-12 {
-  top: $size-12;
-}
+.top-0 {top: 0;}
+.top-12 {top: $size-12;}
+.left-0 {left: 0;}
+.right-12 {right: $size-12;}
 
-.right-12 {
-  right: $size-12;
-}
+.cursor-pointer {cursor: pointer;}
 
 .counter-reset {
   counter-reset: step 0;
@@ -207,6 +207,42 @@ $screen-md: 48rem;
 .counter-increment::after {
   counter-increment: step;
   content: counter(step);
+}
+
+.heart-shape-outlined {
+  visibility: visible;
+  opacity: 1;
+  transition-property: visibility, opacity;
+  transition-duration: 150ms;
+}
+
+.heart-shape-filled {
+  visibility: hidden;
+  opacity: 0;
+  transition-property: visibility, opacity;
+  transition-duration: 150ms;
+}
+
+.heart-button:hover > .heart-icon > .heart-shape-outlined {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.heart-button:hover > .heart-icon > .heart-shape-filled {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 @media screen and (min-width: $screen-sm) {

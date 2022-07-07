@@ -11,6 +11,32 @@
 </head>
 
 <body>
+  <!-- Icons -->
+  <svg class="sr-only" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="icon-heart-gradient" gradientTransform="rotate(90)">
+        <stop offset="0%" stop-color="hsl(317, 100%, 74%)" />
+        <stop offset="100%" stop-color="hsl(267, 66%, 60%)" />
+      </linearGradient>
+    </defs>
+    <symbol id="icon-location" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+    </symbol>
+    <symbol id="icon-heart-outlined" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path fill="url(#icon-heart-gradient)" d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/>
+    </symbol>
+    <symbol id="icon-heart-filled" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path fill="url(#icon-heart-gradient)" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </symbol>
+  </svg>
+
   <!-- Header -->
   <header class="w-full h-auto pt-24 pb-12 text-center bg-white shadow-md">
     <p class="font-display text-30 leading-30 text-dark-gray">ohmyfood</p>
@@ -18,9 +44,8 @@
 
   <!-- Location -->
   <div class="flex flex-row justify-center items-center w-full h-auto py-16 bg-light-gray text-dark-gray">
-    <svg class="-ml-40 mr-16 w-24 h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    <svg class="-ml-40 mr-16 w-24 h-24" fill="currentColor">
+      <use href="#icon-location" />
     </svg>
     <p class="font-sans text-16 font-medium">Paris, Belleville</p>
   </div>
@@ -42,9 +67,8 @@
       <li class="mb-24 self-start flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg">
         <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment"></div>
         <div class="flex flex-row justify-center items-center text-dark-gray">
-          <svg class="w-24 h-24 mr-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+          <svg class="w-24 h-24 mr-24" fill="currentColor">
+            <use href="#icon-phone" />
           </svg>
           <p class="font-sans font-medium text-16">Choisissez un restaurant</p>
         </div>
@@ -53,9 +77,8 @@
       <li class="mb-24 flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg">
         <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment"></div>
         <div class="flex flex-row justify-center items-center text-dark-gray">
-          <svg class="w-24 h-24 mr-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+          <svg class="w-24 h-24 mr-24" fill="currentColor">
+            <use href="#icon-phone" />
           </svg>
           <p class="font-sans font-medium text-16">Composez votre menu</p>
         </div>
@@ -64,9 +87,8 @@
       <li class="self-end flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg">
         <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment"></div>
         <div class="flex flex-row justify-center items-center text-dark-gray">
-          <svg class="w-24 h-24 mr-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+          <svg class="w-24 h-24 mr-24" fill="currentColor">
+            <use href="#icon-phone" />
           </svg>
           <p class="font-sans font-medium text-16">Déguster au restaurant</p>
         </div>
@@ -82,48 +104,68 @@
       <ul class="grid grid-cols-1 gap-20 xs-grid-cols-2">
 
         <li class="relative w-full rounded-15 overflow-hidden bg-white shadow-lg">
-          <img class="w-full h-174 object-cover" src="/src/images/la-palette-du-gout.jpg" alt="la palette du gout">
+          <img class="w-full h-174 object-cover" src="/src/images/x1/la-palette-du-gout.webp" alt="la palette du gout" draggable="false">
           <div class="flex flex-row justify-between items-center py-16 px-12">
             <div>
               <h3 class="font-sans font-medium text-18 text-dark-gray">La palette du goût</h3>
               <p class="font-sans font-light text-17 text-dark-gray">Ménilmontant</p>
             </div>
-            svg
+            <button class="heart-button relative w-24 h-24 text-dark-green cursor-pointer">
+              <svg class="heart-icon absolute top-0 left-0 w-24 h-24">
+                <use class="heart-shape-outlined" href="#icon-heart-outlined"/>
+                <use class="heart-shape-filled" href="#icon-heart-filled"/>
+              </svg>
+            </button>
           </div>
           <div class="absolute top-12 right-12 px-12 py-8 bg-green font-sans font-medium text-14 text-dark-green rounded-2">Nouveau</div>
         </li>
 
         <li class="relative w-full rounded-15 overflow-hidden bg-white shadow-lg">
-          <img class="w-full h-174 object-cover" src="/src/images/la-note-enchantee.jpg" alt="la palette du gout">
+          <img class="w-full h-174 object-cover" src="/src/images/x1/la-note-enchantee.webp" alt="la palette du gout" draggable="false">
           <div class="flex flex-row justify-between items-center py-16 px-12">
             <div>
               <h3 class="font-sans font-medium text-18 text-dark-gray">La note enchantée</h3>
               <p class="font-sans font-light text-17 text-dark-gray">Charonne</p>
             </div>
-            svg
+            <button class="heart-button relative w-24 h-24 text-dark-green cursor-pointer">
+              <svg class="heart-icon absolute top-0 left-0 w-24 h-24">
+                <use class="heart-shape-outlined" href="#icon-heart-outlined"/>
+                <use class="heart-shape-filled" href="#icon-heart-filled"/>
+              </svg>
+            </button>
           </div>
           <div class="absolute top-12 right-12 px-12 py-8 bg-green font-sans font-medium text-14 text-dark-green rounded-2">Nouveau</div>
         </li>
 
         <li class="w-full rounded-15 overflow-hidden bg-white shadow-lg">
-          <img class="w-full h-174 object-cover" src="/src/images/a-la-francaise.jpg" alt="la palette du gout">
+          <img class="w-full h-174 object-cover" src="/src/images/x1/a-la-francaise.webp" alt="la palette du gout" draggable="false">
           <div class="flex flex-row justify-between items-center py-16 px-12">
             <div>
               <h3 class="font-sans font-medium text-18 text-dark-gray">A la française</h3>
               <p class="font-sans font-light text-17 text-dark-gray">Cité Rouge</p>
             </div>
-            svg
+            <button class="heart-button relative w-24 h-24 text-dark-green cursor-pointer">
+              <svg class="heart-icon absolute top-0 left-0 w-24 h-24">
+                <use class="heart-shape-outlined" href="#icon-heart-outlined"/>
+                <use class="heart-shape-filled" href="#icon-heart-filled"/>
+              </svg>
+            </button>
           </div>
         </li>
 
         <li class="w-full rounded-15 overflow-hidden bg-white shadow-lg">
-          <img class="w-full h-174 object-cover" src="/src/images/le-delice-des-sens.jpg" alt="la palette du gout">
+          <img class="w-full h-174 object-cover" src="/src/images/x1/le-delice-des-sens.webp" alt="la palette du gout" draggable="false">
           <div class="flex flex-row justify-between items-center py-16 px-12">
             <div>
               <h3 class="font-sans font-medium text-18 text-dark-gray">Le délice des sens</h3>
               <p class="font-sans font-light text-17 text-dark-gray">Folie-Méricourt</p>
             </div>
-            svg
+            <button class="heart-button relative w-24 h-24 text-dark-green cursor-pointer">
+              <svg class="heart-icon absolute top-0 left-0 w-24 h-24">
+                <use class="heart-shape-outlined" href="#icon-heart-outlined"/>
+                <use class="heart-shape-filled" href="#icon-heart-filled"/>
+              </svg>
+            </button>
           </div>
         </li>
       
