@@ -98,6 +98,7 @@ $screen-md: 48rem;
 .-ml-40 {margin-left: -$size-40;}
 .mb-12 {margin-bottom: $size-12;}
 .mb-22 {margin-bottom: $size-22;}
+.mb-24 {margin-bottom: $size-24;}
 .mb-28 {margin-bottom: $size-28;}
 .mb-32 {margin-bottom: $size-32;}
 
@@ -199,6 +200,15 @@ $screen-md: 48rem;
 
 .right-12 {
   right: $size-12;
+}
+
+.counter-reset {
+  counter-reset: step 0;
+}
+
+.counter-increment::after {
+  counter-increment: step;
+  content: counter(step);
 }
 
 @media screen and (min-width: $screen-sm) {
