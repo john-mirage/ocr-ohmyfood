@@ -30,16 +30,16 @@
     <div class="container">
       <h1 class="mb-12 font-bold text-24 text-dark-gray leading-28">Réservez le menu qui vous convient</h1>
       <p class="mb-32 font-light text-18 text-dark-gray leading-21">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
-      <button class="px-22 py-16 font-medium text-white bg-gradient border-none rounded-full font-sans leading-20">Explorer nos restaurants</button>
+      <a class="px-22 py-16 font-medium text-white bg-gradient border-none rounded-full font-sans leading-20" href="#restaurants">Explorer nos restaurants</a>
     </div>
   </div>
 
   <!-- Steps -->
   <div class="container pt-48 pb-68">
     <h2 class="mb-28 font-sans text-24 font-bold text-dark-gray">Fonctionnement</h2>
-    <ul class="mx-auto pl-12 w-full max-w-xs counter-reset">
+    <ul class="flex flex-col justify-center items-center w-full pl-12 counter-reset">
 
-      <li class="mb-24 flex flex-row justify-start items-center w-full h-72 bg-very-light-gray rounded-20 shadow-lg">
+      <li class="mb-24 self-start flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg">
         <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment"></div>
         <div class="flex flex-row justify-center items-center text-dark-gray">
           <svg class="w-24 h-24 mr-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -50,7 +50,7 @@
         </div>
       </li>
 
-      <li class="mb-24 flex flex-row justify-start items-center w-full h-72 bg-very-light-gray rounded-20 shadow-lg">
+      <li class="mb-24 flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg">
         <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment"></div>
         <div class="flex flex-row justify-center items-center text-dark-gray">
           <svg class="w-24 h-24 mr-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -61,7 +61,7 @@
         </div>
       </li>
 
-      <li class="flex flex-row justify-start items-center w-full h-72 bg-very-light-gray rounded-20 shadow-lg">
+      <li class="self-end flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg">
         <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment"></div>
         <div class="flex flex-row justify-center items-center text-dark-gray">
           <svg class="w-24 h-24 mr-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -76,7 +76,7 @@
   </div>
 
   <!-- Restaurants -->
-  <div class="w-full h-auto bg-very-light-gray pt-56 pb-64">
+  <div class="w-full h-auto bg-very-light-gray pt-56 pb-64" id="restaurants">
     <div class="container">
       <h2 class="mb-22 font-sans text-24 font-bold text-dark-gray">Restaurants</h2>
       <ul class="grid grid-cols-1 gap-20 xs-grid-cols-2">
