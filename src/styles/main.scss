@@ -5,27 +5,54 @@ $font-fallback: system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-ser
 $color-purple: hsl(267, 66%, 60%);
 $color-pink: hsl(317, 100%, 74%);
 $color-green: hsl(165, 56%, 74%);
+$color-dark-green: hsl(165, 100%, 26%);
 $color-white: hsl(0, 0%, 100%);
 $color-very-light-gray: hsl(0, 0%, 96%);
 $color-light-gray: hsl(0, 0%, 92%);
 $color-dark-gray: hsl(0, 0%, 21%);
 
+$size-2: 0.125rem;
+$size-8: 0.5rem;
 $size-12: 0.75rem;
+$size-14: 0.875rem;
+$size-15: 0.9375rem;
 $size-16: 1rem;
+$size-17: 1.0625rem;
+$size-18: 1.125rem;
 $size-20: 1.25rem;
 $size-21: 1.3125rem;
 $size-22: 1.375rem;
 $size-24: 1.5rem;
 $size-28: 1.75rem;
+$size-30: 1.875rem;
 $size-32: 2rem;
 $size-40: 2.5rem;
+$size-48: 3rem;
 $size-56: 3.5rem;
+$size-64: 4rem;
+$size-68: 4.25rem;
+$size-72: 4.5rem;
+$size-174: 10.875rem;
+
+$screen-xs: 23.4375rem;
+
+.container {
+  width: 100%;
+  padding-left: $size-20;
+  padding-right: $size-20;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $screen-xs;
+}
 
 .w-full {width: 100%;}
 .w-24 {width: $size-24;}
+
 .h-28 {height: $size-28;}
 .h-auto{height: auto;}
 .h-24 {height: $size-24;}
+.h-72 {height: $size-72;}
+.h-174 {height: $size-174}
 
 .flex {
   display: flex;
@@ -35,9 +62,9 @@ $size-56: 3.5rem;
   flex-direction: row;
 }
 
-.justify-center {
-  justify-content: center;
-}
+.justify-start {justify-content: flex-start;}
+.justify-center {justify-content: center;}
+.justify-between {justify-content: space-between;}
 
 .items-center {
   align-items: center;
@@ -47,14 +74,31 @@ $size-56: 3.5rem;
   margin-left: auto;
   margin-right: auto;
 }
+.my-none {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .mr-16 {margin-right: $size-16;}
+.mr-20 {margin-right: $size-20;}
+.mr-24 {margin-right: $size-24;}
+.-ml-12 {margin-left: -$size-12;}
 .-ml-40 {margin-left: -$size-40;}
 .mb-12 {margin-bottom: $size-12;}
+.mb-22 {margin-bottom: $size-22;}
+.mb-28 {margin-bottom: $size-28;}
 .mb-32 {margin-bottom: $size-32;}
 
+.py-8 {
+  padding-top: $size-8;
+  padding-bottom: $size-8;
+}
 .py-16 {
   padding-top: $size-16;
   padding-bottom: $size-16;
+}
+.px-12 {
+  padding-left: $size-12;
+  padding-right: $size-12;
 }
 .px-20 {
   padding-left: $size-20;
@@ -64,40 +108,82 @@ $size-56: 3.5rem;
   padding-left: $size-22;
   padding-right: $size-22;
 }
+.px-32 {
+  padding-left: $size-32;
+  padding-right: $size-32;
+}
 .pt-24 {padding-top: $size-24;}
 .pt-40 {padding-top: $size-40;}
+.pt-48 {padding-top: $size-48;}
+.pt-56 {padding-top: $size-56;}
 .pb-12 {padding-bottom: $size-12;}
+.pb-32 {padding-bottom: $size-32;}
 .pb-56 {padding-bottom: $size-56;}
+.pb-64 {padding-bottom: $size-64;}
+.pb-68 {padding-bottom: $size-68;}
+.pl-12 {padding-left: $size-12;}
 
 .bg-white {background-color: $color-white;}
 .bg-light-gray {background-color: $color-light-gray;}
 .bg-very-light-gray {background-color: $color-very-light-gray;}
+.bg-gradient {background: linear-gradient(to bottom, $color-pink, $color-purple);}
+.bg-purple {background-color: $color-purple;}
+.bg-green {background-color: $color-green;}
+.bg-dark-gray {background-color: $color-dark-gray;}
 
 .shadow-md {box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
+.shadow-lg {box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);}
 
 .font-display {font-family: 'Shrikhand', $font-fallback;}
 .font-sans {font-family: 'Roboto', $font-fallback;}
 
+.font-light {font-weight: 300;}
 .font-medium {font-weight: 500;}
 .font-bold {font-weight: 700;}
 
+.leading-18 {line-height: $size-18;}
 .leading-20 {line-height: $size-20;}
 .leading-21 {line-height: $size-21;}
 .leading-28 {line-height: $size-28;}
+.leading-30 {line-height: $size-30;}
+
+.text-14 {font-size: $size-14;}
+.text-16 {font-size: $size-16;}
+.text-17 {font-size: $size-17;}
+.text-24 {font-size: $size-24;}
+.text-18 {font-size: $size-18;}
+.text-30 {font-size: $size-30;}
 
 .text-center {text-align: center;}
 
 .text-dark-gray {color: $color-dark-gray;}
 .text-white {color: $color-white;}
-
-.bg-gradient {
-  background: linear-gradient(to bottom, $color-pink, $color-purple);
-}
+.text-dark-green {color: $color-dark-green}
 
 .border-none {
   border: none;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-full {border-radius: 9999px;}
+.rounded-20 {border-radius: $size-20;}
+.rounded-15 {border-radius: $size-15;}
+.rounded-2 {border-radius: $size-2;}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.relative {position: relative;}
+.absolute {position: absolute;}
+
+.top-12 {
+  top: $size-12;
+}
+
+.right-12 {
+  right: $size-12;
 }

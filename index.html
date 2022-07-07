@@ -12,8 +12,8 @@
 
 <body>
   <!-- Header -->
-  <header class="w-full h-auto pt-24 pb-12 bg-white shadow-md">
-    <img class="mx-auto h-28" src="/src/images/logo.png" alt="ohmyfood logo">
+  <header class="w-full h-auto pt-24 pb-12 text-center bg-white shadow-md">
+    <p class="font-display text-30 leading-30 text-dark-gray">ohmyfood</p>
   </header>
 
   <!-- Location -->
@@ -22,15 +22,81 @@
       <path d="M0 0h24v24H0z" fill="none"/>
       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
     </svg>
-    <p class="font-sans font-medium">Paris, Belleville</p>
+    <p class="font-sans text-16 font-medium">Paris, Belleville</p>
   </div>
 
   <!-- Hero -->
-  <div class="pt-40 pb-56 px-20 text-center font-sans bg-very-light-gray">
-    <h1 class="mb-12 font-bold text-dark-gray leading-28">Réservez le menu qui vous convient</h1>
-    <p class="mb-32 font-light text-dark-gray leading-21">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
-    <button class="px-22 py-16 font-medium text-white bg-gradient border-none rounded-full font-sans leading-20">Explorer nos restaurants</button>
+  <div class="pt-40 pb-56 text-center font-sans bg-very-light-gray">
+    <div class="container">
+      <h1 class="mb-12 font-bold text-24 text-dark-gray leading-28">Réservez le menu qui vous convient</h1>
+      <p class="mb-32 font-light text-18 text-dark-gray leading-21">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
+      <button class="px-22 py-16 font-medium text-white bg-gradient border-none rounded-full font-sans leading-20">Explorer nos restaurants</button>
+    </div>
   </div>
+
+  <!-- Steps -->
+  <div class="container pt-48 pb-68">
+    <h2 class="mb-28 font-sans text-24 font-bold text-dark-gray">Fonctionnement</h2>
+    <ul class="pl-12">
+
+      <li class="flex flex-row justify-start items-center w-full h-72 bg-very-light-gray rounded-20 shadow-lg">
+        <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white">1</div>
+        <div class="flex flex-row justify-center items-center text-dark-gray">
+          <svg class="w-24 h-24 mr-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+          </svg>
+          <p class="font-sans font-medium text-16">Choisissez un restaurant</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Restaurants -->
+  <div class="w-full h-auto bg-very-light-gray pt-56 pb-64">
+    <div class="container">
+      <h2 class="mb-22 font-sans text-24 font-bold text-dark-gray">Restaurants</h2>
+      <ul>
+
+        <li class="relative w-full rounded-15 overflow-hidden bg-white shadow-lg">
+          <img class="w-full h-174 object-cover" src="/src/images/la-palette-du-gout.jpg" alt="la palette du gout">
+          <div class="flex flex-row justify-between items-center py-16 px-12">
+            <div>
+              <h3 class="font-sans font-medium text-18 text-dark-gray">La palette du goût</h3>
+              <p class="font-sans font-light text-17 text-dark-gray">Ménilmontant</p>
+            </div>
+            svg
+          </div>
+          <div class="absolute top-12 right-12 px-12 py-8 bg-green font-sans font-medium text-14 text-dark-green rounded-2">Nouveau</div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full h-auto bg-dark-gray pt-24 pb-32">
+    <div class="container">
+      <p class="font-display text-18 leading-18 text-white">ohmyfood</p>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Proposer un restaurant</a>
+          </li>
+          <li>
+            <a href="">Devenir partenaire</a>
+          </li>
+          <li>
+            <a href="">Mentions légales</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
