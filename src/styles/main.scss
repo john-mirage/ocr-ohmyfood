@@ -1,0 +1,103 @@
+@use "./reset.scss";
+
+$font-fallback: system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+
+$color-purple: hsl(267, 66%, 60%);
+$color-pink: hsl(317, 100%, 74%);
+$color-green: hsl(165, 56%, 74%);
+$color-white: hsl(0, 0%, 100%);
+$color-very-light-gray: hsl(0, 0%, 96%);
+$color-light-gray: hsl(0, 0%, 92%);
+$color-dark-gray: hsl(0, 0%, 21%);
+
+$size-12: 0.75rem;
+$size-16: 1rem;
+$size-20: 1.25rem;
+$size-21: 1.3125rem;
+$size-22: 1.375rem;
+$size-24: 1.5rem;
+$size-28: 1.75rem;
+$size-32: 2rem;
+$size-40: 2.5rem;
+$size-56: 3.5rem;
+
+.w-full {width: 100%;}
+.w-24 {width: $size-24;}
+.h-28 {height: $size-28;}
+.h-auto{height: auto;}
+.h-24 {height: $size-24;}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mr-16 {margin-right: $size-16;}
+.-ml-40 {margin-left: -$size-40;}
+.mb-12 {margin-bottom: $size-12;}
+.mb-32 {margin-bottom: $size-32;}
+
+.py-16 {
+  padding-top: $size-16;
+  padding-bottom: $size-16;
+}
+.px-20 {
+  padding-left: $size-20;
+  padding-right: $size-20;
+}
+.px-22 {
+  padding-left: $size-22;
+  padding-right: $size-22;
+}
+.pt-24 {padding-top: $size-24;}
+.pt-40 {padding-top: $size-40;}
+.pb-12 {padding-bottom: $size-12;}
+.pb-56 {padding-bottom: $size-56;}
+
+.bg-white {background-color: $color-white;}
+.bg-light-gray {background-color: $color-light-gray;}
+.bg-very-light-gray {background-color: $color-very-light-gray;}
+
+.shadow-md {box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
+
+.font-display {font-family: 'Shrikhand', $font-fallback;}
+.font-sans {font-family: 'Roboto', $font-fallback;}
+
+.font-medium {font-weight: 500;}
+.font-bold {font-weight: 700;}
+
+.leading-20 {line-height: $size-20;}
+.leading-21 {line-height: $size-21;}
+.leading-28 {line-height: $size-28;}
+
+.text-center {text-align: center;}
+
+.text-dark-gray {color: $color-dark-gray;}
+.text-white {color: $color-white;}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, $color-pink, $color-purple);
+}
+
+.border-none {
+  border: none;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
