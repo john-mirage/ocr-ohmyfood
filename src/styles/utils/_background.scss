@@ -32,6 +32,10 @@
   background-color: variables.$color-dark-gray;
 }
 
+.bg-background {
+  background-color: var(--color-bg);
+}
+
 @media screen and (min-width: variables.$screen-lg) {
   .lg-bg-transparent {
     background-color: transparent;

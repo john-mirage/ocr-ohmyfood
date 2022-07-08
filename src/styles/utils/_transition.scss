@@ -6,3 +6,7 @@
   transition-property: visibility, opacity;
   transition-duration: 150ms;
 }
+
+.transition-transform {
+  transition: transform 150ms;
+}
