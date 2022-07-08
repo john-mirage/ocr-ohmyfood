@@ -1,0 +1,16 @@
+/*------------------------------------*\
+  #WIDTH
+\*------------------------------------*/
+
+.w-full {width: 100%;}
+.w-24 {width: $size-24;}
+
+/*------------------------------------*\
+  #MAX-WIDTH
+\*------------------------------------*/
+.max-w-xs {max-width: $screen-xs;}
+
+@media screen and (min-width: $screen-lg) {
+  .lg-max-w-none {max-width: none;}
+  .lg-w-auto {width: auto;}
+}

@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+.font-display {font-family: 'Shrikhand', $font-fallback;}
+.font-sans {font-family: 'Roboto', $font-fallback;}
+
+.font-light {font-weight: 300;}
+.font-medium {font-weight: 500;}
+.font-bold {font-weight: 700;}
+
+.leading-18 {line-height: $size-18;}
+.leading-20 {line-height: $size-20;}
+.leading-21 {line-height: $size-21;}
+.leading-28 {line-height: $size-28;}
+.leading-30 {line-height: $size-30;}
+
+.text-14 {font-size: $size-14;}
+.text-16 {font-size: $size-16;}
+.text-17 {font-size: $size-17;}
+.text-24 {font-size: $size-24;}
+.text-18 {font-size: $size-18;}
+.text-30 {font-size: $size-30;}
+
+.text-center {text-align: center;}
+
+.text-dark-gray {color: $color-dark-gray;}
+.text-white {color: $color-white;}
+.text-dark-green {color: $color-dark-green}
+
+@media screen and (min-width: $screen-lg) {
+  .lg-text-left {text-align: left;}
+}

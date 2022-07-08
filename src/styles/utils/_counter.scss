@@ -1,0 +1,11 @@
+/*------------------------------------*\
+  #COUNTER
+\*------------------------------------*/
+.counter-reset {
+  counter-reset: step 0;
+}
+
+.counter-increment::after {
+  counter-increment: step;
+  content: counter(step);
+}
