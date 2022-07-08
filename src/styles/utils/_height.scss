@@ -1,9 +1,25 @@
+@use "../variables";
+
 /*------------------------------------*\
   #HEIGHT
 \*------------------------------------*/
 
-.h-28 {height: $size-28;}
-.h-auto{height: auto;}
-.h-24 {height: $size-24;}
-.h-72 {height: $size-72;}
-.h-174 {height: $size-174}
+.h-auto {
+  height: auto;
+}
+
+.h-24 {
+  height: variables.$size-24;
+}
+
+.h-28 {
+  height: variables.$size-28;
+}
+
+.h-72 {
+  height: variables.$size-72;
+}
+
+.h-174 {
+  height: variables.$size-174
+}

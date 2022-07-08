@@ -1,3 +1,5 @@
+@use "../variables";
+
 /*------------------------------------*\
   #MARGIN
 \*------------------------------------*/
@@ -6,22 +8,57 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .my-none {
   margin-top: 0;
   margin-bottom: 0;
 }
-.mr-12 {margin-right: $size-12;}
-.mr-16 {margin-right: $size-16;}
-.mr-20 {margin-right: $size-20;}
-.mr-24 {margin-right: $size-24;}
-.-ml-12 {margin-left: -$size-12;}
-.-ml-40 {margin-left: -$size-40;}
-.mb-12 {margin-bottom: $size-12;}
-.mb-22 {margin-bottom: $size-22;}
-.mb-24 {margin-bottom: $size-24;}
-.mb-28 {margin-bottom: $size-28;}
-.mb-32 {margin-bottom: $size-32;}
 
-@media screen and (min-width: $screen-lg) {
-  .lg-ml-0 {margin-left: 0;}
+.mr-12 {
+  margin-right: variables.$size-12;
+}
+
+.mr-16 {
+  margin-right: variables.$size-16;
+}
+
+.mr-20 {
+  margin-right: variables.$size-20;
+}
+
+.mr-24 {
+  margin-right: variables.$size-24;
+}
+.-ml-12 {
+  margin-left: -(variables.$size-12);
+}
+
+.-ml-40 {
+  margin-left: -(variables.$size-40);
+}
+
+.mb-12 {
+  margin-bottom: variables.$size-12;
+}
+
+.mb-22 {
+  margin-bottom: variables.$size-22;
+}
+
+.mb-24 {
+  margin-bottom: variables.$size-24;
+}
+
+.mb-28 {
+  margin-bottom: variables.$size-28;
+}
+
+.mb-32 {
+  margin-bottom: variables.$size-32;
+}
+
+@media screen and (min-width: variables.$screen-lg) {
+  .lg-ml-0 {
+    margin-left: 0;
+  }
 }

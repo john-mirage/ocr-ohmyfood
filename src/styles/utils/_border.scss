@@ -1,11 +1,25 @@
+@use "../variables";
+
 /*------------------------------------*\
   #BORDER
 \*------------------------------------*/
+
 .border-none {
   border: none;
 }
 
-.rounded-full {border-radius: 9999px;}
-.rounded-20 {border-radius: $size-20;}
-.rounded-15 {border-radius: $size-15;}
-.rounded-2 {border-radius: $size-2;}
+.rounded-2 {
+  border-radius: variables.$size-2;
+}
+
+.rounded-15 {
+  border-radius: variables.$size-15;
+}
+
+.rounded-20 {
+  border-radius: variables.$size-20;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}

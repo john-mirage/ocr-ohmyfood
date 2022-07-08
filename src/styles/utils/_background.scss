@@ -1,16 +1,42 @@
+@use "../variables";
+
 /*------------------------------------*\
   #BACKGROUND
 \*------------------------------------*/
 
-.bg-white {background-color: $color-white;}
-.bg-light-gray {background-color: $color-light-gray;}
-.bg-very-light-gray {background-color: $color-very-light-gray;}
-.bg-gradient {background: linear-gradient(to bottom, $color-pink, $color-purple);}
-.bg-purple {background-color: $color-purple;}
-.bg-green {background-color: $color-green;}
-.bg-dark-gray {background-color: $color-dark-gray;}
+.bg-white {
+  background-color: variables.$color-white;
+}
 
-@media screen and (min-width: $screen-lg) {
-  .lg-bg-transparent {background-color: transparent;}
-  .lg-bg-white {background-color: $color-white;}
+.bg-light-gray {
+  background-color: variables.$color-light-gray;
+}
+
+.bg-very-light-gray {
+  background-color: variables.$color-very-light-gray;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, variables.$color-pink, variables.$color-purple);
+}
+
+.bg-purple {
+  background-color: variables.$color-purple;
+}
+
+.bg-green {
+  background-color: variables.$color-green;
+}
+
+.bg-dark-gray {
+  background-color: variables.$color-dark-gray;
+}
+
+@media screen and (min-width: variables.$screen-lg) {
+  .lg-bg-transparent {
+    background-color: transparent;
+  }
+  .lg-bg-white {
+    background-color: variables.$color-white;
+  }
 }

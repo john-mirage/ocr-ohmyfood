@@ -1,49 +1,86 @@
+@use "../variables";
+
 /*------------------------------------*\
   #PADDING
 \*------------------------------------*/
 
 .py-8 {
-  padding-top: $size-8;
-  padding-bottom: $size-8;
+  padding-top: variables.$size-8;
+  padding-bottom: variables.$size-8;
 }
-.py-16 {
-  padding-top: $size-16;
-  padding-bottom: $size-16;
-}
-.px-12 {
-  padding-left: $size-12;
-  padding-right: $size-12;
-}
-.px-20 {
-  padding-left: $size-20;
-  padding-right: $size-20;
-}
-.px-22 {
-  padding-left: $size-22;
-  padding-right: $size-22;
-}
-.px-32 {
-  padding-left: $size-32;
-  padding-right: $size-32;
-}
-.pt-24 {padding-top: $size-24;}
-.pt-40 {padding-top: $size-40;}
-.pt-48 {padding-top: $size-48;}
-.pt-56 {padding-top: $size-56;}
-.pb-12 {padding-bottom: $size-12;}
-.pb-32 {padding-bottom: $size-32;}
-.pb-56 {padding-bottom: $size-56;}
-.pb-64 {padding-bottom: $size-64;}
-.pb-68 {padding-bottom: $size-68;}
-.pl-12 {padding-left: $size-12;}
 
-@media screen and (min-width: $screen-lg) {
+.py-16 {
+  padding-top: variables.$size-16;
+  padding-bottom: variables.$size-16;
+}
+
+.px-12 {
+  padding-left: variables.$size-12;
+  padding-right: variables.$size-12;
+}
+
+.px-20 {
+  padding-left: variables.$size-20;
+  padding-right: variables.$size-20;
+}
+
+.px-22 {
+  padding-left: variables.$size-22;
+  padding-right: variables.$size-22;
+}
+
+.px-32 {
+  padding-left: variables.$size-32;
+  padding-right: variables.$size-32;
+}
+
+.pt-24 {
+  padding-top: variables.$size-24;
+}
+
+.pt-40 {
+  padding-top: variables.$size-40;
+}
+
+.pt-48 {
+  padding-top: variables.$size-48;
+}
+
+.pt-56 {
+  padding-top: variables.$size-56;
+}
+
+.pb-12 {
+  padding-bottom: variables.$size-12;
+}
+
+.pb-32 {
+  padding-bottom: variables.$size-32;
+}
+
+.pb-56 {
+  padding-bottom: variables.$size-56;
+}
+
+.pb-64 {
+  padding-bottom: variables.$size-64;
+}
+
+.pb-68 {
+  padding-bottom: variables.$size-68;
+}
+
+.pl-12 {
+  padding-left: variables.$size-12;
+}
+
+@media screen and (min-width: variables.$screen-lg) {
   .lg-py-0 {
     padding-top: 0;
     padding-bottom: 0;
   }
   .lg-py-24 {
-    padding-top: $size-24;
-    padding-bottom: $size-24;
+    padding-top: variables.$size-24;
+    padding-bottom: variables.$size-24;
   }
 }

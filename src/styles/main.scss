@@ -1,5 +1,41 @@
-@use "./variables";
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+
 @use "./reset";
+
+/*------------------------------------*\
+  #UTILITIES
+\*------------------------------------*/
+
+@use "./utils/background";
+@use "./utils/border";
+@use "./utils/counter";
+@use "./utils/cursor";
+@use "./utils/display";
+@use "./utils/flex";
+@use "./utils/grid";
+@use "./utils/height";
+@use "./utils/image";
+@use "./utils/margin";
+@use "./utils/overflow";
+@use "./utils/padding";
+@use "./utils/position";
+@use "./utils/screen-reader";
+@use "./utils/shadow";
+@use "./utils/typography";
+@use "./utils/width";
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+@use "./components/container";
+@use "./components/heart-button";
+
+/*------------------------------------*\
+  #CUSTOM-PROPERTIES
+\*------------------------------------*/
 
 :root {
   --color-purple: hsl(267, 66%, 60%);
