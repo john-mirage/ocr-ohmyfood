@@ -11,6 +11,8 @@
 </head>
 
 <body>
+  <input class="sr-only" id="theme-button" type="checkbox" aria-hidden="true">
+
   <!-- Icons -->
   <svg class="sr-only" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -54,9 +56,8 @@
       </div>
       <!-- Theme button -->
       <div>
-        <label>
-          <input type="checkbox">
-          <span></span>
+        <label class="block w-40 h-20 bg-light-gray p-4" for="theme-button">
+          <span class="relative z-10 w-12 h-12 rounded-full bg-purple"></span>
         </label>
       </div>
       <!-- Location -->

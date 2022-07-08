@@ -1,0 +1,8 @@
+/*------------------------------------*\
+  #TRANSITION
+\*------------------------------------*/
+
+.transition-fade {
+  transition-property: visibility, opacity;
+  transition-duration: 150ms;
+}

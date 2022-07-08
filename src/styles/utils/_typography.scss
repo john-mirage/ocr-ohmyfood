@@ -72,7 +72,7 @@
 }
 
 .text-dark-gray {
-  color: variables.$color-dark-gray;
+  color: var(--color-text);
 }
 
 .text-white {

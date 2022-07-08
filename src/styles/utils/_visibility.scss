@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #VISIBILITY
+\*------------------------------------*/
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.group:hover .group-hover-invisible {
+  visibility: hidden;
+}
+
+.group:hover .group-hover-visible {
+  visibility: visible;
+}

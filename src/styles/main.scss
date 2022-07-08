@@ -18,12 +18,15 @@
 @use "./utils/height";
 @use "./utils/image";
 @use "./utils/margin";
+@use "./utils/opacity";
 @use "./utils/overflow";
 @use "./utils/padding";
 @use "./utils/position";
 @use "./utils/screen-reader";
 @use "./utils/shadow";
+@use "./utils/transition";
 @use "./utils/typography";
+@use "./utils/visibility";
 @use "./utils/width";
 
 /*------------------------------------*\
@@ -31,7 +34,6 @@
 \*------------------------------------*/
 
 @use "./components/container";
-@use "./components/heart-button";
 
 /*------------------------------------*\
   #CUSTOM-PROPERTIES
@@ -48,9 +50,9 @@
   --color-text: hsl(0, 0%, 21%);
 }
 
-#theme-button:checked {
+#theme-button:checked ~ * {
   --color-bg: hsl(0, 0%, 100%);
   --color-surface: hsl(0, 0%, 96%);
   --color-banner: hsl(0, 0%, 92%);
-  --color-text: hsl(0, 0%, 21%);
+  --color-text: hsl(267, 66%, 60%);
 }

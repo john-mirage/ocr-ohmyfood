@@ -12,6 +12,10 @@
   width: variables.$size-24;
 }
 
+.w-40 {
+  width: variables.$size-40;
+}
+
 /*------------------------------------*\
   #MAX-WIDTH
 \*------------------------------------*/
@@ -19,12 +23,28 @@
   max-width: variables.$screen-xs;
 }
 
+@media screen and (min-width: variables.$screen-sm) {
+  .sm-max-w-sm {
+    max-width: variables.$screen-sm;
+  }
+}
+
+@media screen and (min-width: variables.$screen-md) {
+  .md-max-w-md {
+    max-width: variables.$screen-md;
+  }
+}
+
 @media screen and (min-width: variables.$screen-lg) {
+  .lg-w-auto {
+    width: auto;
+  }
+
   .lg-max-w-none {
     max-width: none;
   }
 
-  .lg-w-auto {
-    width: auto;
+  .lg-max-w-lg {
+    max-width: variables.$screen-lg;
   }
 }
