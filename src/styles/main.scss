@@ -37,11 +37,10 @@ $size-174: 10.875rem;
 $screen-xs: 23.4375rem;
 $screen-sm: 36rem;
 $screen-md: 48rem;
+$screen-lg: 62rem;
 
 .container {
   width: 100%;
-  padding-left: $size-20;
-  padding-right: $size-20;
   margin-left: auto;
   margin-right: auto;
   max-width: $screen-xs;
@@ -89,6 +88,7 @@ $screen-md: 48rem;
   margin-top: 0;
   margin-bottom: 0;
 }
+.mr-12 {margin-right: $size-12;}
 .mr-16 {margin-right: $size-16;}
 .mr-20 {margin-right: $size-20;}
 .mr-24 {margin-right: $size-24;}
@@ -259,5 +259,40 @@ $screen-md: 48rem;
 @media screen and (min-width: $screen-md) {
   .container {
     max-width: $screen-md;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .container {
+    max-width: $screen-lg;
+  }
+  .lg-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $screen-lg;
+  }
+  .lg-flex {display: flex;}
+  .lg-flex-row {flex-direction: row;}
+  .lg-max-w-none {max-width: none;}
+  .lg-grid {display: grid;}
+  .lg-grid-cols-2 {grid-template-columns: repeat(2, minmax(0, 1fr));}
+  .lg-gap-20 {gap: $size-20;}
+  .lg-bg-transparent {background-color: transparent;}
+  .lg-text-left {text-align: left;}
+  .lg-shadow-none {box-shadow: none;}
+  .lg-bg-white {background-color: $color-white;}
+  .lg-shadow-lg {box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);}
+  .lg-justify-between {justify-content: space-between;}
+  .lg-items-center {align-items: center;}
+  .lg-w-auto {width: auto;}
+  .lg-ml-0 {margin-left: 0;}
+  .lg-py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .lg-py-24 {
+    padding-top: $size-24;
+    padding-bottom: $size-24;
   }
 }
