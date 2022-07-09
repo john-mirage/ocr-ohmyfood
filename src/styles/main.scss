@@ -105,3 +105,9 @@
 #dark-theme:checked ~ #app #theme-button-handle {
   transform: translateX(20px);
 }
+
+@media (prefers-reduced-motion) {
+  #app-pannel {
+    transform: translateY(-50%);
+  }
+}
