@@ -9,6 +9,11 @@
   margin-right: auto;
 }
 
+.mx-8 {
+  margin-left: variables.$size-8;
+  margin-right: variables.$size-8;
+}
+
 .my-none {
   margin-top: 0;
   margin-bottom: 0;
@@ -29,6 +34,11 @@
 .mr-24 {
   margin-right: variables.$size-24;
 }
+
+.ml-auto {
+  margin-left: auto;
+}
+
 .-ml-12 {
   margin-left: -(variables.$size-12);
 }

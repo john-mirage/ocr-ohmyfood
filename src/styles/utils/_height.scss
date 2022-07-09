@@ -16,6 +16,10 @@
   height: variables.$size-12;
 }
 
+.h-16 {
+  height: variables.$size-16;
+}
+
 .h-20 {
   height: variables.$size-20;
 }
@@ -28,8 +32,24 @@
   height: variables.$size-28;
 }
 
+.h-48 {
+  height: variables.$size-48;
+}
+
+.h-56 {
+  height: variables.$size-56;
+}
+
+.h-64 {
+  height: variables.$size-64;
+}
+
 .h-72 {
   height: variables.$size-72;
+}
+
+.h-120 {
+  height: variables.$size-120;
 }
 
 .h-174 {

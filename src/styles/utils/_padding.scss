@@ -38,6 +38,10 @@
   padding-right: variables.$size-32;
 }
 
+.pt-56\% {
+  padding-top: 56.25%;
+}
+
 .pt-24 {
   padding-top: variables.$size-24;
 }
@@ -76,6 +80,14 @@
 
 .pl-12 {
   padding-left: variables.$size-12;
+}
+
+.pl-20 {
+  padding-left: variables.$size-20;
+}
+
+.pr-20 {
+  padding-right: variables.$size-20;
 }
 
 @media screen and (min-width: variables.$screen-lg) {

@@ -1,7 +1,7 @@
 @use "../variables";
 
 /*------------------------------------*\
-  #CONTAINER
+  #Container
 \*------------------------------------*/
 
 .container {
@@ -9,26 +9,22 @@
   margin-left: auto;
   margin-right: auto;
   max-width: variables.$screen-xs;
-}
 
-@media screen and (min-width: variables.$screen-sm) {
-  .container {
+  @media screen and (min-width: variables.$screen-sm) {
     max-width: variables.$screen-sm;
   }
-}
 
-@media screen and (min-width: variables.$screen-md) {
-  .container {
+  @media screen and (min-width: variables.$screen-md) {
     max-width: variables.$screen-md;
   }
-}
 
-@media screen and (min-width: variables.$screen-lg) {
-  .container {
+  @media screen and (min-width: variables.$screen-lg) {
     max-width: variables.$screen-lg;
   }
-  
-  .lg-container {
+}
+
+.lg-container {
+  @media screen and (min-width: variables.$screen-lg) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
