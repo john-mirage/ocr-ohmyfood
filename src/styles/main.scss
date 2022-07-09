@@ -40,14 +40,19 @@
   #Theme
 \*------------------------------------*/
 
-#app {
+:root {
   --color-purple: hsl(267, 66%, 60%);
   --color-pink: hsl(317, 100%, 74%);
   --color-green: hsl(165, 56%, 74%);
   --color-dark-green: hsl(165, 100%, 26%);
-  --color-bg: hsl(0, 0%, 100%);
-  --color-surface: hsl(0, 0%, 96%);
-  --color-banner: hsl(0, 0%, 92%);
+}
+
+#app {
+  --color-surface-1: hsl(0, 0%, 100%);
+  --color-surface-2: hsl(0, 0%, 96%);
+  --color-surface-3: hsl(0, 0%, 92%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-footer: hsl(0, 0%, 21%);
   --color-text: hsl(0, 0%, 21%);
 }
 
@@ -62,10 +67,12 @@
     display: none;
   }
   #app {
-    --color-bg: hsl(0, 0%, 10%);
-    --color-surface: hsl(0, 0%, 96%);
-    --color-banner: hsl(0, 0%, 92%);
-    --color-text: hsl(267, 66%, 60%);
+    --color-surface-1: hsl(0, 0%, 10%);
+    --color-surface-2: hsl(0, 0%, 14%);
+    --color-surface-3: hsl(0, 0%, 18%);
+    --color-card: hsl(0, 0%, 10%);
+    --color-footer: hsl(0, 0%, 10%);
+    --color-text: hsl(0, 0%, 84%);
   }
   #theme-button-handle {
     transform: translateX(20px);
@@ -73,9 +80,11 @@
 }
 
 #light-theme:checked ~ #app {
-  --color-bg: hsl(0, 0%, 100%);
-  --color-surface: hsl(0, 0%, 96%);
-  --color-banner: hsl(0, 0%, 92%);
+  --color-surface-1: hsl(0, 0%, 100%);
+  --color-surface-2: hsl(0, 0%, 96%);
+  --color-surface-3: hsl(0, 0%, 92%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-footer: hsl(0, 0%, 21%);
   --color-text: hsl(0, 0%, 21%);
 }
 
@@ -84,10 +93,12 @@
 }
 
 #dark-theme:checked ~ #app {
-  --color-bg: hsl(0, 0%, 10%);
-  --color-surface: hsl(0, 0%, 96%);
-  --color-banner: hsl(0, 0%, 92%);
-  --color-text: hsl(267, 66%, 60%);
+  --color-surface-1: hsl(0, 0%, 10%);
+  --color-surface-2: hsl(0, 0%, 14%);
+  --color-surface-3: hsl(0, 0%, 18%);
+  --color-card: hsl(0, 0%, 10%);
+  --color-footer: hsl(0, 0%, 10%);
+  --color-text: hsl(0, 0%, 84%);
 }
 
 #dark-theme:checked ~ #app #theme-button-handle {

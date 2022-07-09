@@ -99,4 +99,14 @@
     padding-top: variables.$size-24;
     padding-bottom: variables.$size-24;
   }
+  .lg-py-64 {
+    padding-top: variables.$size-64;
+    padding-bottom: variables.$size-64;
+  }
+  .lg-pl-0 {
+    padding-left: 0;
+  }
+  .lg-pr-40 {
+    padding-right: variables.$size-40;
+  }
 }

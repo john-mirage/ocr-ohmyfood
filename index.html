@@ -54,38 +54,38 @@
   </svg>
   
   <!-- Theme input -->
-  <input id="light-theme" type="checkbox" aria-hidden="true">
-  <input id="dark-theme" type="checkbox" aria-hidden="true">
+  <input class="hidden" id="light-theme" type="checkbox" aria-hidden="true">
+  <input class="hidden" id="dark-theme" type="checkbox" aria-hidden="true">
 
   <!-- App -->
   <div id="app">
     <!-- Header -->
     <header>
       <!-- Top app bar -->
-      <div class="relative z-50 w-full h-64 bg-white shadow-lg">
+      <div class="relative z-50 w-full h-64 bg-surface-1 shadow-lg">
         <div class="container h-64 flex flex-row justify-between items-center px-20">
           <!-- Logo -->
           <div>
             <p class="font-display text-30 leading-30 text-dark-gray">ohmyfood</p>
           </div>
           <!-- Theme button -->
-          <div class="relative flex flex-row justify-end items-center">
-            <svg class="w-16 h-16">
+          <div class="relative flex flex-row justify-end items-center text-dark-gray">
+            <svg class="w-16 h-16" fill="currentColor">
               <use href="#icon-sun"/>
             </svg>
-            <div class="mx-8 w-40 h-20 bg-light-gray p-4 rounded-full">
+            <div class="mx-8 w-40 h-20 bg-surface-3 p-4 rounded-full">
               <span class="block relative z-10 w-12 h-12 rounded-full bg-gradient transition-transform" id="theme-button-handle"></span>
             </div>
-            <svg class="w-16 h-16">
+            <svg class="w-16 h-16" fill="currentColor">
               <use href="#icon-moon"/>
             </svg>
-            <label class="absolute top-0 left-0 w-full h-full" id="light-theme-label" for="light-theme"></label>
-            <label class="absolute top-0 left-0 w-full h-full" id="dark-theme-label" for="dark-theme"></label>
+            <label class="absolute top-0 left-0 w-full h-full cursor-pointer" id="light-theme-label" for="light-theme"></label>
+            <label class="absolute top-0 left-0 w-full h-full cursor-pointer" id="dark-theme-label" for="dark-theme"></label>
           </div>
         </div>
       </div>
       <!-- Location -->
-      <div class="relative z-40 w-full h-56 flex flex-row justify-center items-center bg-light-gray">
+      <div class="relative z-40 w-full h-56 flex flex-row justify-center items-center bg-surface-3 text-dark-gray">
         <svg class="-ml-40 mr-12 w-24 h-24" fill="currentColor">
           <use href="#icon-location" />
         </svg>
@@ -93,22 +93,22 @@
       </div>
     </header>
 
-    <main>
-      <div class="lg-container lg-grid lg-grid-cols-2 lg-gap-20">
+    <main class="bg-surface-1">
+      <div class="lg-container lg-grid lg-grid-cols-2 lg-items-center lg-gap-40 lg-py-64">
         <!-- Hero -->
-        <div class="pt-40 pb-56 text-center font-sans bg-very-light-gray lg-bg-transparent lg-text-left">
-          <div class="px-20 container">
-            <h1 class="mb-12 font-bold text-24 text-dark-gray leading-28">Réservez le menu qui vous convient</h1>
+        <div class="pt-40 pb-56 text-center font-sans bg-surface-2 lg-bg-transparent lg-text-left lg-py-0">
+          <div class="px-20 container lg-pr-40">
+            <h1 class="mb-12 font-bold text-24 text-dark-gray leading-28 lg-text-44 lg-leading-48">Réservez le menu qui vous convient</h1>
             <p class="mb-32 font-light text-18 text-dark-gray leading-21">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
             <a class="inline-block px-22 py-16 font-medium text-white bg-gradient border-none rounded-full font-sans leading-20" href="#restaurants">Explorer nos restaurants</a>
           </div>
         </div>
         <!-- Steps -->
-        <div class="px-20 container pt-48 pb-68">
-          <h2 class="mb-28 font-sans text-24 font-bold text-dark-gray">Fonctionnement</h2>
+        <div class="px-20 container pt-48 pb-68 lg-py-0 lg-pl-0">
+          <h2 class="mb-20 font-sans text-24 font-bold text-dark-gray">Fonctionnement</h2>
           <ul class="flex flex-col justify-center items-center w-full pl-12 counter-reset">
   
-            <li class="mb-24 self-start flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg lg-max-w-none">
+            <li class="mb-24 self-start flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
               <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
               </div>
               <div class="flex flex-row justify-center items-center text-dark-gray">
@@ -119,7 +119,7 @@
               </div>
             </li>
   
-            <li class="mb-24 flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg lg-max-w-none">
+            <li class="mb-24 flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
               <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
               </div>
               <div class="flex flex-row justify-center items-center text-dark-gray">
@@ -130,7 +130,7 @@
               </div>
             </li>
   
-            <li class="self-end flex flex-row justify-start items-center w-full max-w-xs h-72 bg-very-light-gray rounded-20 shadow-lg lg-max-w-none">
+            <li class="self-end flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
               <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
               </div>
               <div class="flex flex-row justify-center items-center text-dark-gray">
@@ -146,12 +146,12 @@
       </div>
   
       <!-- Restaurants -->
-      <div class="w-full h-auto bg-very-light-gray pt-56 pb-64" id="restaurants">
+      <div class="w-full h-auto bg-surface-2 pt-56 pb-64" id="restaurants">
         <div class="px-20 container">
           <h2 class="mb-22 font-sans text-24 font-bold text-dark-gray">Restaurants</h2>
-          <ul class="grid grid-cols-1 gap-20 xs-grid-cols-2">
+          <ul class="grid grid-cols-1 gap-20 xs-grid-cols-2 lg-gap-40">
 
-            <li class="relative w-full rounded-15 overflow-hidden bg-white shadow-lg">
+            <li class="relative w-full rounded-15 overflow-hidden bg-card shadow-lg">
               <a class="relative block w-full pt-56% overflow-hidden group" href="#">
                 <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/la-palette-du-gout.webp" alt="La palette du goût" draggable="false">
               </a>
@@ -170,7 +170,7 @@
               <div class="absolute top-12 right-12 px-12 py-8 bg-green font-sans font-medium text-14 text-dark-green rounded-2">Nouveau</div>
             </li>
             
-            <li class="relative w-full rounded-15 overflow-hidden bg-white shadow-lg">
+            <li class="relative w-full rounded-15 overflow-hidden bg-card shadow-lg">
               <a class="relative block w-full pt-56% overflow-hidden group" href="#">
                 <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/la-note-enchantee.webp" alt="La note enchantée" draggable="false">
               </a>
@@ -189,7 +189,7 @@
               <div class="absolute top-12 right-12 px-12 py-8 bg-green font-sans font-medium text-14 text-dark-green rounded-2">Nouveau</div>
             </li>
   
-            <li class="w-full rounded-15 overflow-hidden bg-white shadow-lg">
+            <li class="w-full rounded-15 overflow-hidden bg-card shadow-lg">
               <a class="relative block w-full pt-56% overflow-hidden group" href="#">
                 <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/a-la-francaise.webp" alt="A la française" draggable="false">
               </a>
@@ -207,7 +207,7 @@
               </div>
             </li>
   
-            <li class="w-full rounded-15 overflow-hidden bg-white shadow-lg">
+            <li class="w-full rounded-15 overflow-hidden bg-card shadow-lg">
               <a class="relative block w-full pt-56% overflow-hidden group" href="#">
                 <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/le-delice-des-sens.webp" alt="Le délice des sens" draggable="false">
               </a>
@@ -231,7 +231,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full h-auto bg-dark-gray pt-24 pb-32">
+    <footer class="w-full h-auto bg-footer pt-24 pb-32">
       <div class="px-20 container">
         <p class="font-display text-18 leading-18 text-white">ohmyfood</p>
         <nav>
