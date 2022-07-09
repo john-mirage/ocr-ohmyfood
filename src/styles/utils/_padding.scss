@@ -4,9 +4,7 @@
   #PADDING
 \*------------------------------------*/
 
-.p-4 {
-  padding: variables.$size-4;
-}
+.p-4 {padding: variables.$size-4;}
 
 .py-8 {
   padding-top: variables.$size-8;
@@ -38,66 +36,31 @@
   padding-right: variables.$size-32;
 }
 
-.pt-56\% {
-  padding-top: 56.25%;
-}
+.pt-56\% {padding-top: 56.25%;}
+.pt-24 {padding-top: variables.$size-24;}
+.pt-40 {padding-top: variables.$size-40;}
+.pt-48 {padding-top: variables.$size-48;}
+.pt-56 {padding-top: variables.$size-56;}
 
-.pt-24 {
-  padding-top: variables.$size-24;
-}
+.pb-12 {padding-bottom: variables.$size-12;}
+.pb-32 {padding-bottom: variables.$size-32;}
+.pb-56 {padding-bottom: variables.$size-56;}
+.pb-64 {padding-bottom: variables.$size-64;}
+.pb-68 {padding-bottom: variables.$size-68;}
 
-.pt-40 {
-  padding-top: variables.$size-40;
-}
+.pl-12 {padding-left: variables.$size-12;}
+.pl-20 {padding-left: variables.$size-20;}
 
-.pt-48 {
-  padding-top: variables.$size-48;
-}
-
-.pt-56 {
-  padding-top: variables.$size-56;
-}
-
-.pb-12 {
-  padding-bottom: variables.$size-12;
-}
-
-.pb-32 {
-  padding-bottom: variables.$size-32;
-}
-
-.pb-56 {
-  padding-bottom: variables.$size-56;
-}
-
-.pb-64 {
-  padding-bottom: variables.$size-64;
-}
-
-.pb-68 {
-  padding-bottom: variables.$size-68;
-}
-
-.pl-12 {
-  padding-left: variables.$size-12;
-}
-
-.pl-20 {
-  padding-left: variables.$size-20;
-}
-
-.pr-20 {
-  padding-right: variables.$size-20;
-}
+.pr-20 {padding-right: variables.$size-20;}
 
 @media screen and (min-width: variables.$screen-lg) {
-  .lg-p-24 {
-    padding: variables.$size-24;
-  }
+  .lg-p-24 {padding: variables.$size-24;}
+  
   .lg-px-40 {
     padding-left: variables.$size-40;
     padding-right: variables.$size-40;
   }
+
   .lg-py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -110,10 +73,8 @@
     padding-top: variables.$size-80;
     padding-bottom: variables.$size-80;
   }
-  .lg-pl-0 {
-    padding-left: 0;
-  }
-  .lg-pr-40 {
-    padding-right: variables.$size-40;
-  }
+
+  .lg-pl-0 {padding-left: 0;}
+  
+  .lg-pr-40 {padding-right: variables.$size-40;}
 }

@@ -4,63 +4,22 @@
   #BACKGROUND
 \*------------------------------------*/
 
-.bg-white {
-  background-color: variables.$color-white;
-}
+.bg-white {background-color: variables.$color-white;}
+.bg-light-gray {background-color: variables.$color-light-gray;}
+.bg-very-light-gray {background-color: variables.$color-very-light-gray;}
+.bg-surface-1 {background-color: var(--color-surface-1);}
+.bg-surface-2 {background-color: var(--color-surface-2);}
+.bg-surface-3 {background-color: var(--color-surface-3);}
+.bg-card {background-color: var(--color-card);}
+.bg-footer {background-color: var(--color-footer);}
+.bg-purple {background-color: variables.$color-purple;}
+.bg-green {background-color: variables.$color-green;}
+.bg-dark-gray {background-color: variables.$color-dark-gray;}
+.bg-background {background-color: var(--color-bg);}
 
-.bg-light-gray {
-  background-color: variables.$color-light-gray;
-}
-
-.bg-very-light-gray {
-  background-color: variables.$color-very-light-gray;
-}
-
-.bg-surface-1 {
-  background-color: var(--color-surface-1);
-}
-
-.bg-surface-2 {
-  background-color: var(--color-surface-2);
-}
-
-.bg-surface-3 {
-  background-color: var(--color-surface-3);
-}
-
-.bg-card {
-  background-color: var(--color-card);
-}
-
-.bg-footer {
-  background-color: var(--color-footer);
-}
-
-.bg-gradient {
-  background: linear-gradient(to bottom, variables.$color-pink, variables.$color-purple);
-}
-
-.bg-purple {
-  background-color: variables.$color-purple;
-}
-
-.bg-green {
-  background-color: variables.$color-green;
-}
-
-.bg-dark-gray {
-  background-color: variables.$color-dark-gray;
-}
-
-.bg-background {
-  background-color: var(--color-bg);
-}
+.bg-gradient {background: linear-gradient(to bottom, variables.$color-pink, variables.$color-purple);}
 
 @media screen and (min-width: variables.$screen-lg) {
-  .lg-bg-transparent {
-    background-color: transparent;
-  }
-  .lg-bg-white {
-    background-color: variables.$color-white;
-  }
+  .lg-bg-transparent {background-color: transparent;}
+  .lg-bg-white {background-color: variables.$color-white;}
 }

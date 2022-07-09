@@ -13,6 +13,7 @@
 .w-24 {width: variables.$size-24;}
 .w-40 {width: variables.$size-40;}
 .w-72 {width: variables.$size-72;}
+.w-96 {width: variables.$size-96;}
 
 /*------------------------------------*\
   #MAX-WIDTH
@@ -21,27 +22,16 @@
 .max-w-xs {max-width: variables.$screen-xs;}
 
 @media screen and (min-width: variables.$screen-sm) {
-  .sm-max-w-sm {
-    max-width: variables.$screen-sm;
-  }
+  .sm-max-w-sm {max-width: variables.$screen-sm;}
 }
 
 @media screen and (min-width: variables.$screen-md) {
-  .md-max-w-md {
-    max-width: variables.$screen-md;
-  }
+  .md-max-w-md {max-width: variables.$screen-md;}
 }
 
 @media screen and (min-width: variables.$screen-lg) {
-  .lg-w-auto {
-    width: auto;
-  }
+  .lg-w-auto {width: auto;}
 
-  .lg-max-w-none {
-    max-width: none;
-  }
-
-  .lg-max-w-lg {
-    max-width: variables.$screen-lg;
-  }
+  .lg-max-w-none {max-width: none;}
+  .lg-max-w-lg {max-width: variables.$screen-lg;}
 }

@@ -22,15 +22,9 @@
 .flex-wrap {flex-wrap: wrap;}
 
 @media screen and (min-width: variables.$screen-lg) {
-  .lg-flex-row {
-    flex-direction: row;
-  }
+  .lg-flex-row {flex-direction: row;}
 
-  .lg-justify-between {
-    justify-content: space-between;
-  }
+  .lg-justify-between {justify-content: space-between;}
   
-  .lg-items-center {
-    align-items: center;
-  }
+  .lg-items-center {align-items: center;}
 }

@@ -2,13 +2,8 @@
   #VISIBILITY
 \*------------------------------------*/
 
-.invisible {
-  visibility: hidden;
-}
-
-.visible {
-  visibility: visible;
-}
+.invisible {visibility: hidden;}
+.visible {visibility: visible;}
 
 .group:hover .group-hover-invisible {
   visibility: hidden;
