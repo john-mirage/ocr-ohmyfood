@@ -12,8 +12,8 @@
   gap: variables.$size-20;
 }
 
-@media screen and (min-width: variables.$screen-sm) {
-  .xs-grid-cols-2 {
+@media screen and (min-width: variables.$screen-md) {
+  .md-grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
