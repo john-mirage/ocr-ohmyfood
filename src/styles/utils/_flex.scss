@@ -21,6 +21,10 @@
 
 .flex-wrap {flex-wrap: wrap;}
 
+@media screen and (min-width: variables.$screen-md) {
+  .md-flex-row {flex-direction: row;}
+}
+
 @media screen and (min-width: variables.$screen-lg) {
   .lg-flex-row {flex-direction: row;}
 

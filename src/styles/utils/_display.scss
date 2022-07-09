@@ -10,6 +10,10 @@
 .block {display: block;}
 .inline-block {display: inline-block;}
 
+@media screen and (min-width: variables.$screen-md) {
+  .md-flex {display: flex;}
+}
+
 @media screen and (min-width: variables.$screen-lg) {
   .lg-grid {display: grid;}
   .lg-flex {display: flex;}

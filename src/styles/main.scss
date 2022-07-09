@@ -54,7 +54,9 @@
   --color-surface-3: hsl(0, 0%, 92%);
   --color-card: hsl(0, 0%, 100%);
   --color-footer: hsl(0, 0%, 21%);
+
   --color-text: hsl(0, 0%, 21%);
+  --color-text-alt: hsl(0, 0%, 40%);
 }
 
 @media (prefers-color-scheme: light) {
@@ -73,7 +75,9 @@
     --color-surface-3: hsl(0, 0%, 18%);
     --color-card: hsl(0, 0%, 10%);
     --color-footer: hsl(0, 0%, 10%);
+
     --color-text: hsl(0, 0%, 84%);
+    --color-text-alt: hsl(0, 0%, 60%);
   }
   #theme-button-handle {
     transform: translateX(20px);
@@ -86,7 +90,9 @@
   --color-surface-3: hsl(0, 0%, 92%);
   --color-card: hsl(0, 0%, 100%);
   --color-footer: hsl(0, 0%, 21%);
+
   --color-text: hsl(0, 0%, 21%);
+  --color-text-alt: hsl(0, 0%, 40%);
 }
 
 #light-theme:checked ~ #app #theme-button-handle {
@@ -99,7 +105,9 @@
   --color-surface-3: hsl(0, 0%, 18%);
   --color-card: hsl(0, 0%, 10%);
   --color-footer: hsl(0, 0%, 10%);
+
   --color-text: hsl(0, 0%, 84%);
+  --color-text-alt: hsl(0, 0%, 60%);
 }
 
 #dark-theme:checked ~ #app #theme-button-handle {
