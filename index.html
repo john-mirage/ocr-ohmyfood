@@ -71,7 +71,7 @@
   <input class="hidden" id="light-theme" type="checkbox" aria-hidden="true">
   <input class="hidden" id="dark-theme" type="checkbox" aria-hidden="true">
 
-  <div class="w-full h-screen overflow-hidden" id="app">
+  <div class="w-full h-screen overflow-clip" id="app">
     <div class="relative w-full h-2screen animate-pannel" id="app-pannel">
       <!-- App loader -->
       <div class="absolute top-0 left-0 flex justify-center items-center w-full h-half bg-surface-1 text-primary" id="app-loader">
@@ -86,7 +86,7 @@
             <div class="container h-64 flex flex-row justify-between items-center px-20 lg-px-40">
               <!-- Logo -->
               <div>
-                <p class="font-display text-30 leading-30 text-primary">ohmyfood</p>
+                <p class="font-display text-24 leading-normal text-primary md-text-30">ohmyfood</p>
               </div>
               <!-- Theme button -->
               <div class="relative flex flex-row justify-end items-center text-primary">
@@ -114,50 +114,50 @@
         </header>
 
         <main class="bg-surface-1">
-          <div class="lg-container lg-grid lg-grid-cols-2 lg-items-center lg-gap-40 lg-py-80">
+          <div class="lg-container lg-grid lg-grid-cols-2 lg-items-center lg-gap-40 lg-py-96">
             <!-- Hero -->
             <div class="pt-40 pb-56 text-center font-sans bg-surface-2 lg-bg-transparent lg-text-left lg-py-0">
-              <div class="px-20 container lg-px-40">
-                <h1 class="mb-12 font-bold text-24 text-primary leading-28 lg-text-44 lg-leading-48">Réservez le menu qui vous convient</h1>
-                <p class="mb-32 font-regular text-18 text-secondary leading-21">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
+              <div class="px-20 container lg-px-40 xl-pr-64">
+                <h1 class="mb-12 font-bold text-24 text-primary leading-28 lg-text-44 lg-leading-48 lg-mb-24">Réservez le menu qui vous convient</h1>
+                <p class="mb-32 font-regular text-18 text-secondary leading-24">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
                 <a class="inline-block px-22 py-16 font-medium text-white bg-gradient border-none rounded-full font-sans leading-20" href="#restaurants">Explorer nos restaurants</a>
               </div>
             </div>
             <!-- Steps -->
             <div class="px-20 container pt-48 pb-68 lg-py-0 lg-px-40 lg-pl-0">
-              <h2 class="mb-20 font-sans text-24 font-bold text-primary">Fonctionnement</h2>
+              <h2 class="mb-20 pl-12 font-sans text-24 font-bold text-primary lg-text-32">Fonctionnement</h2>
               <ul class="flex flex-col justify-center items-center w-full pl-12 counter-reset">
       
                 <li class="mb-24 self-start flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
                   <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
                   </div>
-                  <div class="flex flex-row justify-center items-center text-primary">
-                    <svg class="w-24 h-24 mr-24" fill="currentColor">
+                  <div class="flex flex-row justify-center items-center">
+                    <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
                       <use href="#icon-phone" />
                     </svg>
-                    <p class="font-sans font-medium text-16">Choisissez un restaurant</p>
+                    <p class="font-sans font-medium text-16 text-primary">Choisissez un restaurant</p>
                   </div>
                 </li>
       
                 <li class="mb-24 flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
                   <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
                   </div>
-                  <div class="flex flex-row justify-center items-center text-primary">
-                    <svg class="w-24 h-24 mr-24" fill="currentColor">
+                  <div class="flex flex-row justify-center items-center">
+                    <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
                       <use href="#icon-menu" />
                     </svg>
-                    <p class="font-sans font-medium text-16">Composez votre menu</p>
+                    <p class="font-sans font-medium text-16 text-primary">Composez votre menu</p>
                   </div>
                 </li>
       
                 <li class="self-end flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
                   <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
                   </div>
-                  <div class="flex flex-row justify-center items-center text-primary">
-                    <svg class="w-24 h-24 mr-24" fill="currentColor">
+                  <div class="flex flex-row justify-center items-center">
+                    <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
                       <use href="#icon-store" />
                     </svg>
-                    <p class="font-sans font-medium text-16">Déguster au restaurant</p>
+                    <p class="font-sans font-medium text-16 text-primary">Déguster au restaurant</p>
                   </div>
                 </li>
       
@@ -166,9 +166,9 @@
           </div>
       
           <!-- Restaurants -->
-          <div class="w-full h-auto bg-surface-2 pt-56 pb-64 lg-py-80" id="restaurants">
+          <div class="w-full h-auto bg-surface-2 pt-56 pb-64 lg-py-96" id="restaurants">
             <div class="px-20 container lg-px-40">
-              <h2 class="mb-22 font-sans text-24 font-bold text-primary">Restaurants</h2>
+              <h2 class="mb-22 font-sans text-24 font-bold text-primary lg-text-32">Restaurants</h2>
               <ul class="grid grid-cols-1 gap-20 md-grid-cols-2 lg-gap-40">
 
                 <li class="relative w-full rounded-15 overflow-hidden bg-card shadow-lg">
@@ -251,11 +251,11 @@
         </main>
 
         <!-- Footer -->
-        <footer class="w-full h-auto bg-footer pt-24 pb-32">
+        <footer class="w-full h-auto bg-footer pt-24 pb-32 lg-py-40">
           <div class="px-20 container lg-px-40 lg-flex lg-flex-row lg-justify-between lg-items-center">
-            <p class="mb-24 font-display text-18 leading-18 text-white lg-mb-0">ohmyfood</p>
+            <p class="mb-24 font-display text-24 leading-18 text-white lg-mb-0">ohmyfood</p>
             <nav>
-              <ul class="font-sans text-secondary font-medium text-16 md-flex md-flex-row">
+              <ul class="font-sans text-white font-medium text-16 md-flex md-flex-row">
                 <li class="flex flex-row items-center transition-color hover-color-pink md-mr-32">
                   <svg class="w-16 h-16 mr-8" fill="currentColor">
                     <use href="#icon-restaurant" />
