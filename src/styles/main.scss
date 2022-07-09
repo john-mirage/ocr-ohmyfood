@@ -37,10 +37,10 @@
 @use "./components/container";
 
 /*------------------------------------*\
-  #CUSTOM-PROPERTIES
+  #Theme
 \*------------------------------------*/
 
-:root {
+#app {
   --color-purple: hsl(267, 66%, 60%);
   --color-pink: hsl(317, 100%, 74%);
   --color-green: hsl(165, 56%, 74%);
@@ -51,13 +51,45 @@
   --color-text: hsl(0, 0%, 21%);
 }
 
-#theme-input:checked ~ #app {
+@media (prefers-color-scheme: light) {
+  #light-theme-label {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #dark-theme-label {
+    display: none;
+  }
+  #app {
+    --color-bg: hsl(0, 0%, 10%);
+    --color-surface: hsl(0, 0%, 96%);
+    --color-banner: hsl(0, 0%, 92%);
+    --color-text: hsl(267, 66%, 60%);
+  }
+  #theme-button-handle {
+    transform: translateX(20px);
+  }
+}
+
+#light-theme:checked ~ #app {
+  --color-bg: hsl(0, 0%, 100%);
+  --color-surface: hsl(0, 0%, 96%);
+  --color-banner: hsl(0, 0%, 92%);
+  --color-text: hsl(0, 0%, 21%);
+}
+
+#light-theme:checked ~ #app #theme-button-handle {
+  transform: translateX(0);
+}
+
+#dark-theme:checked ~ #app {
   --color-bg: hsl(0, 0%, 10%);
   --color-surface: hsl(0, 0%, 96%);
   --color-banner: hsl(0, 0%, 92%);
   --color-text: hsl(267, 66%, 60%);
 }
 
-#theme-input:checked ~ #app #theme-button-handle {
+#dark-theme:checked ~ #app #theme-button-handle {
   transform: translateX(20px);
 }

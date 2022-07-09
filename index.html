@@ -54,7 +54,8 @@
   </svg>
   
   <!-- Theme input -->
-  <input class="sr-only" id="theme-input" type="checkbox" aria-hidden="true">
+  <input id="light-theme" type="checkbox" aria-hidden="true">
+  <input id="dark-theme" type="checkbox" aria-hidden="true">
 
   <!-- App -->
   <div id="app">
@@ -62,22 +63,24 @@
     <header>
       <!-- Top app bar -->
       <div class="relative z-50 w-full h-64 bg-white shadow-lg">
-        <div class="container h-64 flex flex-row justify-between items-center">
+        <div class="container h-64 flex flex-row justify-between items-center px-20">
           <!-- Logo -->
-          <div class="pl-20">
+          <div>
             <p class="font-display text-30 leading-30 text-dark-gray">ohmyfood</p>
           </div>
           <!-- Theme button -->
-          <div class="flex flex-row justify-end items-center pr-20">
+          <div class="relative flex flex-row justify-end items-center">
             <svg class="w-16 h-16">
               <use href="#icon-sun"/>
             </svg>
-            <label class="mx-8 w-40 h-20 bg-light-gray p-4 rounded-full" for="theme-input" tabindex="0">
-              <span class="block relative z-10 w-12 h-12 rounded-full bg-gradient" id="theme-button-handle"></span>
-            </label>
+            <div class="mx-8 w-40 h-20 bg-light-gray p-4 rounded-full">
+              <span class="block relative z-10 w-12 h-12 rounded-full bg-gradient transition-transform" id="theme-button-handle"></span>
+            </div>
             <svg class="w-16 h-16">
               <use href="#icon-moon"/>
             </svg>
+            <label class="absolute top-0 left-0 w-full h-full" id="light-theme-label" for="light-theme"></label>
+            <label class="absolute top-0 left-0 w-full h-full" id="dark-theme-label" for="dark-theme"></label>
           </div>
         </div>
       </div>
@@ -157,10 +160,10 @@
                   <h3 class="font-sans font-medium text-18 text-dark-gray">La palette du goût</h3>
                   <p class="font-sans font-light text-17 text-dark-gray">Ménilmontant</p>
                 </div>
-                <button class="heart-button relative w-24 h-24 text-dark-green cursor-pointer">
-                  <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
-                    <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
-                    <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+                <button class="relative w-24 h-24 text-dark-green cursor-pointer group">
+                  <svg class="absolute top-0 left-0 w-24 h-24">
+                    <use class="visible opacity-1 transition-fade group-hover-invisible group-hover-opacity-0" href="#icon-heart-outlined" />
+                    <use class="invisible opacity-0 transition-fade group-hover-visible group-hover-opacity-1" href="#icon-heart-filled" />
                   </svg>
                 </button>
               </div>
@@ -176,10 +179,10 @@
                   <h3 class="font-sans font-medium text-18 text-dark-gray">La note enchantée</h3>
                   <p class="font-sans font-light text-17 text-dark-gray">Charonne</p>
                 </div>
-                <button class="heart-button relative w-24 h-24 text-dark-green cursor-pointer">
-                  <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
-                    <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
-                    <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+                <button class="relative w-24 h-24 text-dark-green cursor-pointer group">
+                  <svg class="absolute top-0 left-0 w-24 h-24">
+                    <use class="visible opacity-1 transition-fade group-hover-invisible group-hover-opacity-0" href="#icon-heart-outlined" />
+                    <use class="invisible opacity-0 transition-fade group-hover-visible group-hover-opacity-1" href="#icon-heart-filled" />
                   </svg>
                 </button>
               </div>
@@ -195,10 +198,10 @@
                   <h3 class="font-sans font-medium text-18 text-dark-gray">A la française</h3>
                   <p class="font-sans font-light text-17 text-dark-gray">Cité Rouge</p>
                 </div>
-                <button class="heart-button relative w-24 h-24 text-dark-green cursor-pointer">
-                  <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
-                    <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
-                    <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+                <button class="relative w-24 h-24 text-dark-green cursor-pointer group">
+                  <svg class="absolute top-0 left-0 w-24 h-24">
+                    <use class="visible opacity-1 transition-fade group-hover-invisible group-hover-opacity-0" href="#icon-heart-outlined" />
+                    <use class="invisible opacity-0 transition-fade group-hover-visible group-hover-opacity-1" href="#icon-heart-filled" />
                   </svg>
                 </button>
               </div>
@@ -213,10 +216,10 @@
                   <h3 class="font-sans font-medium text-18 text-dark-gray">Le délice des sens</h3>
                   <p class="font-sans font-light text-17 text-dark-gray">Folie-Méricourt</p>
                 </div>
-                <button class="heart-button relative w-24 h-24 text-dark-green cursor-pointer">
-                  <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
-                    <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
-                    <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+                <button class="relative w-24 h-24 text-dark-green cursor-pointer group">
+                  <svg class="absolute top-0 left-0 w-24 h-24">
+                    <use class="visible opacity-1 transition-fade group-hover-invisible group-hover-opacity-0" href="#icon-heart-outlined" />
+                    <use class="invisible opacity-0 transition-fade group-hover-visible group-hover-opacity-1" href="#icon-heart-filled" />
                   </svg>
                 </button>
               </div>
