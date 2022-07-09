@@ -1,3 +1,5 @@
+@use "../variables";
+
 /*------------------------------------*\
   #DISPLAY
 \*------------------------------------*/
@@ -20,4 +22,10 @@
 
 .inline-block {
   display: inline-block;
+}
+
+@media screen and (min-width: variables.$screen-lg) {
+  .lg-flex {
+    display: flex;
+  }
 }

@@ -4,51 +4,24 @@
   #FLEX
 \*------------------------------------*/
 
-.flex-row {
-  flex-direction: row;
-}
+.flex-row {flex-direction: row;}
+.flex-col {flex-direction: column;}
 
-.flex-col {
-  flex-direction: column;
-}
+.flex-none {flex: none;}
 
-.justify-start {
-  justify-content: flex-start;
-}
+.justify-start {justify-content: flex-start;}
+.justify-center {justify-content: center;}
+.justify-between {justify-content: space-between;}
+.justify-end {justify-content: flex-end;}
 
-.justify-center {
-  justify-content: center;
-}
+.self-start {align-self: flex-start;}
+.self-end {align-self: flex-end;}
 
-.justify-between {
-  justify-content: space-between;
-}
+.items-center {align-items: center;}
 
-.justify-end {
-  justify-content: flex-end;
-}
-
-.self-start {
-  align-self: flex-start;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
+.flex-wrap {flex-wrap: wrap;}
 
 @media screen and (min-width: variables.$screen-lg) {
-  .lg-flex {
-    display: flex;
-  }
-
   .lg-flex-row {
     flex-direction: row;
   }

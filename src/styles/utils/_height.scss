@@ -4,54 +4,20 @@
   #HEIGHT
 \*------------------------------------*/
 
-.h-auto {
-  height: auto;
-}
+.h-auto {height: auto;}
+.h-half {height: 50%;}
+.h-full {height: 100%;}
+.h-screen {height: 100vh;}
+.h-2screen {height: 200vh;}
 
-.h-full {
-  height: 100%;
-}
-
-.h-12 {
-  height: variables.$size-12;
-}
-
-.h-16 {
-  height: variables.$size-16;
-}
-
-.h-20 {
-  height: variables.$size-20;
-}
-
-.h-24 {
-  height: variables.$size-24;
-}
-
-.h-28 {
-  height: variables.$size-28;
-}
-
-.h-48 {
-  height: variables.$size-48;
-}
-
-.h-56 {
-  height: variables.$size-56;
-}
-
-.h-64 {
-  height: variables.$size-64;
-}
-
-.h-72 {
-  height: variables.$size-72;
-}
-
-.h-120 {
-  height: variables.$size-120;
-}
-
-.h-174 {
-  height: variables.$size-174
-}
+.h-12 {height: variables.$size-12;}
+.h-16 {height: variables.$size-16;}
+.h-20 {height: variables.$size-20;}
+.h-24 {height: variables.$size-24;}
+.h-28 {height: variables.$size-28;}
+.h-48 {height: variables.$size-48;}
+.h-56 {height: variables.$size-56;}
+.h-64 {height: variables.$size-64;}
+.h-72 {height: variables.$size-72;}
+.h-120 {height: variables.$size-120;}
+.h-174 {height: variables.$size-174}

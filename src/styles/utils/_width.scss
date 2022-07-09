@@ -4,36 +4,21 @@
   #WIDTH
 \*------------------------------------*/
 
-.w-full {
-  width: 100%;
-}
+.w-full {width: 100%;}
+.w-half {width: 50%;}
+.w-200\% {width: 200%;}
 
-.w-half {
-  width: 50%;
-}
-
-.w-12 {
-  width: variables.$size-12;
-}
-
-.w-16 {
-  width: variables.$size-16;
-}
-
-.w-24 {
-  width: variables.$size-24;
-}
-
-.w-40 {
-  width: variables.$size-40;
-}
+.w-12 {width: variables.$size-12;}
+.w-16 {width: variables.$size-16;}
+.w-24 {width: variables.$size-24;}
+.w-40 {width: variables.$size-40;}
+.w-72 {width: variables.$size-72;}
 
 /*------------------------------------*\
   #MAX-WIDTH
 \*------------------------------------*/
-.max-w-xs {
-  max-width: variables.$screen-xs;
-}
+
+.max-w-xs {max-width: variables.$screen-xs;}
 
 @media screen and (min-width: variables.$screen-sm) {
   .sm-max-w-sm {

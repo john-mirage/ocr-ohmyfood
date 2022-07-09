@@ -8,6 +8,22 @@
   border: none;
 }
 
+.border-8 {
+  border-width: variables.$size-8;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-surface-3 {
+  border-color: var(--color-surface-3);
+}
+
+.border-top-pink {
+  border-top-color: var(--color-pink);
+}
+
 .rounded-2 {
   border-radius: variables.$size-2;
 }
