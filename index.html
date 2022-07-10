@@ -145,70 +145,65 @@
                 <h2 class="hero__title hero__title--sm">Fonctionnement</h2>
                 <!-- step list -->
                 <ul class="step-list">
-        
-                  <li class="step-list__item mb-24 self-start flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
-                    <div class="step-list__number -ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
-                    </div>
-                    <div class="step-list__content flex flex-row justify-center items-center">
-                      <svg class="step-list__icon w-24 h-24 mr-24 text-secondary" fill="currentColor">
+                  <li class="step-list__item step-list__item--left">
+                    <div class="step-list__number"></div>
+                    <div class="step-list__content">
+                      <svg class="step-list__icon" fill="currentColor">
                         <use href="#icon-phone" />
                       </svg>
-                      <p class="step-list__name font-sans font-medium text-16 text-primary">Choisissez un restaurant</p>
+                      <p class="step-list__name">Choisissez un restaurant</p>
                     </div>
                   </li>
-        
-                  <li class="mb-24 flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
-                    <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
-                    </div>
-                    <div class="flex flex-row justify-center items-center">
-                      <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
+                  <li class="step-list__item step-list__item--middle">
+                    <div class="step-list__number"></div>
+                    <div class="step-list__content">
+                      <svg class="step-list__icon" fill="currentColor">
                         <use href="#icon-menu" />
                       </svg>
-                      <p class="font-sans font-medium text-16 text-primary">Composez votre menu</p>
+                      <p class="step-list__name">Composez votre menu</p>
                     </div>
                   </li>
-        
-                  <li class="self-end flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
-                    <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
-                    </div>
-                    <div class="flex flex-row justify-center items-center">
-                      <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
+                  <li class="step-list__item step-list__item--right">
+                    <div class="step-list__number"></div>
+                    <div class="step-list__content">
+                      <svg class="step-list__icon" fill="currentColor">
                         <use href="#icon-store" />
                       </svg>
-                      <p class="font-sans font-medium text-16 text-primary">Déguster au restaurant</p>
+                      <p class="step-list__name">Déguster au restaurant</p>
                     </div>
                   </li>
-        
                 </ul>
               </div>
             </div>
           </div>
       
           <!-- Restaurants -->
-          <div class="w-full h-auto bg-surface-2 pt-56 pb-64 lg-py-96" id="restaurants">
-            <div class="px-20 container lg-px-40">
-              <h2 class="mb-22 font-sans text-24 font-bold text-primary lg-text-32">Restaurants</h2>
-              <ul class="grid grid-cols-1 gap-20 md-grid-cols-2 lg-gap-40">
+          <div class="restaurant-section" id="restaurants">
+            <div class="restaurant-section__container">
+              <h2 class="restaurant-section__title">Restaurants</h2>
 
-                <li class="relative w-full rounded-15 overflow-hidden bg-card shadow-lg">
-                  <a class="relative block w-full pt-56% overflow-hidden group" href="/src/pages/la-palette-du-gout.html">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/la-palette-du-gout.webp" alt="La palette du goût" draggable="false">
+              <ul class="restaurant-list">
+
+                <li class="restaurant-list__item restaurant-list__item--with-badge">
+                  <a class="restaurant-list__link" href="/src/pages/la-palette-du-gout.html">
+                    <img class="restaurant-list__image" src="/src/images/x1/la-palette-du-gout.webp" alt="La palette du goût" draggable="false">
                   </a>
-                  <div class="flex flex-row justify-between items-center py-16 px-12 lg-p-24">
-                    <div>
-                      <h3 class="font-sans font-medium text-18 text-primary">La palette du goût</h3>
-                      <p class="font-sans font-regular text-17 text-secondary">Ménilmontant</p>
+                  <div class="restaurant-list__body">
+                    <div class="restaurant-list__info">
+                      <h3 class="restaurant-list__name">La palette du goût</h3>
+                      <p class="restaurant-list__location">Ménilmontant</p>
                     </div>
-                    <button class="relative w-24 h-24 text-dark-green cursor-pointer group">
-                      <svg class="absolute top-0 left-0 w-24 h-24">
-                        <use class="visible opacity-100 transition-fade group-hover-invisible group-hover-opacity-0 text-primary" fill="currentColor" href="#icon-heart-outlined" />
-                        <use class="invisible opacity-0 transition-fade group-hover-visible group-hover-opacity-100" href="#icon-heart-filled" />
+                    <button class="heart-button">
+                      <input class="heart-button__input" type="checkbox">
+                      <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+                        <use class="heart-button__shape heart-button__shape--outlined" fill="currentColor" href="#icon-heart-outlined" />
+                        <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
                       </svg>
                     </button>
                   </div>
-                  <div class="absolute top-12 right-12 px-12 py-8 bg-green font-sans font-medium text-14 text-dark-green rounded-2">Nouveau</div>
+                  <div class="restaurant-list__badge">Nouveau</div>
                 </li>
-                
+
                 <li class="relative w-full rounded-15 overflow-hidden bg-card shadow-lg">
                   <a class="relative block w-full pt-56% overflow-hidden group" href="/src/pages/la-note-enchantee.html">
                     <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/la-note-enchantee.webp" alt="La note enchantée" draggable="false">
@@ -227,7 +222,6 @@
                   </div>
                   <div class="absolute top-12 right-12 px-12 py-8 bg-green font-sans font-medium text-14 text-dark-green rounded-2">Nouveau</div>
                 </li>
-      
                 <li class="w-full rounded-15 overflow-hidden bg-card shadow-lg">
                   <a class="relative block w-full pt-56% overflow-hidden group" href="/src/pages/a-la-francaise.html">
                     <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/a-la-francaise.webp" alt="A la française" draggable="false">
@@ -245,7 +239,6 @@
                     </button>
                   </div>
                 </li>
-      
                 <li class="w-full rounded-15 overflow-hidden bg-card shadow-lg">
                   <a class="relative block w-full pt-56% overflow-hidden group" href="/src/pages/le-delice-des-sens.html">
                     <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/le-delice-des-sens.webp" alt="Le délice des sens" draggable="false">
@@ -263,8 +256,8 @@
                     </button>
                   </div>
                 </li>
-      
               </ul>
+
             </div>
           </div>
         </main>

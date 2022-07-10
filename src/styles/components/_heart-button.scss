@@ -1,0 +1,67 @@
+@use "../variables";
+
+.heart-button {
+  position: relative;
+  display: flex;
+  width: variables.$size-48;
+  height: variables.$size-48;
+  cursor: pointer;
+  border-radius: 9999px;
+  overflow: hidden;
+
+  &--on-right {
+    margin-right: -(variables.$size-12);
+  }
+
+  &__input {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    width: variables.$size-24;
+    height: variables.$size-24;
+  }
+
+  &__shape {
+    transition-property: visibility, opacity;
+    transition-duration: 150ms;
+
+    &--outlined {
+      visibility: visible;
+      opacity: 1;
+      color: var(--color-text);
+
+      .heart-button:hover & {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .heart-button__input:checked & {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    &--filled {
+      visibility: hidden;
+      opacity: 0;
+
+      .heart-button:hover & {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .heart-button__input:checked & {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
