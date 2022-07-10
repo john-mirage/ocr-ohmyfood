@@ -5,37 +5,22 @@
 @use "./reset";
 
 /*------------------------------------*\
-  #UTILITIES
-\*------------------------------------*/
-
-@use "./utils/animation";
-@use "./utils/background";
-@use "./utils/border";
-@use "./utils/counter";
-@use "./utils/cursor";
-@use "./utils/display";
-@use "./utils/flex";
-@use "./utils/grid";
-@use "./utils/height";
-@use "./utils/image";
-@use "./utils/margin";
-@use "./utils/opacity";
-@use "./utils/overflow";
-@use "./utils/padding";
-@use "./utils/position";
-@use "./utils/screen-reader";
-@use "./utils/shadow";
-@use "./utils/transform";
-@use "./utils/transition";
-@use "./utils/typography";
-@use "./utils/visibility";
-@use "./utils/width";
-
-/*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
 
-@use "./components/container";
+@use "./components/button";
+@use "./components/footer";
+@use "./components/heart-button";
+@use "./components/hero";
+@use "./components/location";
+@use "./components/navigation";
+@use "./components/page";
+@use "./components/restaurant-list";
+@use "./components/restaurant-section";
+@use "./components/spinner";
+@use "./components/step-list";
+@use "./components/switch";
+@use "./components/top-app-bar";
 
 /*------------------------------------*\
   #Theme
@@ -46,7 +31,8 @@
   --color-pink: hsl(317, 100%, 74%);
   --color-green: hsl(165, 56%, 74%);
   --color-dark-green: hsl(165, 100%, 26%);
-  --color-gradient: linear-gradient(to bottom, variables.$color-pink, variables.$color-purple);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gradient: linear-gradient(to bottom, var(--color-pink), var(--color-purple));
 }
 
 #app {

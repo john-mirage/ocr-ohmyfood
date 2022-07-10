@@ -136,7 +136,10 @@
                 <h1 class="hero__title hero__title--lg">Réservez le menu qui vous convient</h1>
                 <p class="hero__subtitle">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
                 <!-- button -->
-                <a class="button" href="#restaurants">Explorer nos restaurants</a>
+                <a class="button" href="#restaurants">
+                  <span class="button__label">Explorer nos restaurants</span>
+                  <span class="button__overlay"></span>
+                </a>
               </div>
             </div>
             
@@ -193,7 +196,7 @@
                       <h3 class="restaurant-list__name">La palette du goût</h3>
                       <p class="restaurant-list__location">Ménilmontant</p>
                     </div>
-                    <button class="heart-button">
+                    <button class="heart-button heart-button--on-right">
                       <input class="heart-button__input" type="checkbox">
                       <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
                         <use class="heart-button__shape heart-button__shape--outlined" fill="currentColor" href="#icon-heart-outlined" />
@@ -204,54 +207,59 @@
                   <div class="restaurant-list__badge">Nouveau</div>
                 </li>
 
-                <li class="relative w-full rounded-15 overflow-hidden bg-card shadow-lg">
-                  <a class="relative block w-full pt-56% overflow-hidden group" href="/src/pages/la-note-enchantee.html">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/la-note-enchantee.webp" alt="La note enchantée" draggable="false">
+                <li class="restaurant-list__item restaurant-list__item--with-badge">
+                  <a class="restaurant-list__link" href="/src/pages/la-note-enchantee.html">
+                    <img class="restaurant-list__image" src="/src/images/x1/la-note-enchantee.webp" alt="La note enchantée" draggable="false">
                   </a>
-                  <div class="flex flex-row justify-between items-center py-16 px-12 lg-p-24">
-                    <div>
-                      <h3 class="font-sans font-medium text-18 text-primary">La note enchantée</h3>
-                      <p class="font-sans font-regular text-17 text-secondary">Charonne</p>
+                  <div class="restaurant-list__body">
+                    <div class="restaurant-list__info">
+                      <h3 class="restaurant-list__name">La note enchantée</h3>
+                      <p class="restaurant-list__location">Charonne</p>
                     </div>
-                    <button class="relative w-24 h-24 text-dark-green cursor-pointer group">
-                      <svg class="absolute top-0 left-0 w-24 h-24">
-                        <use class="visible opacity-100 transition-fade group-hover-invisible group-hover-opacity-0 text-primary" fill="currentColor" href="#icon-heart-outlined" />
-                        <use class="invisible opacity-0 transition-fade group-hover-visible group-hover-opacity-100" href="#icon-heart-filled" />
+                    <button class="heart-button heart-button--on-right">
+                      <input class="heart-button__input" type="checkbox">
+                      <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+                        <use class="heart-button__shape heart-button__shape--outlined" fill="currentColor" href="#icon-heart-outlined" />
+                        <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
                       </svg>
                     </button>
                   </div>
-                  <div class="absolute top-12 right-12 px-12 py-8 bg-green font-sans font-medium text-14 text-dark-green rounded-2">Nouveau</div>
+                  <div class="restaurant-list__badge">Nouveau</div>
                 </li>
-                <li class="w-full rounded-15 overflow-hidden bg-card shadow-lg">
-                  <a class="relative block w-full pt-56% overflow-hidden group" href="/src/pages/a-la-francaise.html">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/a-la-francaise.webp" alt="A la française" draggable="false">
+
+                <li class="restaurant-list__item">
+                  <a class="restaurant-list__link" href="/src/pages/a-la-francaise.html">
+                    <img class="restaurant-list__image" src="/src/images/x1/a-la-francaise.webp" alt="A la française" draggable="false">
                   </a>
-                  <div class="flex flex-row justify-between items-center py-16 px-12 lg-p-24">
-                    <div>
-                      <h3 class="font-sans font-medium text-18 text-primary">A la française</h3>
-                      <p class="font-sans font-regular text-17 text-secondary">Cité Rouge</p>
+                  <div class="restaurant-list__body">
+                    <div class="restaurant-list__info">
+                      <h3 class="restaurant-list__name">A la française</h3>
+                      <p class="restaurant-list__location">Cité Rouge</p>
                     </div>
-                    <button class="relative w-24 h-24 text-dark-green cursor-pointer group">
-                      <svg class="absolute top-0 left-0 w-24 h-24">
-                        <use class="visible opacity-100 transition-fade group-hover-invisible group-hover-opacity-0 text-primary" fill="currentColor" href="#icon-heart-outlined" />
-                        <use class="invisible opacity-0 transition-fade group-hover-visible group-hover-opacity-100" href="#icon-heart-filled" />
+                    <button class="heart-button heart-button--on-right">
+                      <input class="heart-button__input" type="checkbox">
+                      <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+                        <use class="heart-button__shape heart-button__shape--outlined" fill="currentColor" href="#icon-heart-outlined" />
+                        <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
                       </svg>
                     </button>
                   </div>
                 </li>
-                <li class="w-full rounded-15 overflow-hidden bg-card shadow-lg">
-                  <a class="relative block w-full pt-56% overflow-hidden group" href="/src/pages/le-delice-des-sens.html">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform group-hover-scale-105" src="/src/images/x1/le-delice-des-sens.webp" alt="Le délice des sens" draggable="false">
+
+                <li class="restaurant-list__item">
+                  <a class="restaurant-list__link" href="/src/pages/le-delice-des-sens.html">
+                    <img class="restaurant-list__image" src="/src/images/x1/le-delice-des-sens.webp" alt="Le délice des sens" draggable="false">
                   </a>
-                  <div class="flex flex-row justify-between items-center py-16 px-12 lg-p-24">
-                    <div>
-                      <h3 class="font-sans font-medium text-18 text-primary">Le délice des sens</h3>
-                      <p class="font-sans font-regular text-17 text-secondary">Folie-Méricourt</p>
+                  <div class="restaurant-list__body">
+                    <div class="restaurant-list__info">
+                      <h3 class="restaurant-list__name">Le délice des sens</h3>
+                      <p class="restaurant-list__location">Folie-Méricourt</p>
                     </div>
-                    <button class="relative w-24 h-24 text-dark-green cursor-pointer group">
-                      <svg class="absolute top-0 left-0 w-24 h-24">
-                        <use class="visible opacity-100 transition-fade group-hover-invisible group-hover-opacity-0 text-primary" fill="currentColor" href="#icon-heart-outlined" />
-                        <use class="invisible opacity-0 transition-fade group-hover-visible group-hover-opacity-100" href="#icon-heart-filled" />
+                    <button class="heart-button heart-button--on-right">
+                      <input class="heart-button__input" type="checkbox">
+                      <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+                        <use class="heart-button__shape heart-button__shape--outlined" fill="currentColor" href="#icon-heart-outlined" />
+                        <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
                       </svg>
                     </button>
                   </div>
@@ -263,28 +271,29 @@
         </main>
 
         <!-- Footer -->
-        <footer class="w-full h-auto bg-footer pt-24 pb-32 lg-py-40">
-          <div class="px-20 container lg-px-40 lg-flex lg-flex-row lg-justify-between lg-items-center">
-            <p class="mb-24 font-display text-24 leading-18 text-white lg-mb-0">ohmyfood</p>
-            <nav>
-              <ul class="font-sans text-white font-medium text-16 md-flex md-flex-row">
-                <li class="flex flex-row items-center transition-color hover-color-pink md-mr-32">
-                  <svg class="w-16 h-16 mr-8" fill="currentColor">
+        <footer class="footer">
+          <div class="footer__container">
+            <p class="footer__logo">ohmyfood</p>
+            <!-- navigation -->
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item navigation__item--with-icon">
+                  <svg class="navigation__icon" fill="currentColor">
                     <use href="#icon-restaurant" />
                   </svg>
-                  <a href="#">Proposer un restaurant</a>
+                  <a class="navigation__link" href="#">Proposer un restaurant</a>
                 </li>
-                <li class="flex flex-row items-center transition-color hover-color-pink md-mr-32">
-                  <svg class="w-16 h-16 mr-8" fill="currentColor">
+                <li class="navigation__item navigation__item--with-icon">
+                  <svg class="navigation__icon" fill="currentColor">
                     <use href="#icon-handshake" />
                   </svg>
-                  <a href="#">Devenir partenaire</a>
+                  <a class="navigation__link" href="#">Devenir partenaire</a>
                 </li>
-                <li class="transition-color hover-color-pink md-mr-32">
-                  <a href="#">Mentions légales</a>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Mentions légales</a>
                 </li>
-                <li class="transition-color hover-color-pink">
-                  <a href="#">Contact</a>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Contact</a>
                 </li>
               </ul>
             </nav>

@@ -79,8 +79,9 @@
     position: absolute;
     top: variables.$size-12;
     right: variables.$size-12;
-    padding: variables.$size-12 variables.$size-8;
+    padding: variables.$size-8 variables.$size-12;
     background-color: var(--color-green);
+    font-family: variables.$font-sans;
     font-weight: 500;
     font-size: variables.$size-14;
     color: var(--color-dark-green);

@@ -1,6 +1,6 @@
 $font-fallback: system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-$font-display: 'Shrikhand', variables.$font-fallback;
-$font-sans: 'Roboto', variables.$font-fallback;
+$font-display: 'Shrikhand', $font-fallback;
+$font-sans: 'Roboto', $font-fallback;
 
 $size-2: 0.125rem;
 $size-4: 0.25rem;

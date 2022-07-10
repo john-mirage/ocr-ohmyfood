@@ -1,12 +1,40 @@
 @use "../variables";
 
 .button {
+  position: relative;
   display: inline-block;
   padding: variables.$size-16 variables.$size-22;
-  font-family: variables.$font-sans;
-  font-weight: 500;
-  color: var(--color-white);
   background: var(--color-gradient);
   border-radius: 9999px;
-  line-height: variables.$size-20;
+  overflow: hidden;
+  box-shadow: variables.$shadow-md;
+  transition: box-shadow 150ms;
+
+  &:hover {
+    box-shadow: variables.$shadow-lg;
+  }
+
+  &__label {
+    position: relative;
+    z-index: 10;
+    line-height: variables.$size-20;
+    font-family: variables.$font-sans;
+    font-weight: 500;
+    color: var(--color-white);
+  }
+  
+  &__overlay {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 150ms;
+
+    .button:hover & {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
 }

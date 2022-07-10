@@ -1,0 +1,43 @@
+@use "../variables";
+
+.navigation {
+  font-family: variables.$font-sans;
+  font-size: variables.$size-16;
+  font-weight: 500;
+  color: var(--color-white);
+
+  &__list {
+    @media screen and (min-width: variables.$screen-md) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    transition: color 150ms;
+
+    @media screen and (min-width: variables.$screen-md) {
+      margin-right: variables.$size-32;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      color: var(--color-pink);
+    }
+
+    &--with-icon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    margin-right: variables.$size-8;
+    width: variables.$size-16;
+    height: variables.$size-16;
+  }
+}

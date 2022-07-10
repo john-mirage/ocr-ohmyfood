@@ -1,0 +1,42 @@
+@use "../variables";
+@use "../mixins";
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-footer);
+  padding-top: variables.$size-24;
+  padding-bottom: variables.$size-32;
+
+  @media screen and (min-width: variables.$screen-lg) {
+    padding-top: variables.$size-40;
+    padding-bottom: variables.$size-40;
+  }
+
+  &__container {
+    @include mixins.container;
+    padding-left: variables.$size-20;
+    padding-right: variables.$size-20;
+
+    @media screen and (min-width: variables.$screen-lg) {
+      padding-left: variables.$size-40;
+      padding-right: variables.$size-40;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    margin-bottom: variables.$size-24;
+    font-family: variables.$font-display;
+    font-size: variables.$size-24;
+    line-height: 1;
+    color: var(--color-white);
+
+    @media screen and (min-width: variables.$screen-lg) {
+      margin-bottom: 0;
+    }
+  }
+}
