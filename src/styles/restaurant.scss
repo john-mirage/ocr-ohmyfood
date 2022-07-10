@@ -1,0 +1,115 @@
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+
+@use "./reset";
+
+/*------------------------------------*\
+  #UTILITIES
+\*------------------------------------*/
+
+@use "./utils/animation";
+@use "./utils/background";
+@use "./utils/border";
+@use "./utils/counter";
+@use "./utils/cursor";
+@use "./utils/display";
+@use "./utils/flex";
+@use "./utils/grid";
+@use "./utils/height";
+@use "./utils/image";
+@use "./utils/margin";
+@use "./utils/opacity";
+@use "./utils/overflow";
+@use "./utils/padding";
+@use "./utils/position";
+@use "./utils/screen-reader";
+@use "./utils/shadow";
+@use "./utils/transform";
+@use "./utils/transition";
+@use "./utils/typography";
+@use "./utils/visibility";
+@use "./utils/width";
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+@use "./components/container";
+
+/*------------------------------------*\
+  #Theme
+\*------------------------------------*/
+
+:root {
+  --color-purple: hsl(267, 66%, 60%);
+  --color-pink: hsl(317, 100%, 74%);
+  --color-green: hsl(165, 56%, 74%);
+  --color-dark-green: hsl(165, 100%, 26%);
+}
+
+#app {
+  --color-surface-1: hsl(0, 0%, 100%);
+  --color-surface-2: hsl(0, 0%, 96%);
+  --color-surface-3: hsl(0, 0%, 92%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-footer: hsl(0, 0%, 21%);
+
+  --color-text: hsl(0, 0%, 21%);
+  --color-text-alt: hsl(0, 0%, 40%);
+}
+
+@media (prefers-color-scheme: light) {
+  #light-theme-label {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #dark-theme-label {
+    display: none;
+  }
+  #app {
+    --color-surface-1: hsl(0, 0%, 10%);
+    --color-surface-2: hsl(0, 0%, 14%);
+    --color-surface-3: hsl(0, 0%, 18%);
+    --color-card: hsl(0, 0%, 10%);
+    --color-footer: hsl(0, 0%, 10%);
+
+    --color-text: hsl(0, 0%, 84%);
+    --color-text-alt: hsl(0, 0%, 60%);
+  }
+  #theme-button-handle {
+    transform: translateX(20px);
+  }
+}
+
+#light-theme:checked ~ #app {
+  --color-surface-1: hsl(0, 0%, 100%);
+  --color-surface-2: hsl(0, 0%, 96%);
+  --color-surface-3: hsl(0, 0%, 92%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-footer: hsl(0, 0%, 21%);
+
+  --color-text: hsl(0, 0%, 21%);
+  --color-text-alt: hsl(0, 0%, 40%);
+}
+
+#light-theme:checked ~ #app #theme-button-handle {
+  transform: translateX(0);
+}
+
+#dark-theme:checked ~ #app {
+  --color-surface-1: hsl(0, 0%, 10%);
+  --color-surface-2: hsl(0, 0%, 14%);
+  --color-surface-3: hsl(0, 0%, 18%);
+  --color-card: hsl(0, 0%, 10%);
+  --color-footer: hsl(0, 0%, 10%);
+
+  --color-text: hsl(0, 0%, 84%);
+  --color-text-alt: hsl(0, 0%, 60%);
+}
+
+#dark-theme:checked ~ #app #theme-button-handle {
+  transform: translateX(20px);
+}
