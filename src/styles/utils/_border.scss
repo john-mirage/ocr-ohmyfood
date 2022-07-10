@@ -17,3 +17,8 @@
 .rounded-15 {border-radius: variables.$size-15;}
 .rounded-20 {border-radius: variables.$size-20;}
 .rounded-full {border-radius: 9999px;}
+
+.rounded-t-40 {
+  border-top-left-radius: variables.$size-40;
+  border-top-right-radius: variables.$size-40;
+}

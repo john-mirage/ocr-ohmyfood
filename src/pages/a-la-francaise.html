@@ -47,7 +47,7 @@
 
   <div id="app">
     <!-- Header -->
-    <header>
+    <header class="fixed z-50 top-0 left-0 w-full">
       <!-- Top app bar -->
       <div class="relative z-50 w-full h-64 bg-surface-1 shadow-lg">
         <div class="container h-64 flex flex-row justify-between items-center px-20 lg-px-40">
@@ -72,6 +72,17 @@
         </div>
       </div>
     </header>
+
+    <!-- Image -->
+    <div class="relative z-10 w-full h-screen">
+      <img class="absolute top-0 left-0 w-full h-full object-cover" src="/src/images/x2/a-la-francaise.webp" alt="">
+    </div>
+
+    <main class="fixed bottom-0 left-0 w-full h-64 bg-surface-1 rounded-t-40 overflow-hidden">
+      <div class="flex flex-row justify-center items-center w-full h-64 bg-surface-2 shadow-lg">
+        <h1 class="font-display font-regular text-24 text-primary">A la française</h1>
+      </div>
+    </main>
   </div>
 
   <script type="module" src="/src/restaurant.js"></script>

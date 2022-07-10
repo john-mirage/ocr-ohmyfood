@@ -113,3 +113,7 @@
 #dark-theme:checked ~ #app #theme-button-handle {
   transform: translateX(20px);
 }
+
+.blur {
+  filter: blur(12px);
+}
