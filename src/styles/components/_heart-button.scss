@@ -66,7 +66,6 @@
     &--outlined {
       visibility: visible;
       opacity: 1;
-      color: var(--color-text);
 
       .heart-button__input:checked ~ .heart-button__icon > & {
         visibility: hidden;

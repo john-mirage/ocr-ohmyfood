@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: variables.$size-8;
+  padding-bottom: variables.$size-8;
   color: var(--color-text);
 
   &__icon {

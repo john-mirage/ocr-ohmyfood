@@ -18,19 +18,31 @@
     padding-top: variables.$size-40;
     padding-bottom: variables.$size-56;
     font-family: variables.$font-sans;
-    background-color: var(--color-surface-2);
 
     @media screen and (min-width: variables.$screen-lg) {
-      text-align: left;
       padding: 0;
-      background-color: transparent;
     }
 
-    &--steps {
+    &--presentation {
+      background-color: var(--color-surface-2);
       text-align: center;
 
       @media screen and (min-width: variables.$screen-lg) {
+        background-color: transparent;
         text-align: left;
+        padding-left: variables.$size-40;
+        padding-right: variables.$size-40;
+      }
+
+      @media screen and (min-width: variables.$screen-xl) {
+        padding-right: variables.$size-96;
+      }
+    }
+
+    &--steps {
+      @media screen and (min-width: variables.$screen-lg) {
+        padding-left: 0;
+        padding-right: variables.$size-40;
       }
     }
   }
@@ -41,8 +53,8 @@
     padding-right: variables.$size-20;
 
     @media screen and (min-width: variables.$screen-lg) {
-      padding-left: variables.$size-40;
-      padding-right: variables.$size-40;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
