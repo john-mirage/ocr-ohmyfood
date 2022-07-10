@@ -14,9 +14,15 @@
   }
 
   &__item {
+    margin-bottom: variables.$size-8;
     transition: color 150ms;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     @media screen and (min-width: variables.$screen-md) {
+      margin-bottom: 0;
       margin-right: variables.$size-32;
 
       &:last-child {
