@@ -1,4 +1,6 @@
 $font-fallback: system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+$font-display: 'Shrikhand', variables.$font-fallback;
+$font-sans: 'Roboto', variables.$font-fallback;
 
 $size-2: 0.125rem;
 $size-4: 0.25rem;
@@ -44,3 +46,6 @@ $color-white: hsl(0, 0%, 100%);
 $color-very-light-gray: hsl(0, 0%, 96%);
 $color-light-gray: hsl(0, 0%, 92%);
 $color-dark-gray: hsl(0, 0%, 21%);
+
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+$shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);

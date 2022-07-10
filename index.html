@@ -28,9 +28,9 @@
   <meta property="twitter:image" content="https://john-mirage.github.io/foodtech-website/ohmyfood.webp">
 </head>
 
-<body>
-  <!-- Icons -->
-  <svg class="sr-only" xmlns="http://www.w3.org/2000/svg">
+<!-- page -->
+<body class="page">
+  <svg class="page__icons" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="icon-heart-gradient" gradientTransform="rotate(90)">
         <stop offset="0%" stop-color="hsl(267, 66%, 60%)" />
@@ -84,102 +84,103 @@
       </g>
     </symbol>
   </svg>
-  
-  <!-- Theme input -->
-  <input class="hidden" id="light-theme" type="checkbox" aria-hidden="true">
-  <input class="hidden" id="dark-theme" type="checkbox" aria-hidden="true">
 
-  <div class="w-full h-screen overflow-clip" id="app">
-    <div class="relative w-full h-2screen animate-pannel" id="app-pannel">
-      <!-- App loader -->
-      <div class="absolute top-0 left-0 flex justify-center items-center w-full h-half bg-surface-1 text-primary" id="app-loader">
-        <div class="w-72 h-72 rounded-full border-8 border-solid border-surface-3 border-top-pink animate-spin"></div>
+  <input class="page__input" id="light-theme" type="checkbox" aria-hidden="true">
+  <input class="page__input" id="dark-theme" type="checkbox" aria-hidden="true">
+
+  <div class="page__wrapper" id="app">
+    <div class="page__slider" id="app-pannel">
+      <div class="page__slide page__slide--loader" id="app-loader">
+        <!-- spinner -->
+        <div class="spinner"></div>
       </div>
-      <!-- App content -->
-      <div class="absolute bottom-0 left-0 w-full h-half overflow-y-auto" id="app-content">
-        <!-- Header -->
-        <header>
-          <!-- Top app bar -->
-          <div class="relative z-50 w-full h-64 bg-surface-1 shadow-lg">
-            <div class="container h-64 flex flex-row justify-between items-center px-20 lg-px-40">
-              <!-- Logo -->
-              <div>
-                <p class="font-display text-24 leading-normal text-primary md-text-30">ohmyfood</p>
-              </div>
-              <!-- Theme button -->
-              <div class="relative flex flex-row justify-end items-center text-primary">
-                <svg class="w-16 h-16" fill="currentColor">
+      <div class="page__slide page__slide--content" id="app-content">
+        <!-- Top app bar -->
+        <header class="top-app-bar">
+          <div class="top-app-bar__container">
+            <div class="top-app-bar__section top-app-bar__section--left">
+              <p class="top-app-bar__logo">ohmyfood</p>
+            </div>
+            <div class="top-app-bar__section top-app-bar__section--right">
+              <!-- switch -->
+              <div class="switch">
+                <svg class="switch__icon" fill="currentColor">
                   <use href="#icon-sun"/>
                 </svg>
-                <div class="mx-8 w-40 h-20 bg-surface-3 p-4 rounded-full">
-                  <span class="block relative z-10 w-12 h-12 rounded-full bg-gradient transition-transform" id="theme-button-handle"></span>
+                <div class="switch__track">
+                  <div class="switch__handle" id="theme-button-handle"></div>
                 </div>
-                <svg class="w-16 h-16" fill="currentColor">
+                <svg class="switch__icon" fill="currentColor">
                   <use href="#icon-moon"/>
                 </svg>
-                <label class="absolute top-0 left-0 w-full h-full cursor-pointer" id="light-theme-label" for="light-theme"></label>
-                <label class="absolute top-0 left-0 w-full h-full cursor-pointer" id="dark-theme-label" for="dark-theme"></label>
+                <label class="switch__button" id="light-theme-label" for="light-theme"></label>
+                <label class="switch__button" id="dark-theme-label" for="dark-theme"></label>
               </div>
-            </div>
-          </div>
-          <!-- Location -->
-          <div class="relative z-40 w-full h-56 flex flex-row justify-center items-center bg-surface-3 text-primary">
-            <svg class="-ml-40 mr-12 w-24 h-24" fill="currentColor">
-              <use href="#icon-location" />
-            </svg>
-            <p class="font-sans text-16 font-medium">Paris, Belleville</p>
+            </div>            
           </div>
         </header>
 
-        <main class="bg-surface-1">
-          <div class="lg-container lg-grid lg-grid-cols-2 lg-items-center lg-gap-40 lg-py-96">
-            <!-- Hero -->
-            <div class="pt-40 pb-56 text-center font-sans bg-surface-2 lg-bg-transparent lg-text-left lg-py-0">
-              <div class="px-20 container lg-px-40 xl-pr-64">
-                <h1 class="mb-12 font-bold text-24 text-primary leading-28 lg-text-44 lg-leading-48 lg-mb-24">Réservez le menu qui vous convient</h1>
-                <p class="mb-32 font-regular text-18 text-secondary leading-24">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
-                <a class="inline-block px-22 py-16 font-medium text-white bg-gradient border-none rounded-full font-sans leading-20" href="#restaurants">Explorer nos restaurants</a>
+        <!-- Location -->
+        <div class="location">
+          <svg class="location__icon" fill="currentColor">
+            <use href="#icon-location" />
+          </svg>
+          <p class="location__address">Paris, Belleville</p>
+        </div>
+
+        <main class="page__content">
+          <!-- hero -->
+          <div class="hero">
+            <div class="hero__section">
+              <div class="hero__container">
+                <h1 class="hero__title hero__title--lg">Réservez le menu qui vous convient</h1>
+                <p class="hero__subtitle">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
+                <!-- button -->
+                <a class="button" href="#restaurants">Explorer nos restaurants</a>
               </div>
             </div>
-            <!-- Steps -->
-            <div class="px-20 container pt-48 pb-68 lg-py-0 lg-px-40 lg-pl-0">
-              <h2 class="mb-20 pl-12 font-sans text-24 font-bold text-primary lg-text-32">Fonctionnement</h2>
-              <ul class="flex flex-col justify-center items-center w-full pl-12 counter-reset">
-      
-                <li class="mb-24 self-start flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
-                  <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
-                  </div>
-                  <div class="flex flex-row justify-center items-center">
-                    <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
-                      <use href="#icon-phone" />
-                    </svg>
-                    <p class="font-sans font-medium text-16 text-primary">Choisissez un restaurant</p>
-                  </div>
-                </li>
-      
-                <li class="mb-24 flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
-                  <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
-                  </div>
-                  <div class="flex flex-row justify-center items-center">
-                    <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
-                      <use href="#icon-menu" />
-                    </svg>
-                    <p class="font-sans font-medium text-16 text-primary">Composez votre menu</p>
-                  </div>
-                </li>
-      
-                <li class="self-end flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
-                  <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
-                  </div>
-                  <div class="flex flex-row justify-center items-center">
-                    <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
-                      <use href="#icon-store" />
-                    </svg>
-                    <p class="font-sans font-medium text-16 text-primary">Déguster au restaurant</p>
-                  </div>
-                </li>
-      
-              </ul>
+            
+            <div class="hero__section hero__section--steps">
+              <div class="hero__container">
+                <h2 class="hero__title hero__title--sm">Fonctionnement</h2>
+                <!-- step list -->
+                <ul class="step-list">
+        
+                  <li class="step-list__item mb-24 self-start flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
+                    <div class="step-list__number -ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
+                    </div>
+                    <div class="step-list__content flex flex-row justify-center items-center">
+                      <svg class="step-list__icon w-24 h-24 mr-24 text-secondary" fill="currentColor">
+                        <use href="#icon-phone" />
+                      </svg>
+                      <p class="step-list__name font-sans font-medium text-16 text-primary">Choisissez un restaurant</p>
+                    </div>
+                  </li>
+        
+                  <li class="mb-24 flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
+                    <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
+                    </div>
+                    <div class="flex flex-row justify-center items-center">
+                      <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
+                        <use href="#icon-menu" />
+                      </svg>
+                      <p class="font-sans font-medium text-16 text-primary">Composez votre menu</p>
+                    </div>
+                  </li>
+        
+                  <li class="self-end flex flex-row justify-start items-center w-full max-w-xs h-72 bg-surface-2 rounded-20 shadow-lg lg-max-w-none">
+                    <div class="-ml-12 mr-20 flex justify-center items-center w-24 h-24 rounded-full bg-purple font-sans font-medium text-white counter-increment">
+                    </div>
+                    <div class="flex flex-row justify-center items-center">
+                      <svg class="w-24 h-24 mr-24 text-secondary" fill="currentColor">
+                        <use href="#icon-store" />
+                      </svg>
+                      <p class="font-sans font-medium text-16 text-primary">Déguster au restaurant</p>
+                    </div>
+                  </li>
+        
+                </ul>
+              </div>
             </div>
           </div>
       

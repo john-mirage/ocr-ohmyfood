@@ -1,0 +1,15 @@
+@use "../variables";
+
+.step-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-left: variables.$size-12;
+  counter-reset: step 0;
+
+  &__item {
+
+  }
+}

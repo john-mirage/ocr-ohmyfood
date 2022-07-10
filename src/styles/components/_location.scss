@@ -1,0 +1,27 @@
+@use "../variables";
+@use "../mixins";
+
+.location {
+  position: relative;
+  z-index: 40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: variables.$size-56;
+  background-color: var(--color-surface-3);
+  color: var(--color-text);
+
+  &__icon {
+    margin-left: -(variables.$size-40);
+    margin-right: variables.$size-12;
+    width: variables.$size-24;
+    height: variables.$size-24;
+  }
+
+  &__address {
+    font-family: variables.$font-sans;
+    font-size: variables.$size-16;
+    font-weight: 500;
+  }
+}

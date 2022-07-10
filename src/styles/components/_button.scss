@@ -1,0 +1,12 @@
+@use "../variables";
+
+.button {
+  display: inline-block;
+  padding: variables.$size-16 variables.$size-22;
+  font-family: variables.$font-sans;
+  font-weight: 500;
+  color: var(--color-white);
+  background: var(--color-gradient);
+  border-radius: 9999px;
+  line-height: variables.$size-20;
+}

@@ -1,0 +1,83 @@
+@use "../variables";
+@use "../mixins";
+
+.hero {
+  width: 100%;
+  @include mixins.lg-container;
+
+  @media screen and (min-width: variables.$screen-lg) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: variables.$size-40;
+    padding-top: variables.$size-96;
+    padding-bottom: variables.$size-96;
+  }
+
+  &__section {
+    padding-top: variables.$size-40;
+    padding-bottom: variables.$size-56;
+    font-family: variables.$font-sans;
+    background-color: var(--color-surface-2);
+
+    @media screen and (min-width: variables.$screen-lg) {
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--steps {
+      text-align: center;
+
+      @media screen and (min-width: variables.$screen-lg) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__container {
+    @include mixins.container;
+    padding-left: variables.$size-20;
+    padding-right: variables.$size-20;
+
+    @media screen and (min-width: variables.$screen-lg) {
+      padding-left: variables.$size-40;
+      padding-right: variables.$size-40;
+    }
+  }
+
+  &__title {
+    font-size: variables.$size-24;
+    font-weight: 700;
+    line-height: variables.$size-28;
+    color: var(--color-text);
+
+    &--sm {
+      margin-bottom: variables.$size-20;
+      padding-left: variables.$size-12;
+
+      @media screen and (min-width: variables.$screen-lg) {
+        font-size: variables.$size-32;
+        line-height: variables.$size-40;
+      }
+    }
+
+    &--lg {
+      margin-bottom: variables.$size-12;
+
+      @media screen and (min-width: variables.$screen-lg) {
+        margin-bottom: variables.$size-24;
+        font-size: variables.$size-44;
+        line-height: variables.$size-48;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: variables.$size-32;
+    font-weight: 400;
+    font-size: variables.$size-18;
+    color: var(--color-text-alt);
+    line-height: variables.$size-24;
+  }
+}
