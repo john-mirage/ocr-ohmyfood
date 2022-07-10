@@ -1,13 +1,19 @@
 @use "../variables";
 
 .switch {
+  margin-right: -(variables.$size-16);
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: variables.$size-8;
-  padding-bottom: variables.$size-8;
+  padding: variables.$size-8 variables.$size-16;
   color: var(--color-text);
+  border: variables.$size-2 solid transparent;
+  border-radius: 9999px;
+
+  &:hover {
+    border: variables.$size-2 solid var(--color-surface-3);
+  }
 
   &__icon {
     width: variables.$size-16;
