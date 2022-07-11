@@ -8,8 +8,8 @@
   #COMPONENTS
 \*------------------------------------*/
 
+@use "./components/bottom-drawer";
 @use "./components/button";
-@use "./components/drawer";
 @use "./components/footer";
 @use "./components/heart-button";
 @use "./components/hero";
@@ -23,6 +23,7 @@
 @use "./components/step-list";
 @use "./components/switch";
 @use "./components/top-app-bar";
+@use "./components/top-drawer";
 
 /*------------------------------------*\
   #Theme
@@ -103,18 +104,10 @@
   transform: translateX(20px);
 }
 
-#drawer-switch:checked ~ #app #top-app-bar {
-  transform: translateY(0); 
-}
-
-#top-app-bar-container {
-  transition: transform 600ms;
-}
-
-#drawer-switch:checked ~ #app #top-app-bar-container {
-  transform: translateY(-100%);
-}
-
 #drawer-switch:checked ~ #app #drawer {
   transform: translateY(0);
+}
+
+#drawer-switch:checked ~ #app #top-drawer {
+  transform: translateY(50%);
 }

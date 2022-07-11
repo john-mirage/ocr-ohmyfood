@@ -61,6 +61,20 @@
       <path d="M0 0h24v24H0z" fill="none"/>
       <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/>
     </symbol>
+    <symbol id="icon-restaurant" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
+    </symbol>
+    <symbol id="icon-handshake" viewBox="0 0 24 24">
+      <g>
+        <rect fill="none" height="24" width="24"/>
+      </g>
+      <g>
+        <path d="M16.48,10.41c-0.39,0.39-1.04,0.39-1.43,0l-4.47-4.46l-7.05,7.04l-0.66-0.63c-1.17-1.17-1.17-3.07,0-4.24l4.24-4.24 c1.17-1.17,3.07-1.17,4.24,0L16.48,9C16.87,9.39,16.87,10.02,16.48,10.41z M17.18,8.29c0.78,0.78,0.78,2.05,0,2.83 c-1.27,1.27-2.61,0.22-2.83,0l-3.76-3.76l-5.57,5.57c-0.39,0.39-0.39,1.02,0,1.41c0.39,0.39,1.02,0.39,1.42,0l4.62-4.62l0.71,0.71 l-4.62,4.62c-0.39,0.39-0.39,1.02,0,1.41c0.39,0.39,1.02,0.39,1.42,0l4.62-4.62l0.71,0.71l-4.62,4.62c-0.39,0.39-0.39,1.02,0,1.41 c0.39,0.39,1.02,0.39,1.41,0l4.62-4.62l0.71,0.71l-4.62,4.62c-0.39,0.39-0.39,1.02,0,1.41c0.39,0.39,1.02,0.39,1.41,0l8.32-8.34 c1.17-1.17,1.17-3.07,0-4.24l-4.24-4.24c-1.15-1.15-3.01-1.17-4.18-0.06L17.18,8.29z"/>
+      </g>
+    </symbol>
   </svg>
 
   <!-- Theme input -->
@@ -71,7 +85,10 @@
   <div class="page__wrapper" id="app">
     <img class="page__image" src="/src/images/x2/a-la-francaise.webp" alt="">
 
-    <!-- Top app bar -->
+    <!-- top drawer -->
+    <div class="top-drawer" id="top-drawer"></div>
+
+    <!-- top app bar -->
     <header class="top-app-bar top-app-bar--fixed" id="top-app-bar">
       <div class="top-app-bar__container" id="top-app-bar-container">
         <div class="top-app-bar__section top-app-bar__section--left">
@@ -96,15 +113,63 @@
       </div>
     </header>
 
-    <!-- drawer -->
-    <main class="drawer" id="drawer">
-      <div class="drawer__header">
-        <h1 class="drawer__title">A la française</h1>
-        <label class="drawer__button" for="drawer-switch">
-          <svg class="drawer__icon" fill="currentColor">
+    <!-- bottom drawer -->
+    <main class="bottom-drawer" id="drawer">
+      <div class="bottom-drawer__header">
+        <h1 class="bottom-drawer__title">A la française</h1>
+        <label class="bottom-drawer__button" for="drawer-switch">
+          <svg class="bottom-drawer__icon" fill="currentColor">
             <use href="#icon-expand"/>
           </svg>
         </label>
+      </div>
+      <div class="bottom-drawer__body">
+        <div class="bottom-drawer__container">
+          <!-- period list -->
+          <div class="period-list bottom-drawer__content">
+            <div class="period">
+              <h2 class="period__name">Entrées</h2>
+              <div class="period__underline"></div>
+            </div>
+            <div class="period">
+              <h2 class="period__name">Plats</h2>
+              <div class="period__underline"></div>
+            </div>
+            <div class="period">
+              <h2 class="period__name">Desserts</h2>
+              <div class="period__underline"></div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <footer class="footer bottom-drawer__footer">
+            <div class="footer__container">
+              <p class="footer__logo">ohmyfood</p>
+              <!-- navigation -->
+              <nav class="navigation">
+                <ul class="navigation__list">
+                  <li class="navigation__item navigation__item--with-icon">
+                    <svg class="navigation__icon" fill="currentColor">
+                      <use href="#icon-restaurant" />
+                    </svg>
+                    <a class="navigation__link" href="#">Proposer un restaurant</a>
+                  </li>
+                  <li class="navigation__item navigation__item--with-icon">
+                    <svg class="navigation__icon" fill="currentColor">
+                      <use href="#icon-handshake" />
+                    </svg>
+                    <a class="navigation__link" href="#">Devenir partenaire</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Mentions légales</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </footer>
+        </div>
       </div>
     </main>
   </div>

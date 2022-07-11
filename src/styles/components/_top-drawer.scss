@@ -1,0 +1,13 @@
+@use "../variables";
+
+.top-drawer {
+  position: fixed;
+  z-index: 90;
+  top: -(variables.$size-64);
+  left: 0;
+  width: 100%;
+  height: variables.$size-128;
+  background-color: var(--color-surface-1);
+  box-shadow: variables.$shadow-lg;
+  transition: transform 600ms;
+}
