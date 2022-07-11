@@ -34,6 +34,21 @@
     }
   }
 
+  &__section {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &--left {
+      justify-content: flex-start;
+    }
+
+    &--right {
+      justify-content: flex-end;
+    }
+  }
+
   &__logo {
     font-family: variables.$font-display;
     font-size: variables.$size-24;
@@ -42,6 +57,10 @@
 
     @media screen and (min-width: variables.$screen-md) {
       font-size: variables.$size-30;
+    }
+
+    &--ml {
+      margin-left: variables.$size-16;
     }
   }
 }

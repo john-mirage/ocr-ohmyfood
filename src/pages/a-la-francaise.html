@@ -92,7 +92,12 @@
     <header class="top-app-bar top-app-bar--fixed" id="top-app-bar">
       <div class="top-app-bar__container" id="top-app-bar-container">
         <div class="top-app-bar__section top-app-bar__section--left">
-          <p class="top-app-bar__logo">ohmyfood</p>
+          <a class="icon-button icon-button--on-left" href="/index.html">
+            <svg class="icon-button__icon" fill="currentColor">
+              <use href="#icon-back"/>
+            </svg>
+          </a>
+          <p class="top-app-bar__logo top-app-bar__logo--ml">ohmyfood</p>
         </div>
         <div class="top-app-bar__section top-app-bar__section--right">
           <!-- switch -->
@@ -117,8 +122,8 @@
     <main class="bottom-drawer" id="drawer">
       <div class="bottom-drawer__header">
         <h1 class="bottom-drawer__title">A la française</h1>
-        <label class="bottom-drawer__button" for="drawer-switch">
-          <svg class="bottom-drawer__icon" fill="currentColor">
+        <label class="icon-button icon-button--on-right icon-button--can-rotate" id="drawer-button" for="drawer-switch">
+          <svg class="icon-button__icon" fill="currentColor">
             <use href="#icon-expand"/>
           </svg>
         </label>

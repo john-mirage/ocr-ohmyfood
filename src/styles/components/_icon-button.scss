@@ -1,0 +1,35 @@
+@use "../variables";
+
+.icon-button {
+  display: flex;
+  width: variables.$size-48;
+  height: variables.$size-48;
+  color: var(--color-text-alt);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 150ms;
+
+  &:hover {
+    background-color: var(--color-surface-3);
+    color: var(--color-text);
+  }
+
+  &--on-right {
+    margin-right: -(variables.$size-12);
+  }
+
+  &--on-left {
+    margin-left: -(variables.$size-12);
+  }
+
+  &--can-rotate {
+    transition-property: background-color, color, transform;
+  }
+
+  &__icon {
+    margin: auto;
+    width: variables.$size-24;
+    height: variables.$size-24;
+  }
+}

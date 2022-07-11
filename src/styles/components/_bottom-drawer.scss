@@ -30,24 +30,11 @@
   }
 
   &__title {
+    margin-right: variables.$size-24;
     font-family: variables.$font-display;
     font-weight: 400;
     font-size: variables.$size-24;
     color: var(--color-text);
-  }
-
-  &__button {
-    display: flex;
-    width: variables.$size-48;
-    height: variables.$size-48;
-    border-radius: 9999px;
-  }
-
-  &__icon {
-    margin: auto;
-    width: variables.$size-24;
-    height: variables.$size-24;
-    color: var(--color-text-alt);
   }
 
   &__body {

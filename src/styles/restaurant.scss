@@ -13,6 +13,7 @@
 @use "./components/footer";
 @use "./components/heart-button";
 @use "./components/hero";
+@use "./components/icon-button";
 @use "./components/location";
 @use "./components/navigation";
 @use "./components/page";
@@ -110,4 +111,8 @@
 
 #drawer-switch:checked ~ #app #top-drawer {
   transform: translateY(50%);
+}
+
+#drawer-switch:checked ~ #app #drawer-button {
+  transform: rotate(180deg);
 }
