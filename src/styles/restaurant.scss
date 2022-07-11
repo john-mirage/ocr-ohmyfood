@@ -102,3 +102,19 @@
 #dark-theme:checked ~ #app #theme-button-handle {
   transform: translateX(20px);
 }
+
+#drawer-switch:checked ~ #app #top-app-bar {
+  transform: translateY(0); 
+}
+
+#top-app-bar-container {
+  transition: transform 600ms;
+}
+
+#drawer-switch:checked ~ #app #top-app-bar-container {
+  transform: translateY(-100%);
+}
+
+#drawer-switch:checked ~ #app #drawer {
+  transform: translateY(0);
+}

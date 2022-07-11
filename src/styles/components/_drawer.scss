@@ -3,14 +3,17 @@
 
 .drawer {
   position: fixed;
+  z-index: 200;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: variables.$size-64;
+  height: calc(100% - 64px);
   background-color: var(--color-surface-1);
   border-top-left-radius: variables.$size-40;
   border-top-right-radius: variables.$size-40;
   overflow: hidden;
+  transform: translateY(calc(100% - variables.$size-64));
+  transition: transform 600ms;
 
   &__header {
     display: flex;
@@ -28,5 +31,19 @@
     font-weight: 400;
     font-size: variables.$size-24;
     color: var(--color-text);
+  }
+
+  &__button {
+    display: flex;
+    width: variables.$size-48;
+    height: variables.$size-48;
+    border-radius: 9999px;
+  }
+
+  &__icon {
+    margin: auto;
+    width: variables.$size-24;
+    height: variables.$size-24;
+    color: var(--color-text-alt);
   }
 }

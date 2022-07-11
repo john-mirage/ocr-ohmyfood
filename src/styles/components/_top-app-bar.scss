@@ -2,17 +2,24 @@
 @use "../mixins";
 
 .top-app-bar {
-  position: relative;
   z-index: 100;
   width: 100%;
-  height: variables.$size-64;
   background-color: var(--color-surface-1);
   box-shadow: variables.$shadow-lg;
+
+  &--static {
+    position: relative;
+    height: variables.$size-64;
+  }
 
   &--fixed {
     position: fixed;
     top: 0;
     left: 0;
+    height: variables.$size-128;
+    padding-top: variables.$size-64;
+    transform: translateY(-50%);
+    transition: transform 600ms;
   }
 
   &__container {
