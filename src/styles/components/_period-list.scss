@@ -4,17 +4,20 @@
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: variables.$size-20;
-  padding-left: variables.$size-20;
-  padding-right: variables.$size-20;
+  padding-left: variables.$size-24;
+  padding-right: variables.$size-24;
 
   @media screen and (min-width: variables.$screen-md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   @media screen and (min-width: variables.$screen-lg) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: variables.$size-40;
     padding-left: variables.$size-40;
     padding-right: variables.$size-40;
+  }
+
+  @media screen and (min-width: variables.$screen-xl) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
