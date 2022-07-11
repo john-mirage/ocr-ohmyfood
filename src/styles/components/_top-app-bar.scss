@@ -9,6 +9,12 @@
   background-color: var(--color-surface-1);
   box-shadow: variables.$shadow-lg;
 
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
   &__container {
     @include mixins.container;
     display: flex;

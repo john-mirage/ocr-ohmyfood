@@ -1,0 +1,32 @@
+@use "../variables";
+@use "../mixins";
+
+.drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: variables.$size-64;
+  background-color: var(--color-surface-1);
+  border-top-left-radius: variables.$size-40;
+  border-top-right-radius: variables.$size-40;
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: variables.$size-64;
+    background-color: var(--color-surface-2);
+    box-shadow: variables.$shadow-lg;
+  }
+
+  &__title {
+    font-family: variables.$font-display;
+    font-weight: 400;
+    font-size: variables.$size-24;
+    color: var(--color-text);
+  }
+}
