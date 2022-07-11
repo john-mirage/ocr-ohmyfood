@@ -31,5 +31,10 @@
     margin: auto;
     width: variables.$size-24;
     height: variables.$size-24;
+
+    &--lg {
+      width: variables.$size-32;
+      height: variables.$size-32;
+    }
   }
 }
