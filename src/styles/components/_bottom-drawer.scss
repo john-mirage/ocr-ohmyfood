@@ -19,19 +19,45 @@
 
   &__header {
     flex: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: variables.$size-64;
     background-color: var(--color-surface-2);
     box-shadow: variables.$shadow-md;
   }
 
+  &__container {
+    @include mixins.container;
+    padding-left: variables.$size-20;
+    padding-right: variables.$size-20;
+
+    @media screen and (min-width: variables.$screen-lg) {
+      padding-left: variables.$size-40;
+      padding-right: variables.$size-40;
+    }
+    
+    &--on-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    &--on-body {
+      flex: 1 1 0;
+      padding-bottom: variables.$size-80;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   &__title {
-    margin-right: variables.$size-24;
-    margin-left: variables.$size-24;
+    margin-right: variables.$size-16;
+    margin-left: variables.$size-16;
     font-family: variables.$font-display;
     font-weight: 400;
     font-size: variables.$size-24;
@@ -45,12 +71,6 @@
     width: 100%;
     overflow-y: auto;
     padding-top: variables.$size-24;
-  }
-
-  &__container {
-    flex: 1 1 0;
-    @include mixins.container;
-    padding-bottom: variables.$size-80;
   }
 
   &__footer {

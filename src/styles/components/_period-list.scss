@@ -4,8 +4,7 @@
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: variables.$size-20;
-  padding-left: variables.$size-24;
-  padding-right: variables.$size-24;
+  
   padding-bottom: variables.$size-48;
 
   @media screen and (min-width: variables.$screen-md) {
@@ -14,8 +13,6 @@
 
   @media screen and (min-width: variables.$screen-lg) {
     gap: variables.$size-40;
-    padding-left: variables.$size-40;
-    padding-right: variables.$size-40;
   }
 
   @media screen and (min-width: variables.$screen-xl) {
