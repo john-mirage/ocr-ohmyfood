@@ -10,7 +10,7 @@
   flex-direction: column;
   width: 100%;
   height: calc(100% - 64px);
-  background-color: var(--color-surface-1);
+  background-color: var(--color-surface-2);
   border-top-left-radius: variables.$size-40;
   border-top-right-radius: variables.$size-40;
   overflow: hidden;
@@ -40,20 +40,17 @@
 
   &__body {
     flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     overflow-y: auto;
     padding-top: variables.$size-24;
   }
 
   &__container {
-    @include mixins.container;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
-
-  &__content {
     flex: 1 1 0;
+    @include mixins.container;
+    padding-bottom: variables.$size-80;
   }
 
   &__footer {

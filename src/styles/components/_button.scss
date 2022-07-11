@@ -14,6 +14,14 @@
     box-shadow: variables.$shadow-lg;
   }
 
+  &--center {
+    display: block;
+    max-width: variables.$size-186;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
   &__label {
     position: relative;
     z-index: 10;
