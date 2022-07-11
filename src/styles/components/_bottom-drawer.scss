@@ -42,12 +42,11 @@
     flex: 1 1 0;
     width: 100%;
     overflow-y: auto;
+    padding-top: variables.$size-24;
   }
 
   &__container {
     @include mixins.container;
-    padding-left: variables.$size-20;
-    padding-right: variables.$size-20;
     display: flex;
     flex-direction: column;
     min-height: 100%;

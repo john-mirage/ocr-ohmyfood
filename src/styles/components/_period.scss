@@ -1,0 +1,20 @@
+@use "../variables";
+
+.period {
+  width: 100%;
+
+  &__name {
+    margin-bottom: variables.$size-8;
+    font-family: variables.$font-sans;
+    font-size: variables.$size-16;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+
+  &__underline {
+    width: variables.$size-40;
+    height: variables.$size-3;
+    background-color: var(--color-green);
+  }
+}
