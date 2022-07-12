@@ -6,8 +6,9 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: stretch;
   width: 100%;
-  height: variables.$size-68;
+  min-height: variables.$size-68;
   border-radius: variables.$size-16;
   background-color: var(--color-surface-1);
   box-shadow: variables.$shadow-md;
@@ -53,10 +54,8 @@
     }
 
     &--badge {
-      align-self: center;
       display: flex;
       width: 56px;
-      height: 100%;
       background-color: var(--color-green);
     }
   }
@@ -66,9 +65,12 @@
     font-weight: 500;
     line-height: 1;
     color: var(--color-text);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    
+    @media screen and (min-width: variables.$screen-sm) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 
   &__desc {
@@ -76,9 +78,12 @@
     font-weight: 400;
     line-height: 1;
     color: var(--color-text-alt);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+
+    @media screen and (min-width: variables.$screen-sm) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 
   &__price {

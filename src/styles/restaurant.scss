@@ -42,6 +42,10 @@
   --color-gradient: linear-gradient(to bottom, var(--color-pink), var(--color-purple));
 }
 
+/*------------------------------------*\
+  #states
+\*------------------------------------*/
+
 #app {
   --color-surface-1: hsl(0, 0%, 100%);
   --color-surface-2: hsl(0, 0%, 96%);
@@ -108,12 +112,40 @@
   transform: translateX(20px);
 }
 
-#drawer-switch:checked ~ #app #drawer {
-  transform: translateY(0);
+@keyframes top-drawer {
+  from {transform: translateY(-50%);}
+  to {transform: translateY(0);}
+}
+
+@keyframes bottom-drawer {
+  from {transform: translateY(calc(100% - 64px));}
+  to {transform: translateY(0);}
+}
+
+#top-drawer {
+  animation-name: top-drawer;
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0,.66,.19,1);
+  animation-delay: 2000ms;
+  animation-fill-mode: backwards;
+  transition: transform 600ms;
+}
+
+#bottom-drawer {
+  animation-name: bottom-drawer;
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0,.66,.19,1);
+  animation-delay: 2000ms;
+  animation-fill-mode: backwards;
+  transition: transform 600ms;
 }
 
 #drawer-switch:checked ~ #app #top-drawer {
-  transform: translateY(50%);
+  transform: translateY(-50%);
+}
+
+#drawer-switch:checked ~ #app #bottom-drawer {
+  transform: translateY(calc(100% - 64px));
 }
 
 #drawer-switch:checked ~ #app #drawer-button {

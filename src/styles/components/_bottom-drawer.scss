@@ -4,18 +4,16 @@
 .bottom-drawer {
   position: fixed;
   z-index: 200;
-  bottom: 0;
+  top: variables.$size-64;
   left: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100% - 64px);
+  height: calc(100% - variables.$size-64);
   background-color: var(--color-surface-2);
   border-top-left-radius: variables.$size-40;
   border-top-right-radius: variables.$size-40;
   overflow: hidden;
-  transform: translateY(calc(100% - variables.$size-64));
-  transition: transform 600ms;
 
   &__header {
     flex: none;
