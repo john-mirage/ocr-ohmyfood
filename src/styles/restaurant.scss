@@ -129,28 +129,34 @@
 }
 
 #top-drawer {
+  /*
   animation-name: top-drawer;
   animation-duration: 600ms;
   animation-timing-function: cubic-bezier(0,.66,.19,1);
   animation-delay: 2000ms;
   animation-fill-mode: backwards;
+  */
   transition: transform 600ms;
 }
 
 #bottom-drawer {
+  /*
   animation-name: bottom-drawer;
   animation-duration: 600ms;
   animation-timing-function: cubic-bezier(0,.66,.19,1);
   animation-delay: 2000ms;
   animation-fill-mode: backwards;
+  */
   transition: transform 600ms;
 }
 
 #drawer-button {
+  /*
   animation-name: rotate-drawer-button;
   animation-duration: 600ms;
   animation-delay: 2000ms;
   animation-fill-mode: backwards;
+  */
   transition: transform 600ms;
 }
 
