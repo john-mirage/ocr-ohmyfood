@@ -38,29 +38,31 @@
       flex-direction: column;
       justify-content: space-between;
       width: calc(100% - 56px);
-      height: 100%;
+      min-height: 68px;
       padding: variables.$size-14;
       transition: width 150ms;
 
       .dish__input:checked ~ & {
-        width: calc(100% - 112px);
+        width: calc(100% - 124px);
       }
     }
 
     &--price {
       align-self: flex-end;
       width: 56px;
-      padding: variables.$size-14;
+      padding-bottom: variables.$size-14;
+      padding-right: variables.$size-14;
     }
 
     &--badge {
       display: flex;
-      width: 56px;
+      width: 68px;
       background-color: var(--color-green);
     }
   }
 
   &__name {
+    margin-bottom: variables.$size-4;
     font-size: variables.$size-18;
     font-weight: 500;
     line-height: 1;
@@ -88,7 +90,7 @@
 
   &__price {
     margin-left: auto;
-    text-align: right;
+    width: max-content;
     font-size: variables.$size-15;
     font-weight: 500;
     line-height: 1;
