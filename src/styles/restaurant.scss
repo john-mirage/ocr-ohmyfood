@@ -23,6 +23,7 @@
 @use "./components/restaurant-card";
 @use "./components/restaurant-list";
 @use "./components/restaurant-section";
+@use "./components/slider";
 @use "./components/spinner";
 @use "./components/step-list";
 @use "./components/switch";
@@ -163,4 +164,19 @@
 
 #drawer-switch:checked ~ #app #drawer-button {
   transform: rotate(180deg);
+}
+
+#slide-input-1:checked ~ .slider__pannel {transform: translateX(0);}
+#slide-input-2:checked ~ .slider__pannel {transform: translateX(-50%);}
+
+#slide-input-1:checked ~ #slide-button-2 {
+  display: block;
+  right: 20px;
+  background-image: url("/src/images/chevron_right.svg");
+}
+
+#slide-input-2:checked ~ #slide-button-1 {
+  display: block;
+  left: 20px;
+  background-image: url("/src/images/chevron_left.svg");
 }
