@@ -1,0 +1,90 @@
+:root {
+  --color-purple: hsl(267, 66%, 60%);
+  --color-pink: hsl(317, 100%, 74%);
+  --color-green: hsl(165, 56%, 74%);
+  --color-dark-green: hsl(165, 100%, 26%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gradient: linear-gradient(to bottom, var(--color-pink), var(--color-purple));
+}
+
+#app {
+  --color-surface-1: hsl(0, 0%, 100%);
+  --color-surface-2: hsl(0, 0%, 96%);
+  --color-surface-3: hsl(0, 0%, 92%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-footer: hsl(0, 0%, 21%);
+
+  --color-text: hsl(0, 0%, 21%);
+  --color-text-alt: hsl(0, 0%, 40%);
+
+  --color-switch-icon: hsl(210, 11%, 71%);
+  --color-switch-icon-hover: hsl(210, 10%, 23%);
+  --color-switch-icon-active: #f59f00;
+}
+
+@media (prefers-color-scheme: light) {
+  #light-theme-label {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #dark-theme-label {
+    display: none;
+  }
+  #app {
+    --color-surface-1: hsl(0, 0%, 10%);
+    --color-surface-2: hsl(0, 0%, 14%);
+    --color-surface-3: hsl(0, 0%, 18%);
+    --color-card: hsl(0, 0%, 10%);
+    --color-footer: hsl(0, 0%, 10%);
+
+    --color-text: hsl(0, 0%, 84%);
+    --color-text-alt: hsl(0, 0%, 60%);
+
+    --color-toggle-button-icon: hsl(210, 11%, 71%);
+    --color-toggle-button-icon-hover: hsl(0, 0%, 100%);
+    --color-toggle-button-icon-active: #f59f00;
+  }
+  #theme-button-handle {
+    transform: translateX(20px);
+  }
+}
+
+#light-theme:checked ~ #app {
+  --color-surface-1: hsl(0, 0%, 100%);
+  --color-surface-2: hsl(0, 0%, 96%);
+  --color-surface-3: hsl(0, 0%, 92%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-footer: hsl(0, 0%, 21%);
+
+  --color-text: hsl(0, 0%, 21%);
+  --color-text-alt: hsl(0, 0%, 40%);
+
+  --color-switch-icon: hsl(210, 11%, 71%);
+  --color-switch-icon-hover: hsl(210, 10%, 23%);
+  --color-switch-icon-active: #f59f00;
+}
+
+#light-theme:checked ~ #app #theme-button-handle {
+  transform: translateX(0);
+}
+
+#dark-theme:checked ~ #app {
+  --color-surface-1: hsl(0, 0%, 10%);
+  --color-surface-2: hsl(0, 0%, 14%);
+  --color-surface-3: hsl(0, 0%, 18%);
+  --color-card: hsl(0, 0%, 10%);
+  --color-footer: hsl(0, 0%, 10%);
+
+  --color-text: hsl(0, 0%, 84%);
+  --color-text-alt: hsl(0, 0%, 60%);
+
+  --color-toggle-button-icon: hsl(210, 11%, 71%);
+  --color-toggle-button-icon-hover: hsl(0, 0%, 100%);
+  --color-toggle-button-icon-active: #f59f00;
+}
+
+#dark-theme:checked ~ #app #theme-button-handle {
+  transform: translateX(20px);
+}
