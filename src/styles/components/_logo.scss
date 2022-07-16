@@ -1,9 +1,0 @@
-@use "../variables";
-
-.logo {
-  margin-bottom: variables.$size-64;
-  font-family: variables.$font-display;
-  font-size: variables.$size-48;
-  line-height: 1;
-  color: var(--color-text);
-}

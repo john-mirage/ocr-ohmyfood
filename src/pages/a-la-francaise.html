@@ -98,7 +98,7 @@
     <div class="slider">
       <input class="slider__input" id="slide-input-1" name="slider" type="radio" checked>
       <input class="slider__input" id="slide-input-2" name="slider" type="radio">
-      <div class="slider__pannel">
+      <div class="slider__pannel slider__pannel--row">
         <picture class="slider__slide" id="slide-content-1">
           <img class="slider__image" src="/src/images/x2/a-la-francaise.webp" alt="" draggable="false">
         </picture>
@@ -108,6 +108,12 @@
       </div>
       <label class="slider__button" id="slide-button-1" for="slide-input-1"></label>
       <label class="slider__button" id="slide-button-2" for="slide-input-2"></label>
+    </div>
+
+    <!-- loader -->
+    <div class="loader loader--fixed" id="app-loader">
+      <div class="loader__title">Chargement</div>
+      <div class="loader__spinner" id="app-spinner"></div>
     </div>
 
     <!-- top drawer -->

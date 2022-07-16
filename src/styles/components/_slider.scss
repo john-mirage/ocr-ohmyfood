@@ -10,18 +10,38 @@
 
   &__pannel {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 200%;
-    height: 100%;
     transition: transform 600ms;
+
+    &--row {
+      flex-direction: row;
+      width: 200%;
+      height: 100%;
+    }
+  
+    &--column {
+      flex-direction: column;
+      width: 100%;
+      height: 200vh;
+    }
+
+    &--row > .slider__slide {
+      width: 50%;
+      height: 100%;
+    }
+
+    &--column > .slider__slide {
+      width: 100%;
+      height: 50%;
+    }
   }
 
   &__slide {
     flex: none;
-    width: 50%;
-    height: 100%;
+    background-color: var(--color-surface-1);
+
+    &--scrollable {
+      overflow-y: auto;
+    }
   }
 
   &__image {

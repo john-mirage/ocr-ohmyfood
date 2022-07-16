@@ -14,6 +14,7 @@
 @use "./components/footer";
 @use "./components/heart-button";
 @use "./components/hero";
+@use "./components/loader";
 @use "./components/icon-button";
 @use "./components/location";
 @use "./components/navigation";
@@ -24,7 +25,6 @@
 @use "./components/restaurant-list";
 @use "./components/restaurant-section";
 @use "./components/slider";
-@use "./components/spinner";
 @use "./components/step-list";
 @use "./components/switch";
 @use "./components/top-app-bar";
@@ -42,10 +42,6 @@
   --color-white: hsl(0, 0%, 100%);
   --color-gradient: linear-gradient(to bottom, var(--color-pink), var(--color-purple));
 }
-
-/*------------------------------------*\
-  #states
-\*------------------------------------*/
 
 #app {
   --color-surface-1: hsl(0, 0%, 100%);
@@ -113,6 +109,10 @@
   transform: translateX(20px);
 }
 
+/*------------------------------------*\
+  #animations
+\*------------------------------------*/
+
 @keyframes top-drawer {
   from {transform: translateY(-50%);}
   to {transform: translateY(0);}
@@ -128,36 +128,45 @@
   to {transform: rotate(0);}
 }
 
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
 #top-drawer {
-  /*
   animation-name: top-drawer;
   animation-duration: 600ms;
   animation-timing-function: cubic-bezier(0,.66,.19,1);
   animation-delay: 2000ms;
   animation-fill-mode: backwards;
-  */
   transition: transform 600ms;
 }
 
 #bottom-drawer {
-  /*
   animation-name: bottom-drawer;
   animation-duration: 600ms;
   animation-timing-function: cubic-bezier(0,.66,.19,1);
   animation-delay: 2000ms;
   animation-fill-mode: backwards;
-  */
   transition: transform 600ms;
 }
 
 #drawer-button {
-  /*
   animation-name: rotate-drawer-button;
   animation-duration: 600ms;
   animation-delay: 2000ms;
   animation-fill-mode: backwards;
-  */
-  transition: transform 600ms;
 }
 
 #drawer-switch:checked ~ #app #top-drawer {
@@ -185,4 +194,17 @@
   display: block;
   left: 20px;
   background-image: url("/src/images/chevron_left.svg");
+}
+
+#app-loader {
+  animation-name: fade-out;
+  animation-duration: 600ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+#app-spinner {
+  animation-name: spin;
+  animation-duration: 2600ms;
+  animation-timing-function: linear;
 }
