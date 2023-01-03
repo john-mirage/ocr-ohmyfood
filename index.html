@@ -89,221 +89,215 @@
   <input class="page__input" id="dark-theme" type="checkbox" aria-hidden="true">
 
   <div class="page__wrapper" id="app">
-    <div class="slider">
-      <div class="slider__pannel slider__pannel--column" id="app-pannel">
-        <div class="slider__slide">
-          <div class="loader">
-            <div class="loader__title">Chargement</div>
-            <div class="loader__spinner" id="app-spinner"></div>
+    <!-- Top app bar -->
+    <header class="top-app-bar top-app-bar--static">
+      <div class="top-app-bar__container">
+        <div class="top-app-bar__section top-app-bar__section--left">
+          <p class="top-app-bar__logo">ohmyfood</p>
+        </div>
+        <div class="top-app-bar__section top-app-bar__section--right">
+          <!-- switch -->
+          <div class="switch">
+            <svg class="switch__icon" fill="currentColor">
+              <use href="#icon-sun"/>
+            </svg>
+            <div class="switch__track">
+              <div class="switch__handle" id="theme-button-handle"></div>
+            </div>
+            <svg class="switch__icon" fill="currentColor">
+              <use href="#icon-moon"/>
+            </svg>
+            <label class="switch__button" id="light-theme-label" for="light-theme"></label>
+            <label class="switch__button" id="dark-theme-label" for="dark-theme"></label>
+          </div>
+        </div>            
+      </div>
+    </header>
+
+    <!-- Location -->
+    <div class="location">
+      <svg class="location__icon" fill="currentColor">
+        <use href="#icon-location" />
+      </svg>
+      <p class="location__address">Paris, Belleville</p>
+    </div>
+
+    <main>
+      <!-- hero -->
+      <div class="hero">
+        <div class="hero__section hero__section--presentation">
+          <div class="hero__container">
+            <h1 class="hero__title hero__title--lg">Réservez le menu qui vous convient</h1>
+            <p class="hero__subtitle">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
+            <!-- button -->
+            <a class="button" href="#restaurants">
+              <span class="button__label">Explorer nos restaurants</span>
+              <span class="button__overlay"></span>
+            </a>
           </div>
         </div>
-        <div class="slider__slide slider__slide--scrollable">
-          <!-- Top app bar -->
-          <header class="top-app-bar top-app-bar--static">
-            <div class="top-app-bar__container">
-              <div class="top-app-bar__section top-app-bar__section--left">
-                <p class="top-app-bar__logo">ohmyfood</p>
-              </div>
-              <div class="top-app-bar__section top-app-bar__section--right">
-                <!-- switch -->
-                <div class="switch">
-                  <svg class="switch__icon" fill="currentColor">
-                    <use href="#icon-sun"/>
-                  </svg>
-                  <div class="switch__track">
-                    <div class="switch__handle" id="theme-button-handle"></div>
-                  </div>
-                  <svg class="switch__icon" fill="currentColor">
-                    <use href="#icon-moon"/>
-                  </svg>
-                  <label class="switch__button" id="light-theme-label" for="light-theme"></label>
-                  <label class="switch__button" id="dark-theme-label" for="dark-theme"></label>
-                </div>
-              </div>            
-            </div>
-          </header>
-  
-          <!-- Location -->
-          <div class="location">
-            <svg class="location__icon" fill="currentColor">
-              <use href="#icon-location" />
-            </svg>
-            <p class="location__address">Paris, Belleville</p>
-          </div>
-  
-          <main>
-            <!-- hero -->
-            <div class="hero">
-              <div class="hero__section hero__section--presentation">
-                <div class="hero__container">
-                  <h1 class="hero__title hero__title--lg">Réservez le menu qui vous convient</h1>
-                  <p class="hero__subtitle">Découvrez des restaurants d’exception, séléctionnés par nos soins.</p>
-                  <!-- button -->
-                  <a class="button" href="#restaurants">
-                    <span class="button__label">Explorer nos restaurants</span>
-                    <span class="button__overlay"></span>
-                  </a>
-                </div>
-              </div>
-              
-              <div class="hero__section hero__section--steps">
-                <div class="hero__container">
-                  <h2 class="hero__title hero__title--sm">Fonctionnement</h2>
-                  <!-- step list -->
-                  <ul class="step-list">
-                    <li class="step-list__item step-list__item--left">
-                      <div class="step-list__number"></div>
-                      <div class="step-list__content">
-                        <svg class="step-list__icon" fill="currentColor">
-                          <use href="#icon-phone" />
-                        </svg>
-                        <p class="step-list__name">Choisissez un restaurant</p>
-                      </div>
-                    </li>
-                    <li class="step-list__item step-list__item--middle">
-                      <div class="step-list__number"></div>
-                      <div class="step-list__content">
-                        <svg class="step-list__icon" fill="currentColor">
-                          <use href="#icon-menu" />
-                        </svg>
-                        <p class="step-list__name">Composez votre menu</p>
-                      </div>
-                    </li>
-                    <li class="step-list__item step-list__item--right">
-                      <div class="step-list__number"></div>
-                      <div class="step-list__content">
-                        <svg class="step-list__icon" fill="currentColor">
-                          <use href="#icon-store" />
-                        </svg>
-                        <p class="step-list__name">Déguster au restaurant</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
         
-            <!-- Restaurants -->
-            <div class="restaurant-section" id="restaurants">
-              <div class="restaurant-section__container">
-                <h2 class="restaurant-section__title">Restaurants</h2>
-  
-                <ul class="restaurant-list">
-  
-                  <li class="restaurant-card restaurant-card--with-badge">
-                    <a class="restaurant-card__link" href="/src/pages/la-palette-du-gout.html">
-                      <img class="restaurant-card__image" src="/src/images/x1/la-palette-du-gout.webp" alt="La palette du goût" draggable="false">
-                    </a>
-                    <div class="restaurant-card__body">
-                      <div class="restaurant-card__info">
-                        <h3 class="restaurant-card__name">La palette du goût</h3>
-                        <p class="restaurant-card__location">Ménilmontant</p>
-                      </div>
-                      <button class="heart-button heart-button--on-right">
-                        <input class="heart-button__input" type="checkbox">
-                        <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
-                          <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
-                          <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="restaurant-card__badge">Nouveau</div>
-                  </li>
-  
-                  <li class="restaurant-card restaurant-card--with-badge">
-                    <a class="restaurant-card__link" href="/src/pages/la-note-enchantee.html">
-                      <img class="restaurant-card__image" src="/src/images/x1/la-note-enchantee.webp" alt="La note enchantée" draggable="false">
-                    </a>
-                    <div class="restaurant-card__body">
-                      <div class="restaurant-card__info">
-                        <h3 class="restaurant-card__name">La note enchantée</h3>
-                        <p class="restaurant-card__location">Charonne</p>
-                      </div>
-                      <button class="heart-button heart-button--on-right">
-                        <input class="heart-button__input" type="checkbox">
-                        <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
-                          <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
-                          <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="restaurant-card__badge">Nouveau</div>
-                  </li>
-  
-                  <li class="restaurant-card">
-                    <a class="restaurant-card__link" href="/src/pages/a-la-francaise.html">
-                      <img class="restaurant-card__image" src="/src/images/x1/a-la-francaise.webp" alt="A la française" draggable="false">
-                    </a>
-                    <div class="restaurant-card__body">
-                      <div class="restaurant-card__info">
-                        <h3 class="restaurant-card__name">A la française</h3>
-                        <p class="restaurant-card__location">Cité Rouge</p>
-                      </div>
-                      <button class="heart-button heart-button--on-right">
-                        <input class="heart-button__input" type="checkbox">
-                        <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
-                          <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
-                          <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
-                        </svg>
-                      </button>
-                    </div>
-                  </li>
-  
-                  <li class="restaurant-card">
-                    <a class="restaurant-card__link" href="/src/pages/le-delice-des-sens.html">
-                      <img class="restaurant-card__image" src="/src/images/x1/le-delice-des-sens.webp" alt="Le délice des sens" draggable="false">
-                    </a>
-                    <div class="restaurant-card__body">
-                      <div class="restaurant-card__info">
-                        <h3 class="restaurant-card__name">Le délice des sens</h3>
-                        <p class="restaurant-card__location">Folie-Méricourt</p>
-                      </div>
-                      <button class="heart-button heart-button--on-right">
-                        <input class="heart-button__input" type="checkbox">
-                        <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
-                          <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
-                          <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
-                        </svg>
-                      </button>
-                    </div>
-                  </li>
-                </ul>
-  
-              </div>
-            </div>
-          </main>
-  
-          <!-- Footer -->
-          <footer class="footer">
-            <div class="footer__container">
-              <p class="footer__logo">ohmyfood</p>
-              <!-- navigation -->
-              <nav class="navigation">
-                <ul class="navigation__list">
-                  <li class="navigation__item navigation__item--with-icon">
-                    <svg class="navigation__icon" fill="currentColor">
-                      <use href="#icon-restaurant" />
-                    </svg>
-                    <a class="navigation__link" href="#">Proposer un restaurant</a>
-                  </li>
-                  <li class="navigation__item navigation__item--with-icon">
-                    <svg class="navigation__icon" fill="currentColor">
-                      <use href="#icon-handshake" />
-                    </svg>
-                    <a class="navigation__link" href="#">Devenir partenaire</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" href="#">Mentions légales</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </footer>
+        <div class="hero__section hero__section--steps">
+          <div class="hero__container">
+            <h2 class="hero__title hero__title--sm">Fonctionnement</h2>
+            <!-- step list -->
+            <ul class="step-list">
+              <li class="step-list__item step-list__item--left">
+                <div class="step-list__number"></div>
+                <div class="step-list__content">
+                  <svg class="step-list__icon" fill="currentColor">
+                    <use href="#icon-phone" />
+                  </svg>
+                  <p class="step-list__name">Choisissez un restaurant</p>
+                </div>
+              </li>
+              <li class="step-list__item step-list__item--middle">
+                <div class="step-list__number"></div>
+                <div class="step-list__content">
+                  <svg class="step-list__icon" fill="currentColor">
+                    <use href="#icon-menu" />
+                  </svg>
+                  <p class="step-list__name">Composez votre menu</p>
+                </div>
+              </li>
+              <li class="step-list__item step-list__item--right">
+                <div class="step-list__number"></div>
+                <div class="step-list__content">
+                  <svg class="step-list__icon" fill="currentColor">
+                    <use href="#icon-store" />
+                  </svg>
+                  <p class="step-list__name">Déguster au restaurant</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+  
+      <!-- Restaurants -->
+      <div class="restaurant-section" id="restaurants">
+        <div class="restaurant-section__container">
+          <h2 class="restaurant-section__title">Restaurants</h2>
+
+          <ul class="restaurant-list">
+
+            <li class="restaurant-card restaurant-card--with-badge">
+              <a class="restaurant-card__link" href="/src/pages/la-palette-du-gout.html">
+                <img class="restaurant-card__image" src="/src/images/x1/la-palette-du-gout.webp" alt="La palette du goût" draggable="false">
+              </a>
+              <div class="restaurant-card__body">
+                <div class="restaurant-card__info">
+                  <h3 class="restaurant-card__name">La palette du goût</h3>
+                  <p class="restaurant-card__location">Ménilmontant</p>
+                </div>
+                <button class="heart-button heart-button--on-right">
+                  <input class="heart-button__input" type="checkbox">
+                  <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+                    <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
+                    <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+                  </svg>
+                </button>
+              </div>
+              <div class="restaurant-card__badge">Nouveau</div>
+            </li>
+
+            <li class="restaurant-card restaurant-card--with-badge">
+              <a class="restaurant-card__link" href="/src/pages/la-note-enchantee.html">
+                <img class="restaurant-card__image" src="/src/images/x1/la-note-enchantee.webp" alt="La note enchantée" draggable="false">
+              </a>
+              <div class="restaurant-card__body">
+                <div class="restaurant-card__info">
+                  <h3 class="restaurant-card__name">La note enchantée</h3>
+                  <p class="restaurant-card__location">Charonne</p>
+                </div>
+                <button class="heart-button heart-button--on-right">
+                  <input class="heart-button__input" type="checkbox">
+                  <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+                    <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
+                    <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+                  </svg>
+                </button>
+              </div>
+              <div class="restaurant-card__badge">Nouveau</div>
+            </li>
+
+            <li class="restaurant-card">
+              <a class="restaurant-card__link" href="/src/pages/a-la-francaise.html">
+                <img class="restaurant-card__image" src="/src/images/x1/a-la-francaise.webp" alt="A la française" draggable="false">
+              </a>
+              <div class="restaurant-card__body">
+                <div class="restaurant-card__info">
+                  <h3 class="restaurant-card__name">A la française</h3>
+                  <p class="restaurant-card__location">Cité Rouge</p>
+                </div>
+                <button class="heart-button heart-button--on-right">
+                  <input class="heart-button__input" type="checkbox">
+                  <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+                    <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
+                    <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li class="restaurant-card">
+              <a class="restaurant-card__link" href="/src/pages/le-delice-des-sens.html">
+                <img class="restaurant-card__image" src="/src/images/x1/le-delice-des-sens.webp" alt="Le délice des sens" draggable="false">
+              </a>
+              <div class="restaurant-card__body">
+                <div class="restaurant-card__info">
+                  <h3 class="restaurant-card__name">Le délice des sens</h3>
+                  <p class="restaurant-card__location">Folie-Méricourt</p>
+                </div>
+                <button class="heart-button heart-button--on-right">
+                  <input class="heart-button__input" type="checkbox">
+                  <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+                    <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
+                    <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__logo">ohmyfood</p>
+        <!-- navigation -->
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--with-icon">
+              <svg class="navigation__icon" fill="currentColor">
+                <use href="#icon-restaurant" />
+              </svg>
+              <a class="navigation__link" href="#">Proposer un restaurant</a>
+            </li>
+            <li class="navigation__item navigation__item--with-icon">
+              <svg class="navigation__icon" fill="currentColor">
+                <use href="#icon-handshake" />
+              </svg>
+              <a class="navigation__link" href="#">Devenir partenaire</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Mentions légales</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+      <div class="loader__title">Chargement</div>
+      <div class="loader__spinner" id="loader-spinner"></div>
     </div>
   </div>
 

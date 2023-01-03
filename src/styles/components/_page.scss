@@ -16,9 +16,9 @@
     display: none;
   }
 
-  &__wrapper{
+  &__wrapper {
     width: 100%;
-    height: 100vh;
-    overflow: clip;
+    min-height: 100vh;
+    background-color: var(--color-surface-1);
   }
 }
