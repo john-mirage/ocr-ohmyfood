@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../functions";
 @use "../mixins";
 
 .location {
@@ -8,20 +9,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: variables.$size-56;
+  height: functions.pxToRem(56);
   background-color: var(--color-surface-3);
   color: var(--color-text);
 
   &__icon {
-    margin-left: -(variables.$size-40);
-    margin-right: variables.$size-12;
-    width: variables.$size-24;
-    height: variables.$size-24;
+    margin-left: -(functions.pxToRem(40));
+    margin-right: functions.pxToRem(12);
+    width: functions.pxToRem(24);
+    height: functions.pxToRem(24);
   }
 
   &__address {
     font-family: variables.$font-sans;
-    font-size: variables.$size-16;
+    font-size: functions.pxToRem(16);
     font-weight: 500;
   }
 }

@@ -1,9 +1,10 @@
 @use "../variables";
+@use "../functions";
 
 .icon-button {
   display: flex;
-  width: variables.$size-48;
-  height: variables.$size-48;
+  width: functions.pxToRem(48);
+  height: functions.pxToRem(48);
   color: var(--color-text-alt);
   border-radius: 9999px;
   cursor: pointer;
@@ -16,11 +17,11 @@
   }
 
   &--on-right {
-    margin-right: -(variables.$size-12);
+    margin-right: -(functions.pxToRem(12));
   }
 
   &--on-left {
-    margin-left: -(variables.$size-12);
+    margin-left: -(functions.pxToRem(12));
   }
 
   &--can-rotate {
@@ -29,12 +30,12 @@
 
   &__icon {
     margin: auto;
-    width: variables.$size-24;
-    height: variables.$size-24;
+    width: functions.pxToRem(24);
+    height: functions.pxToRem(24);
 
     &--lg {
-      width: variables.$size-32;
-      height: variables.$size-32;
+      width: functions.pxToRem(32);
+      height: functions.pxToRem(32);
     }
   }
 }

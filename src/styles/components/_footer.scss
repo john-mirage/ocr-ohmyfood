@@ -1,26 +1,27 @@
 @use "../variables";
+@use "../functions";
 @use "../mixins";
 
 .footer {
   width: 100%;
   height: auto;
   background-color: var(--color-footer);
-  padding-top: variables.$size-24;
-  padding-bottom: variables.$size-32;
+  padding-top: functions.pxToRem(24);
+  padding-bottom: functions.pxToRem(32);
 
   @media screen and (min-width: variables.$screen-lg) {
-    padding-top: variables.$size-40;
-    padding-bottom: variables.$size-40;
+    padding-top: functions.pxToRem(40);
+    padding-bottom: functions.pxToRem(40);
   }
 
   &__container {
     @include mixins.container;
-    padding-left: variables.$size-20;
-    padding-right: variables.$size-20;
+    padding-left: functions.pxToRem(20);
+    padding-right: functions.pxToRem(20);
 
     @media screen and (min-width: variables.$screen-lg) {
-      padding-left: variables.$size-40;
-      padding-right: variables.$size-40;
+      padding-left: functions.pxToRem(40);
+      padding-right: functions.pxToRem(40);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -29,9 +30,9 @@
   }
 
   &__logo {
-    margin-bottom: variables.$size-24;
+    margin-bottom: functions.pxToRem(24);
     font-family: variables.$font-display;
-    font-size: variables.$size-24;
+    font-size: functions.pxToRem(24);
     line-height: 1;
     color: var(--color-white);
 

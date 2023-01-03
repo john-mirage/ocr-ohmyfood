@@ -1,18 +1,19 @@
 @use "../variables";
+@use "../functions";
 
 .period-list {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: variables.$size-20;
+  gap: functions.pxToRem(20);
   
-  padding-bottom: variables.$size-48;
+  padding-bottom: functions.pxToRem(48);
 
   @media screen and (min-width: variables.$screen-md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   @media screen and (min-width: variables.$screen-lg) {
-    gap: variables.$size-40;
+    gap: functions.pxToRem(40);
   }
 
   @media screen and (min-width: variables.$screen-xl) {

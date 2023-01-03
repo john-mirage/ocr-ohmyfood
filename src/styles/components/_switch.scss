@@ -1,40 +1,41 @@
 @use "../variables";
+@use "../functions";
 
 .switch {
-  margin-right: -(variables.$size-16);
+  margin-right: -(functions.pxToRem(16));
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: variables.$size-8 variables.$size-16;
+  padding: functions.pxToRem(8) functions.pxToRem(16);
   color: var(--color-text);
-  border: variables.$size-2 solid transparent;
+  border: functions.pxToRem(2) solid transparent;
   border-radius: 9999px;
 
   &:hover {
-    border: variables.$size-2 solid var(--color-surface-3);
+    border: functions.pxToRem(2) solid var(--color-surface-3);
   }
 
   &__icon {
-    width: variables.$size-16;
-    height: variables.$size-16;
+    width: functions.pxToRem(16);
+    height: functions.pxToRem(16);
   }
 
   &__track {
-    margin-left: variables.$size-8;
-    margin-right: variables.$size-8;
-    width: variables.$size-40;
-    height: variables.$size-20;
+    margin-left: functions.pxToRem(8);
+    margin-right: functions.pxToRem(8);
+    width: functions.pxToRem(40);
+    height: functions.pxToRem(20);
     background-color: var(--color-surface-3);
-    padding: variables.$size-4;
+    padding: functions.pxToRem(4);
     border-radius: 9999px;
   }
 
   &__handle {
     position: relative;
     z-index: 10;
-    width: variables.$size-12;
-    height: variables.$size-12;
+    width: functions.pxToRem(12);
+    height: functions.pxToRem(12);
     border-radius: 9999px;
     background: var(--color-gradient);
     transition: transform 150ms;

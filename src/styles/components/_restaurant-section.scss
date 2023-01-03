@@ -1,38 +1,39 @@
 @use "../variables";
+@use "../functions";
 @use "../mixins";
 
 .restaurant-section {
   width: 100%;
   height: auto;
-  padding-top: variables.$size-56;
-  padding-bottom: variables.$size-64;
+  padding-top: functions.pxToRem(56);
+  padding-bottom: functions.pxToRem(64);
   background-color: var(--color-surface-2);
 
   @media screen and (min-width: variables.$screen-lg) {
-    padding-top: variables.$size-96;
-    padding-bottom: variables.$size-96;
+    padding-top: functions.pxToRem(96);
+    padding-bottom: functions.pxToRem(96);
   }
 
   &__container {
     @include mixins.container;
-    padding-left: variables.$size-20;
-    padding-right: variables.$size-20;
+    padding-left: functions.pxToRem(20);
+    padding-right: functions.pxToRem(20);
 
     @media screen and (min-width: variables.$screen-lg) {
-      padding-left: variables.$size-40;
-      padding-right: variables.$size-40;
+      padding-left: functions.pxToRem(40);
+      padding-right: functions.pxToRem(40);
     }
   }
 
   &__title {
-    margin-bottom: variables.$size-22;
+    margin-bottom: functions.pxToRem(22);
     font-family: variables.$font-sans;
-    font-size: variables.$size-24;
+    font-size: functions.pxToRem(24);
     font-weight: 700;
     color: var(--color-text);
 
     @media screen and (min-width: variables.$screen-lg) {
-      font-size: variables.$size-32;
+      font-size: functions.pxToRem(32);
     }
   }
 }

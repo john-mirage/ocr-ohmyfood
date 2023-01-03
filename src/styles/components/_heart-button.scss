@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../functions";
 
 @keyframes pulse {
   from {
@@ -17,8 +18,8 @@
 .heart-button {
   position: relative;
   display: flex;
-  width: variables.$size-48;
-  height: variables.$size-48;
+  width: functions.pxToRem(48);
+  height: functions.pxToRem(48);
   cursor: pointer;
   border-radius: 9999px;
   overflow: hidden;
@@ -29,7 +30,7 @@
   }
 
   &--on-right {
-    margin-right: -(variables.$size-12);
+    margin-right: -(functions.pxToRem(12));
   }
 
   &__input {
@@ -49,8 +50,8 @@
     position: relative;
     z-index: 10;
     margin: auto;
-    width: variables.$size-24;
-    height: variables.$size-24;
+    width: functions.pxToRem(24);
+    height: functions.pxToRem(24);
 
     .heart-button__input:checked ~ & {
       animation-name: pulse;

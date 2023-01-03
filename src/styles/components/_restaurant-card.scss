@@ -1,8 +1,9 @@
 @use "../variables";
+@use "../functions";
 
 .restaurant-card {
   width: 100%;
-  border-radius: variables.$size-15;
+  border-radius: functions.pxToRem(15);
   overflow: hidden;
   background-color: var(--color-surface-1);
   box-shadow: variables.$shadow-lg;
@@ -38,10 +39,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: variables.$size-16 variables.$size-12;
+    padding: functions.pxToRem(16) functions.pxToRem(12);
 
     @media screen and (min-width: variables.$screen-lg) {
-      padding: variables.$size-24;
+      padding: functions.pxToRem(24);
     }
   }
 
@@ -51,26 +52,26 @@
 
   &__name {
     font-weight: 500;
-    font-size: variables.$size-18;
+    font-size: functions.pxToRem(18);
     color: var(--color-text);
   }
 
   &__location {
     font-weight: 400;
-    font-size: variables.$size-17;
+    font-size: functions.pxToRem(17);
     color: var(--color-text-alt);
   }
 
   &__badge {
     position: absolute;
-    top: variables.$size-12;
-    right: variables.$size-12;
-    padding: variables.$size-8 variables.$size-16;
+    top: functions.pxToRem(12);
+    right: functions.pxToRem(12);
+    padding: functions.pxToRem(8) functions.pxToRem(16);
     background-color: var(--color-green);
     font-family: variables.$font-sans;
     font-weight: 500;
-    font-size: variables.$size-14;
+    font-size: functions.pxToRem(14);
     color: var(--color-dark-green);
-    border-radius: variables.$size-4;
+    border-radius: functions.pxToRem(4);
   }
 }

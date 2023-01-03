@@ -1,10 +1,11 @@
 @use "../variables";
+@use "../functions";
 @use "../mixins";
 
 .top-app-bar {
   z-index: 100;
   width: 100%;
-  height: variables.$size-64;
+  height: functions.pxToRem(64);
 
   &--static {
     position: relative;
@@ -24,13 +25,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: variables.$size-20;
-    padding-right: variables.$size-20;
-    height: variables.$size-64;
+    padding-left: functions.pxToRem(20);
+    padding-right: functions.pxToRem(20);
+    height: functions.pxToRem(64);
 
     @media screen and (min-width: variables.$screen-lg) {
-      padding-left: variables.$size-40;
-      padding-right: variables.$size-40;
+      padding-left: functions.pxToRem(40);
+      padding-right: functions.pxToRem(40);
     }
   }
 
@@ -51,16 +52,16 @@
 
   &__logo {
     font-family: variables.$font-display;
-    font-size: variables.$size-24;
+    font-size: functions.pxToRem(24);
     line-height: 1;
     color: var(--color-text);
 
     @media screen and (min-width: variables.$screen-md) {
-      font-size: variables.$size-30;
+      font-size: functions.pxToRem(30);
     }
 
     &--ml {
-      margin-left: variables.$size-16;
+      margin-left: functions.pxToRem(16);
     }
   }
 }

@@ -1,15 +1,16 @@
 @use "../variables";
+@use "../functions";
 
 .dish {
-  margin-bottom: variables.$size-14;
+  margin-bottom: functions.pxToRem(14);
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
   width: 100%;
-  min-height: variables.$size-68;
-  border-radius: variables.$size-16;
+  min-height: functions.pxToRem(68);
+  border-radius: functions.pxToRem(16);
   background-color: var(--color-surface-1);
   box-shadow: variables.$shadow-md;
   overflow: hidden;
@@ -39,7 +40,7 @@
       justify-content: space-between;
       width: calc(100% - 56px);
       min-height: 68px;
-      padding: variables.$size-14;
+      padding: functions.pxToRem(14);
       transition: width 150ms;
 
       .dish__input:checked ~ & {
@@ -50,8 +51,8 @@
     &--price {
       align-self: flex-end;
       width: 56px;
-      padding-bottom: variables.$size-14;
-      padding-right: variables.$size-14;
+      padding-bottom: functions.pxToRem(14);
+      padding-right: functions.pxToRem(14);
     }
 
     &--badge {
@@ -62,8 +63,8 @@
   }
 
   &__name {
-    margin-bottom: variables.$size-4;
-    font-size: variables.$size-18;
+    margin-bottom: functions.pxToRem(4);
+    font-size: functions.pxToRem(18);
     font-weight: 500;
     line-height: 1;
     color: var(--color-text);
@@ -76,7 +77,7 @@
   }
 
   &__desc {
-    font-size: variables.$size-15;
+    font-size: functions.pxToRem(15);
     font-weight: 400;
     line-height: 1;
     color: var(--color-text-alt);
@@ -91,7 +92,7 @@
   &__price {
     margin-left: auto;
     width: max-content;
-    font-size: variables.$size-15;
+    font-size: functions.pxToRem(15);
     font-weight: 500;
     line-height: 1;
     color: var(--color-text-alt);
@@ -99,8 +100,8 @@
 
   &__icon {
     margin: auto;
-    width: variables.$size-24;
-    height: variables.$size-24;
+    width: functions.pxToRem(24);
+    height: functions.pxToRem(24);
     color: var(--color-white);
   }
 }

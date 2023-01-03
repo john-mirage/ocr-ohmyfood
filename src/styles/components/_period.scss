@@ -1,21 +1,22 @@
 @use "../variables";
+@use "../functions";
 
 .period {
   width: 100%;
 
   &__name {
-    margin-bottom: variables.$size-4;
+    margin-bottom: functions.pxToRem(4);
     font-family: variables.$font-sans;
-    font-size: variables.$size-16;
+    font-size: functions.pxToRem(16);
     font-weight: 400;
     text-transform: uppercase;
     color: var(--color-text);
   }
 
   &__underline {
-    margin-bottom: variables.$size-14;
-    width: variables.$size-40;
-    height: variables.$size-3;
+    margin-bottom: functions.pxToRem(14);
+    width: functions.pxToRem(40);
+    height: functions.pxToRem(3);
     background-color: var(--color-green);
   }
 }

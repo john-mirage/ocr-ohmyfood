@@ -1,9 +1,10 @@
 @use "../variables";
+@use "../functions";
 
 .button {
   position: relative;
   display: inline-block;
-  padding: variables.$size-16 variables.$size-22;
+  padding: functions.pxToRem(16) functions.pxToRem(22);
   background: var(--color-gradient);
   border-radius: 9999px;
   overflow: hidden;
@@ -16,7 +17,7 @@
 
   &--center {
     display: block;
-    max-width: variables.$size-186;
+    max-width: functions.pxToRem(186);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -25,7 +26,7 @@
   &__label {
     position: relative;
     z-index: 10;
-    line-height: variables.$size-20;
+    line-height: functions.pxToRem(20);
     font-family: variables.$font-sans;
     font-weight: 500;
     color: var(--color-white);

@@ -1,8 +1,9 @@
 @use "../variables";
+@use "../functions";
 
 .navigation {
   font-family: variables.$font-sans;
-  font-size: variables.$size-16;
+  font-size: functions.pxToRem(16);
   font-weight: 500;
   color: var(--color-white);
 
@@ -14,7 +15,7 @@
   }
 
   &__item {
-    margin-bottom: variables.$size-8;
+    margin-bottom: functions.pxToRem(8);
     transition: color 150ms;
 
     &:last-child {
@@ -23,7 +24,7 @@
 
     @media screen and (min-width: variables.$screen-md) {
       margin-bottom: 0;
-      margin-right: variables.$size-32;
+      margin-right: functions.pxToRem(32);
 
       &:last-child {
         margin-right: 0;
@@ -42,8 +43,8 @@
   }
 
   &__icon {
-    margin-right: variables.$size-8;
-    width: variables.$size-16;
-    height: variables.$size-16;
+    margin-right: functions.pxToRem(8);
+    width: functions.pxToRem(16);
+    height: functions.pxToRem(16);
   }
 }

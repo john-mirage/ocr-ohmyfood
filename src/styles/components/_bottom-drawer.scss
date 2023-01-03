@@ -1,36 +1,37 @@
 @use "../variables";
+@use "../functions";
 @use "../mixins";
 
 .bottom-drawer {
   position: fixed;
   z-index: 200;
-  top: variables.$size-64;
+  top: functions.pxToRem(64);
   left: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100% - variables.$size-64);
+  height: calc(100% - functions.pxToRem(64));
   background-color: var(--color-surface-2);
-  border-top-left-radius: variables.$size-40;
-  border-top-right-radius: variables.$size-40;
+  border-top-left-radius: functions.pxToRem(40);
+  border-top-right-radius: functions.pxToRem(40);
   overflow: hidden;
 
   &__header {
     flex: none;
     width: 100%;
-    height: variables.$size-64;
+    height: functions.pxToRem(64);
     background-color: var(--color-surface-2);
     box-shadow: variables.$shadow-md;
   }
 
   &__container {
     @include mixins.container;
-    padding-left: variables.$size-20;
-    padding-right: variables.$size-20;
+    padding-left: functions.pxToRem(20);
+    padding-right: functions.pxToRem(20);
 
     @media screen and (min-width: variables.$screen-lg) {
-      padding-left: variables.$size-40;
-      padding-right: variables.$size-40;
+      padding-left: functions.pxToRem(40);
+      padding-right: functions.pxToRem(40);
     }
     
     &--on-header {
@@ -43,7 +44,7 @@
 
     &--on-body {
       flex: 1 1 0;
-      padding-bottom: variables.$size-80;
+      padding-bottom: functions.pxToRem(80);
     }
   }
 
@@ -54,11 +55,11 @@
   }
 
   &__title {
-    margin-right: variables.$size-16;
-    margin-left: variables.$size-16;
+    margin-right: functions.pxToRem(16);
+    margin-left: functions.pxToRem(16);
     font-family: variables.$font-display;
     font-weight: 400;
-    font-size: variables.$size-24;
+    font-size: functions.pxToRem(24);
     color: var(--color-text);
   }
 
@@ -68,7 +69,7 @@
     flex-direction: column;
     width: 100%;
     overflow-y: auto;
-    padding-top: variables.$size-24;
+    padding-top: functions.pxToRem(24);
   }
 
   &__footer {

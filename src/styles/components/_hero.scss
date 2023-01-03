@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../functions";
 @use "../mixins";
 
 .hero {
@@ -9,14 +10,14 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
-    gap: variables.$size-40;
-    padding-top: variables.$size-96;
-    padding-bottom: variables.$size-96;
+    gap: functions.pxToRem(40);
+    padding-top: functions.pxToRem(96);
+    padding-bottom: functions.pxToRem(96);
   }
 
   &__section {
-    padding-top: variables.$size-40;
-    padding-bottom: variables.$size-56;
+    padding-top: functions.pxToRem(40);
+    padding-bottom: functions.pxToRem(56);
     font-family: variables.$font-sans;
 
     @media screen and (min-width: variables.$screen-lg) {
@@ -30,27 +31,27 @@
       @media screen and (min-width: variables.$screen-lg) {
         background-color: transparent;
         text-align: left;
-        padding-left: variables.$size-40;
-        padding-right: variables.$size-40;
+        padding-left: functions.pxToRem(40);
+        padding-right: functions.pxToRem(40);
       }
 
       @media screen and (min-width: variables.$screen-xl) {
-        padding-right: variables.$size-96;
+        padding-right: functions.pxToRem(96);
       }
     }
 
     &--steps {
       @media screen and (min-width: variables.$screen-lg) {
         padding-left: 0;
-        padding-right: variables.$size-40;
+        padding-right: functions.pxToRem(40);
       }
     }
   }
 
   &__container {
     @include mixins.container;
-    padding-left: variables.$size-20;
-    padding-right: variables.$size-20;
+    padding-left: functions.pxToRem(20);
+    padding-right: functions.pxToRem(20);
 
     @media screen and (min-width: variables.$screen-lg) {
       padding-left: 0;
@@ -59,37 +60,37 @@
   }
 
   &__title {
-    font-size: variables.$size-24;
+    font-size: functions.pxToRem(24);
     font-weight: 700;
-    line-height: variables.$size-28;
+    line-height: functions.pxToRem(28);
     color: var(--color-text);
 
     &--sm {
-      margin-bottom: variables.$size-20;
-      padding-left: variables.$size-12;
+      margin-bottom: functions.pxToRem(20);
+      padding-left: functions.pxToRem(12);
 
       @media screen and (min-width: variables.$screen-lg) {
-        font-size: variables.$size-32;
-        line-height: variables.$size-40;
+        font-size: functions.pxToRem(32);
+        line-height: functions.pxToRem(40);
       }
     }
 
     &--lg {
-      margin-bottom: variables.$size-12;
+      margin-bottom: functions.pxToRem(12);
 
       @media screen and (min-width: variables.$screen-lg) {
-        margin-bottom: variables.$size-24;
-        font-size: variables.$size-44;
-        line-height: variables.$size-48;
+        margin-bottom: functions.pxToRem(24);
+        font-size: functions.pxToRem(44);
+        line-height: functions.pxToRem(48);
       }
     }
   }
 
   &__subtitle {
-    margin-bottom: variables.$size-32;
+    margin-bottom: functions.pxToRem(32);
     font-weight: 400;
-    font-size: variables.$size-18;
+    font-size: functions.pxToRem(18);
     color: var(--color-text-alt);
-    line-height: variables.$size-24;
+    line-height: functions.pxToRem(24);
   }
 }
