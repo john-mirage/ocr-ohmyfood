@@ -14,15 +14,6 @@
   height: 100%;
   background-color: var(--color-surface-1);
 
-  &--fixed {
-    position: fixed;
-    z-index: 80;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    opacity: 0;
-  }
-
   &__title {
     margin-bottom: functions.pxToRem(64);
     font-family: variables.$font-display;

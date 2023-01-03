@@ -123,14 +123,14 @@
   background-image: url("/src/images/chevron_left.svg");
 }
 
-#app-loader {
+#loader {
   animation-name: fade-out;
   animation-duration: 600ms;
   animation-delay: 1000ms;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
 }
 
-#app-spinner {
+#loader-spinner {
   animation-name: spin;
   animation-duration: 2600ms;
   animation-timing-function: linear;
