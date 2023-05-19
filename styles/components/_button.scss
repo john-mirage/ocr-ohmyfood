@@ -10,6 +10,7 @@
   overflow: hidden;
   box-shadow: variables.$shadow-md;
   transition: box-shadow 150ms;
+  cursor: pointer;
 
   &:hover {
     box-shadow: variables.$shadow-lg;
@@ -31,7 +32,7 @@
     font-weight: 500;
     color: var(--color-white);
   }
-  
+
   &__overlay {
     position: absolute;
     z-index: 20;
