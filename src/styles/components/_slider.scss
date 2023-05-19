@@ -1,3 +1,5 @@
+@use "../functions";
+
 .slider {
   position: relative;
   width: 100%;
@@ -17,7 +19,7 @@
       width: 200%;
       height: 100%;
     }
-  
+
     &--column {
       flex-direction: column;
       width: 100%;
@@ -50,19 +52,35 @@
     max-width: none;
     object-fit: cover;
   }
-  
+
   &__button {
     display: none;
     position: absolute;
     z-index: 20;
     top: 50%;
-    width: 64px;
-    height: 64px;
-    border-radius: 9999px;
-    background-color: var(--color-purple);
+    width: functions.pxToRem(64);
+    height: functions.pxToRem(64);
+    background-color: hsla(0, 0%, 0%, 60%);
     background-repeat: no-repeat;
     background-size: 32px;
     background-position: center;
+    transform: translateY(-50%);
+    transition-property: visibility, opacity, background-color;
+    transition-duration: 150ms;
     cursor: pointer;
+
+    @media screen and (hover: hover) {
+      opacity: 0;
+      visibility: hidden;
+
+      &:hover {
+        background-color: var(--color-purple);
+      }
+
+      .slider:hover & {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 }

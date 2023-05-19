@@ -9,28 +9,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
 
   <!-- Primary Meta Tags -->
-  <title>ohmyfood, Restaurant Le délice des sens</title>
-  <meta name="title" content="ohmyfood, Restaurant Le délice des sens">
+  <title>ohmyfood, Le délice des sens</title>
+  <meta name="title" content="ohmyfood, Le délice des sens">
   <meta name="description" content="Avec ohmyfood, Découvrez des restaurants d’exception, séléctionnés par nos soins. Choisissez un restaurant, Composez votre menu et déguster!">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://john-mirage.github.io/foodtech-website/">
-  <meta property="og:title" content="ohmyfood, Restaurant Le délice des sens">
+  <meta property="og:title" content="ohmyfood, Le délice des sens">
   <meta property="og:description" content="Avec ohmyfood, Découvrez des restaurants d’exception, séléctionnés par nos soins. Choisissez un restaurant, Composez votre menu et déguster!">
   <meta property="og:image" content="https://john-mirage.github.io/foodtech-website/ohmyfood.webp">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://john-mirage.github.io/foodtech-website/">
-  <meta property="twitter:title" content="ohmyfood, Restaurant Le délice des sens">
+  <meta property="twitter:title" content="ohmyfood, Le délice des sens">
   <meta property="twitter:description" content="Avec ohmyfood, Découvrez des restaurants d’exception, séléctionnés par nos soins. Choisissez un restaurant, Composez votre menu et déguster!">
   <meta property="twitter:image" content="https://john-mirage.github.io/foodtech-website/ohmyfood.webp">
 </head>
 
-<body>
-  <!-- Icons -->
-  <svg class="sr-only" xmlns="http://www.w3.org/2000/svg">
+<body class="page">
+
+  <svg class="page__icons" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="icon-heart-gradient" gradientTransform="rotate(90)">
+        <stop offset="0%" stop-color="hsl(267, 66%, 60%)" />
+        <stop offset="100%" stop-color="hsl(317, 100%, 74%)" />
+      </linearGradient>
+    </defs>
+    <symbol id="icon-back" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+    </symbol>
     <symbol id="icon-sun" viewBox="0 0 24 24">
       <rect fill="none" height="24" width="24"/>
       <path d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/>
@@ -39,39 +49,331 @@
       <rect fill="none" height="24" width="24"/>
       <path d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/>
     </symbol>
+    <symbol id="icon-heart-outlined" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path fill="url(#icon-heart-gradient)" d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
+    </symbol>
+    <symbol id="icon-heart-filled" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path fill="url(#icon-heart-gradient)" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </symbol>
+    <symbol id="icon-expand" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+    </symbol>
+    <symbol id="icon-restaurant" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
+    </symbol>
+    <symbol id="icon-handshake" viewBox="0 0 24 24">
+      <g>
+        <rect fill="none" height="24" width="24"/>
+      </g>
+      <g>
+        <path d="M16.48,10.41c-0.39,0.39-1.04,0.39-1.43,0l-4.47-4.46l-7.05,7.04l-0.66-0.63c-1.17-1.17-1.17-3.07,0-4.24l4.24-4.24 c1.17-1.17,3.07-1.17,4.24,0L16.48,9C16.87,9.39,16.87,10.02,16.48,10.41z M17.18,8.29c0.78,0.78,0.78,2.05,0,2.83 c-1.27,1.27-2.61,0.22-2.83,0l-3.76-3.76l-5.57,5.57c-0.39,0.39-0.39,1.02,0,1.41c0.39,0.39,1.02,0.39,1.42,0l4.62-4.62l0.71,0.71 l-4.62,4.62c-0.39,0.39-0.39,1.02,0,1.41c0.39,0.39,1.02,0.39,1.42,0l4.62-4.62l0.71,0.71l-4.62,4.62c-0.39,0.39-0.39,1.02,0,1.41 c0.39,0.39,1.02,0.39,1.41,0l4.62-4.62l0.71,0.71l-4.62,4.62c-0.39,0.39-0.39,1.02,0,1.41c0.39,0.39,1.02,0.39,1.41,0l8.32-8.34 c1.17-1.17,1.17-3.07,0-4.24l-4.24-4.24c-1.15-1.15-3.01-1.17-4.18-0.06L17.18,8.29z"/>
+      </g>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+    </symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    </symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </symbol>
   </svg>
 
-  <!-- Theme input -->
-  <input class="hidden" id="light-theme" type="checkbox" aria-hidden="true">
-  <input class="hidden" id="dark-theme" type="checkbox" aria-hidden="true">
+  <input class="page__input" id="light-theme" type="checkbox" aria-hidden="true">
+  <input class="page__input" id="dark-theme" type="checkbox" aria-hidden="true">
+  <input class="page__input" id="drawer-switch" type="checkbox" aria-hidden="true">
 
-  <div id="app">
-    <!-- Header -->
-    <header>
-      <!-- Top app bar -->
-      <div class="relative z-50 w-full h-64 bg-surface-1 shadow-lg">
-        <div class="container h-64 flex flex-row justify-between items-center px-20 lg-px-40">
-          <!-- Logo -->
-          <div>
-            <p class="font-display text-24 leading-normal text-primary md-text-30">ohmyfood</p>
-          </div>
-          <!-- Theme button -->
-          <div class="relative flex flex-row justify-end items-center text-primary">
-            <svg class="w-16 h-16" fill="currentColor">
+  <div class="page__wrapper page__wrapper--not-scrollable" id="app">
+    <!-- slider -->
+    <div class="slider">
+      <input class="slider__input" id="slide-input-1" name="slider" type="radio" checked>
+      <input class="slider__input" id="slide-input-2" name="slider" type="radio">
+      <div class="slider__pannel slider__pannel--row">
+        <picture class="slider__slide" id="slide-content-1">
+          <img class="slider__image" src="/src/images/x2/a-la-francaise.webp" alt="" draggable="false">
+        </picture>
+        <picture class="slider__slide" id="slide-content-2">
+          <img class="slider__image" src="/src/images/x2/la-note-enchantee.webp" alt="" draggable="false">
+        </picture>
+      </div>
+      <label class="slider__button" id="slide-button-1" for="slide-input-1"></label>
+      <label class="slider__button" id="slide-button-2" for="slide-input-2"></label>
+    </div>
+
+    <!-- top drawer -->
+    <div class="top-drawer" id="top-drawer"></div>
+
+    <!-- top app bar -->
+    <header class="top-app-bar top-app-bar--fixed" id="top-app-bar">
+      <div class="top-app-bar__container" id="top-app-bar-container">
+        <div class="top-app-bar__section top-app-bar__section--left">
+          <a class="icon-button icon-button--on-left" href="/index.html">
+            <svg class="icon-button__icon" fill="currentColor">
+              <use href="#icon-back"/>
+            </svg>
+          </a>
+          <a href="#" class="top-app-bar__logo top-app-bar__logo--ml">ohmyfood</a>
+        </div>
+        <div class="top-app-bar__section top-app-bar__section--right">
+          <!-- switch -->
+          <div class="switch">
+            <svg class="switch__icon" fill="currentColor">
               <use href="#icon-sun"/>
             </svg>
-            <div class="mx-8 w-40 h-20 bg-surface-3 p-4 rounded-full">
-              <span class="block relative z-10 w-12 h-12 rounded-full bg-gradient transition-transform" id="theme-button-handle"></span>
+            <div class="switch__track">
+              <div class="switch__handle" id="theme-button-handle"></div>
             </div>
-            <svg class="w-16 h-16" fill="currentColor">
+            <svg class="switch__icon" fill="currentColor">
               <use href="#icon-moon"/>
             </svg>
-            <label class="absolute top-0 left-0 w-full h-full cursor-pointer" id="light-theme-label" for="light-theme"></label>
-            <label class="absolute top-0 left-0 w-full h-full cursor-pointer" id="dark-theme-label" for="dark-theme"></label>
+            <label class="switch__button" id="light-theme-label" for="light-theme"></label>
+            <label class="switch__button" id="dark-theme-label" for="dark-theme"></label>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- bottom drawer -->
+    <main class="bottom-drawer" id="bottom-drawer">
+      <div class="bottom-drawer__header">
+        <div class="bottom-drawer__container bottom-drawer__container--on-header">
+          <div class="bottom-drawer__row">
+            <label class="icon-button icon-button--on-left icon-button--can-rotate" id="drawer-button" for="drawer-switch">
+              <svg class="icon-button__icon icon-button__icon--lg" fill="currentColor">
+                <use href="#icon-expand"/>
+              </svg>
+            </label>
+            <h1 class="bottom-drawer__title">Le délice des sens</h1>
+          </div>
+          <div class="heart-button heart-button--on-right">
+            <input class="heart-button__input" type="checkbox">
+            <svg class="heart-button__icon absolute top-0 left-0 w-24 h-24">
+              <use class="heart-button__shape heart-button__shape--outlined" href="#icon-heart-outlined" />
+              <use class="heart-button__shape heart-button__shape--filled" href="#icon-heart-filled" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-drawer__body">
+        <div class="bottom-drawer__container bottom-drawer__container--on-body">
+          <!-- period list -->
+          <div class="period-list">
+            <div class="period">
+              <h2 class="period__name">Entrées</h2>
+              <div class="period__underline"></div>
+              <ul class="period__dishes">
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Tartare de thon</h3>
+                    <p class="dish__desc">Assaisonné au yuzu</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">25€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Bouchée de homard croustillant</h3>
+                    <p class="dish__desc">Et sa farandole de petits légumes</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">35€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Velouté de cèpes</h3>
+                    <p class="dish__desc">Aux truffes</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">20€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="period">
+              <h2 class="period__name">Plats</h2>
+              <div class="period__underline"></div>
+              <ul class="period__dishes">
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Poulet rôti aux herbes de Provence</h3>
+                    <p class="dish__desc">Et sa crème de truffe</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">40€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Langouste rôtie</h3>
+                    <p class="dish__desc">Et ses légumes de saison</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">35€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Côte de boeuf Angus</h3>
+                    <p class="dish__desc">Et sa purée de panais</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">44€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="period">
+              <h2 class="period__name">Desserts</h2>
+              <div class="period__underline"></div>
+              <ul class="period__dishes">
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Farandole de desserts</h3>
+                    <p class="dish__desc">Du chef</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">18€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Crème brulée</h3>
+                    <p class="dish__desc">Revisitée</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">22€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+                <!-- dish -->
+                <li class="dish">
+                  <input class="dish__input" type="checkbox">
+                  <div class="dish__section dish__section--info">
+                    <h3 class="dish__name">Tiramisu</h3>
+                    <p class="dish__desc">À la noisette</p>
+                  </div>
+                  <div class="dish__section dish__section--price">
+                    <p class="dish__price">23€</p>
+                  </div>
+                  <div class="dish__section dish__section--badge">
+                    <svg class="dish__icon" fill="currentColor">
+                      <use href="#icon-check"/>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- button -->
+          <a class="button button--center" href="#">
+            <span class="button__label">Commander</span>
+            <span class="button__overlay"></span>
+          </a>
+        </div>
+        <!-- Footer -->
+        <footer class="footer bottom-drawer__footer">
+          <div class="footer__container">
+            <a href="#" class="footer__logo">ohmyfood</a>
+            <!-- navigation -->
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item navigation__item--with-icon">
+                  <svg class="navigation__icon" fill="currentColor">
+                    <use href="#icon-restaurant" />
+                  </svg>
+                  <a class="navigation__link" href="#">Proposer un restaurant</a>
+                </li>
+                <li class="navigation__item navigation__item--with-icon">
+                  <svg class="navigation__icon" fill="currentColor">
+                    <use href="#icon-handshake" />
+                  </svg>
+                  <a class="navigation__link" href="#">Devenir partenaire</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Mentions légales</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <!-- loader -->
+    <div class="loader" id="loader">
+      <div class="loader__title">Chargement</div>
+      <div class="loader__spinner" id="loader-spinner"></div>
+    </div>
   </div>
 
   <script type="module" src="/src/restaurant.js"></script>
