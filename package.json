@@ -4,7 +4,9 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
+    "dev-styles": "sass --watch styles:public",
     "build": "vite build",
+    "build-styles": "sass styles:public",
     "preview": "vite preview"
   },
   "devDependencies": {
