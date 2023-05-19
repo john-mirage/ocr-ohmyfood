@@ -51,6 +51,7 @@
   }
 
   &__logo {
+    display: block;
     font-family: variables.$font-display;
     font-size: functions.pxToRem(24);
     line-height: 1;

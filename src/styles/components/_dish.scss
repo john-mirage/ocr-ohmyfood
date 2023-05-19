@@ -14,19 +14,27 @@
   background-color: var(--color-surface-1);
   box-shadow: variables.$shadow-md;
   overflow: hidden;
-  
+  transition: background-color 150ms;
+
+  &:hover {
+    background-color: hsla(165, 100%, 26%, 8%);
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
 
   &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+    top: functions.pxToRem(4);
+    left: functions.pxToRem(4);
+    width: calc(100% - functions.pxToRem(8));
+    height: calc(100% - functions.pxToRem(8));
     cursor: pointer;
+    border-radius: functions.pxToRem(16);
   }
 
   &__section {
@@ -68,7 +76,7 @@
     font-weight: 500;
     line-height: 1;
     color: var(--color-text);
-    
+
     @media screen and (min-width: variables.$screen-sm) {
       overflow: hidden;
       text-overflow: ellipsis;

@@ -20,20 +20,15 @@
   display: flex;
   width: functions.pxToRem(48);
   height: functions.pxToRem(48);
-  cursor: pointer;
-  border-radius: 9999px;
-  overflow: hidden;
-  transition: background-color 150ms;
-
-  &:hover {
-    background-color: var(--color-surface-3);
-  }
 
   &--on-right {
     margin-right: -(functions.pxToRem(12));
   }
 
   &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     margin: 0;
     position: absolute;
     display: block;
@@ -42,8 +37,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
     cursor: pointer;
+    border-radius: 9999px;
+    transition: background-color 150ms;
+
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.1);
+    }
   }
 
   &__icon {

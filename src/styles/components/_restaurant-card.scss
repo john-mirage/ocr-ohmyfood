@@ -8,9 +8,10 @@
   overflow: hidden;
   background-color: var(--color-surface-1);
   box-shadow: variables.$shadow-lg;
+  transition: background-color 150ms;
 
   &:hover {
-    background-color: hsl(267, 66%, 12%);
+    background-color: hsla(267, 66%, 60%, 8%);
   }
 
   &--with-badge {

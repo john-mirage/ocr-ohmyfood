@@ -4,7 +4,11 @@
   --color-green: hsl(165, 56%, 74%);
   --color-dark-green: hsl(165, 100%, 26%);
   --color-white: hsl(0, 0%, 100%);
-  --color-gradient: linear-gradient(to bottom, var(--color-pink), var(--color-purple));
+  --color-gradient: linear-gradient(
+    to bottom,
+    var(--color-pink),
+    var(--color-purple)
+  );
 }
 
 #app {
