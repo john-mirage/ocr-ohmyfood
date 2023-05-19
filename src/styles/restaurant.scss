@@ -136,7 +136,7 @@
   right: 0;
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
-  background-image: url("/src/images/chevron_right.svg");
+  background-image: url("chevron_right.svg");
 }
 
 #slide-input-2:checked ~ #slide-button-1 {
@@ -144,7 +144,7 @@
   left: 0;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
-  background-image: url("/src/images/chevron_left.svg");
+  background-image: url("chevron_left.svg");
 }
 
 #loader {
