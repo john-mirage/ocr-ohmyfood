@@ -2,19 +2,23 @@
 @use "../functions";
 
 .restaurant-card {
+  display: block;
   width: 100%;
   border-radius: functions.pxToRem(15);
   overflow: hidden;
   background-color: var(--color-surface-1);
   box-shadow: variables.$shadow-lg;
 
+  &:hover {
+    background-color: hsl(267, 66%, 12%);
+  }
+
   &--with-badge {
     position: relative;
   }
 
-  &__link {
+  &__image-container {
     position: relative;
-    display: block;
     width: 100%;
     padding-top: 56.25%;
     overflow: hidden;
@@ -28,10 +32,6 @@
     height: 100%;
     object-fit: cover;
     transition: transform 150ms;
-
-    .restaurant-card__link:hover > & {
-      transform: scale(1.05);
-    }
   }
 
   &__body {
@@ -39,7 +39,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: functions.pxToRem(16) functions.pxToRem(12);
+    padding: functions.pxToRem(16);
 
     @media screen and (min-width: variables.$screen-lg) {
       padding: functions.pxToRem(24);
