@@ -35,8 +35,12 @@
 \*------------------------------------*/
 
 @keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes fadeOut {
@@ -52,14 +56,14 @@
 
 #loader {
   animation-name: fadeOut;
-  animation-duration: 1000ms;
-  animation-timing-function: cubic-bezier(0,.66,.19,1);
-  animation-delay: 2000ms;
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0, 0.66, 0.19, 1);
+  animation-delay: 1200ms;
   animation-fill-mode: forwards;
 }
 
 #loader-spinner {
   animation-name: spin;
-  animation-duration: 2500ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
 }

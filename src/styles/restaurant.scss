@@ -41,18 +41,30 @@
 \*------------------------------------*/
 
 @keyframes top-drawer {
-  from {transform: translateY(-50%);}
-  to {transform: translateY(0);}
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes bottom-drawer {
-  from {transform: translateY(calc(100% - 64px));}
-  to {transform: translateY(0);}
+  from {
+    transform: translateY(calc(100% - 64px));
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes rotate-drawer-button {
-  from {transform: rotate(180deg);}
-  to {transform: rotate(0);}
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
 
 @keyframes fade-out {
@@ -67,14 +79,18 @@
 }
 
 @keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #top-drawer {
   animation-name: top-drawer;
   animation-duration: 600ms;
-  animation-timing-function: cubic-bezier(0,.66,.19,1);
+  animation-timing-function: cubic-bezier(0, 0.66, 0.19, 1);
   animation-delay: 2000ms;
   animation-fill-mode: backwards;
   transition: transform 600ms;
@@ -83,7 +99,7 @@
 #bottom-drawer {
   animation-name: bottom-drawer;
   animation-duration: 600ms;
-  animation-timing-function: cubic-bezier(0,.66,.19,1);
+  animation-timing-function: cubic-bezier(0, 0.66, 0.19, 1);
   animation-delay: 2000ms;
   animation-fill-mode: backwards;
   transition: transform 600ms;
@@ -108,8 +124,12 @@
   transform: rotate(180deg);
 }
 
-#slide-input-1:checked ~ .slider__pannel {transform: translateX(0);}
-#slide-input-2:checked ~ .slider__pannel {transform: translateX(-50%);}
+#slide-input-1:checked ~ .slider__pannel {
+  transform: translateX(0);
+}
+#slide-input-2:checked ~ .slider__pannel {
+  transform: translateX(-50%);
+}
 
 #slide-input-1:checked ~ #slide-button-2 {
   display: block;
@@ -132,6 +152,6 @@
 
 #loader-spinner {
   animation-name: spin;
-  animation-duration: 2600ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
 }
