@@ -6,9 +6,9 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        restaurant1: resolve(__dirname, "a-la-francaise.html"),
+        restaurant1: resolve(__dirname, "la-palette-du-gout.html"),
         restaurant2: resolve(__dirname, "la-note-enchantee.html"),
-        restaurant3: resolve(__dirname, "la-palette-du-gout.html"),
+        restaurant3: resolve(__dirname, "a-la-francaise.html"),
         restaurant4: resolve(__dirname, "le-delice-des-sens.html"),
       },
     },
